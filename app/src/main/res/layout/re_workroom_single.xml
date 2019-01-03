@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/et_shap"
+                android:paddingTop="@dimen/comment_10_dip"
+                android:paddingBottom="@dimen/comment_5_dip"
+                android:paddingLeft="@dimen/comment_10_dip"
+                android:paddingEnd="@dimen/comment_10_dip"
+                android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_workshop_danpin"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_shap_queen"
+        android:layout_height="@dimen/comment_100_dip">
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="¥58"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/comment_17_dip"
+            android:textSize="@dimen/comment_25_dip"
+            />
+        <TextView
+            android:layout_toRightOf="@id/tv_price"
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:layout_marginTop="15dp"
+            android:text="美甲套餐抵用券"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/img_overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_no"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/icon_shop_receive" />
+
+        <View
+            android:layout_toRightOf="@id/tv_price"
+            android:id="@+id/videoView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_discount"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:layout_marginEnd="@dimen/comment_8_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@drawable/dash_dashed_shape" />
+
+
+        <TextView
+            android:layout_toRightOf="@id/tv_price"
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videoView2"
+            android:text="有效期："
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_youxiao"
+            android:layout_toRightOf="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videoView2"
+            android:text="2018.01.08~2018.03.08"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_toRightOf="@id/tv_price"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:layout_below="@id/tv_youxiao"
+            android:visibility="gone"
+            android:text="限本店美甲套餐使用"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

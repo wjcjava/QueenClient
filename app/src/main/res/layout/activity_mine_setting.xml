@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".ui.mine.activity.MineSettingActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_below="@+id/ic_title"
+        android:background="@color/alpha_05_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:id="@+id/layout_pay_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_pay_modify"
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comment_11_dip"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:layout_marginBottom="@dimen/comment_15_dip"
+                app:srcCompat="@drawable/icon_full_right" />
+
+            <TextView
+                android:id="@+id/tv_pay_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/comment_18_dip"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:text="@string/modify_payment_password"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_14_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/layout_pay_modify"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:id="@+id/layout_pay_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_pay_back"
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comment_11_dip"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:layout_marginBottom="@dimen/comment_15_dip"
+                app:srcCompat="@drawable/icon_full_right" />
+
+            <TextView
+                android:id="@+id/tv_pay_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/comment_18_dip"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:text="@string/back_payment_password"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_14_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

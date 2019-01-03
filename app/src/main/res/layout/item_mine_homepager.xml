@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_queen_headline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_100_dip"
+                android:layout_marginTop="@dimen/comment_10_dip">
+
+    <ImageView
+        android:id="@+id/iv_mine_homepager_title"
+        android:layout_width="@dimen/comment_80_dip"
+        android:layout_height="@dimen/comment_80_dip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/li_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_mine_homepager_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_marginEnd="@dimen/comment_10_dip"
+            android:layout_toRightOf="@+id/iv_title"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/comment_16_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:maxLines="1"
+            android:text="文章作者"
+            android:textColor="@color/alpha_55_black"
+            android:textSize="@dimen/comment_13_size"
+            android:visibility="invisible"/>
+
+
+        <RelativeLayout
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/mine_homepager_new"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/third_login"
+                android:textSize="@dimen/comment_13_size">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_mine_pager_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:textColor="@color/alpha_55_black"
+                android:textSize="@dimen/comment_13_size"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_mine_pager_number"
+                android:src="@drawable/mine_pager_see">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+    </View>
+
+</RelativeLayout>

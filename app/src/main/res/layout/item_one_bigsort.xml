@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/comment_3_dip"
+    android:background="@drawable/et_shap"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_title"
+        android:layout_width="@dimen/comment_44_dip"
+        android:layout_height="@dimen/comment_44_dip"
+        android:layout_marginStart="@dimen/comment_15_dip"
+        android:layout_marginTop="@dimen/comment_11_dip"
+        android:backgroundTintMode="@color/white"
+        android:src="@drawable/icon_portrait"
+        app:civ_border_color="@color/alpha_95_black"
+        app:civ_border_width="@dimen/comment_2_dip" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_9_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_toRightOf="@id/iv_title"
+        android:textSize="@dimen/comment_14_size"
+        android:text="纹身大师"
+        android:textColor="@color/gray_E7370C" />
+
+    <TextView
+        android:id="@+id/tv_upload_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_name"
+        android:layout_marginLeft="@dimen/comment_9_dip"
+        android:layout_marginTop="@dimen/comment_6_dip"
+        android:layout_toRightOf="@id/iv_title"
+        android:textSize="@dimen/comment_12_size"
+        android:text="2小时前"
+        />
+    <ImageView
+        android:layout_below="@id/text_name"
+        android:layout_width="@dimen/comment_50_dip"
+        android:layout_height="@dimen/comment_34_dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/comment_14_dip"
+        app:srcCompat="@drawable/icon_item_rueen"
+        />
+    <TextView
+        android:id="@+id/tv_big_content"
+        android:layout_width="wrap_content"
+        android:text="讲讲如何纹身"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_below="@id/tv_upload_time"
+        android:layout_marginStart="@dimen/comment_15_dip"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_master_shop"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginEnd="@dimen/comment_11_dip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_200_dip"
+        android:layout_below="@id/tv_big_content"
+        android:layout_marginTop="@dimen/comment_13_dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_big_coffeetattoos" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/comment_15_dip"
+        android:layout_marginEnd="@dimen/comment_16_dip"
+        android:layout_below="@id/iv_master_shop"
+        android:layout_marginTop="@dimen/comment_8_dip"
+        android:background="@color/alpha_05_black" />
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_below="@id/view"
+        android:layout_marginStart="@dimen/comment_15_dip"
+        android:layout_marginEnd="@dimen/comment_16_dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/re_forward_dynamic"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginBottom="@dimen/comment_14_dip"
+                android:id="@+id/iv_big_share"
+
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_marginTop="@dimen/comment_14_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:src="@drawable/icon_big_share"
+                />
+            <TextView
+                android:layout_toRightOf="@id/iv_big_share"
+                android:layout_width="wrap_content"
+                android:text="278"
+                android:textSize="@dimen/comment_12_size"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/re_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginBottom="@dimen/comment_14_dip"
+                android:id="@+id/iv_big_massage"
+
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_marginTop="@dimen/comment_14_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:src="@drawable/icon_big_message"
+                />
+            <TextView
+                android:layout_toRightOf="@id/iv_big_massage"
+                android:layout_width="wrap_content"
+                android:text="680"
+                android:textSize="@dimen/comment_12_size"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/comment_14_dip"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_big_praise"
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_marginTop="@dimen/comment_14_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:src="@drawable/icon_big_unpraise"
+                />
+            <TextView
+                android:layout_toRightOf="@id/iv_big_praise"
+                android:layout_width="wrap_content"
+                android:text="2353"
+                android:textColor="@color/gray_E7370C"
+                android:textSize="@dimen/comment_12_size"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_height="wrap_content"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/mine_back_gray"
+        android:layout_below="@id/rl_bottom">
+    </View>
+
+</RelativeLayout>

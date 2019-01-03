@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_dailynew_bottom_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="center"
+        android:src="@drawable/holiday_list_third">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_dailynew_bottom_number"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="@drawable/dailynew_pic"
+        android:text="¥100"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/comment_13_size"
+        android:textColor="@color/third_login">
+    </TextView>
+
+</RelativeLayout>

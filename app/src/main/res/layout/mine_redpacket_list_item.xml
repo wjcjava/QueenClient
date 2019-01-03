@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/li_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_red_packet_mine_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/third_login"
+                    android:text="¥"
+                    android:textSize="@dimen/comment_12_size">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_red_packet_record_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/third_login"
+                    android:text="0.00"
+                    android:textSize="@dimen/comment_18_size"
+                    android:layout_marginStart="@dimen/comment_5_dip">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_red_packet_record_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alpha_35_black"
+                android:layout_marginTop="5dp"
+                android:text="满200可用"
+                android:textSize="@dimen/comment_12_size">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/li_right"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mine_red_packet_record_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="新晋女王注册红包"
+                android:textStyle="normal"
+                android:textSize="@dimen/comment_14_size"
+                android:textColor="@color/alpha_95_black">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_red_packet_record_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="有效期至2018.08.26"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+                android:textSize="@dimen/comment_12_size"
+                android:textColor="@color/third_login">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/li_red_packet_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用规则"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size"/>
+                <ImageView
+                    android:id="@+id/iv_near_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/arrow_up_black"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_red_packet_record_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="女王首单红包，限苏州地区，美业商家使用。"
+        android:textSize="@dimen/comment_10_size"
+        android:padding="10dp"
+        android:textColor="@color/order_number"
+        android:background="@color/mine_redpcket_gray">
+    </TextView>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/mine_back_gray"/>
+
+</LinearLayout>

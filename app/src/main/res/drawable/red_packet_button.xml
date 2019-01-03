@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景色 -->
+    <solid android:color="@color/mine_red_packet_text" />
+    <!-- 边框色 -->
+    <stroke
+        android:width="@dimen/comment_1_dip"
+        android:color="@color/mine_red_packet_text" />
+    <corners
+        android:radius="99dp"/>
+
+    <padding android:top="8dp"
+        android:bottom="8dp"
+        android:left="30dp"
+        android:right="30dp"/>
+</shape>

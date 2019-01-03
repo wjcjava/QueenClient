@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/comment_15_dip"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/iv_title"
+        android:layout_width="@dimen/comment_42_dip"
+        android:layout_height="@dimen/comment_42_dip"
+        android:src="@drawable/icon_portrait"
+        app:civ_border_color="@color/alpha_95_black"
+        app:civ_border_width="@dimen/comment_2_dip" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_9_dip"
+        android:layout_marginTop="@dimen/comment_3_dip"
+        android:layout_toRightOf="@+id/iv_title"
+        android:text="纹身大师"
+        android:textColor="@color/gray_E7370C"
+        android:textSize="@dimen/comment_16_size" />
+
+    <TextView
+        android:id="@+id/tv_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="@dimen/comment_9_dip"
+        android:layout_toRightOf="@+id/iv_title"
+
+        android:text="如何纹身"
+        android:textSize="@dimen/comment_15_size" />
+
+    <RelativeLayout
+        android:id="@+id/re_master_evaluation"
+        android:layout_width="@dimen/comment_300_dip"
+        android:layout_height="@dimen/comment_34_dip"
+        android:layout_below="@id/tv_shop"
+        android:layout_marginStart="@dimen/comment_7_dip"
+        android:layout_marginTop="@dimen/comment_9_dip"
+        android:layout_toRightOf="@+id/iv_title"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_comments_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/comment_15_dip"
+            android:text="小明"
+            android:textColor="@color/Light_blue" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_comments_name"
+            android:text="等人"
+            android:textColor="@color/alpha_15_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toRightOf="@id/text"
+            android:text="共60条回复>"
+            android:textColor="@color/Light_blue" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_master_evaluation"
+        android:layout_marginStart="@dimen/comment_8_dip"
+        android:layout_marginTop="@dimen/comment_13_dip"
+        android:layout_toRightOf="@+id/iv_title"
+        android:text="1-25 14:12"
+        android:textColor="@color/alpha_15_black" />
+
+    <RelativeLayout
+        android:id="@+id/recycler"
+        android:layout_width="@dimen/comment_160_dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/re_master_evaluation"
+        android:layout_marginEnd="@dimen/comment_16_dip"
+        android:layout_marginStart="@dimen/comment_15_dip"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_big_share"
+            android:layout_width="@dimen/comment_14_dip"
+            android:layout_height="@dimen/comment_14_dip"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:src="@drawable/icon_big_share" />
+
+        <ImageView
+            android:id="@+id/iv_big_massage"
+            android:layout_width="@dimen/comment_14_dip"
+            android:layout_height="@dimen/comment_14_dip"
+            android:layout_marginStart="@dimen/comment_23_dip"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:layout_toRightOf="@id/iv_big_share"
+            android:src="@drawable/icon_big_message" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_23_dip"
+            android:layout_toRightOf="@id/iv_big_massage">
+
+            <ImageView
+                android:id="@+id/iv_big_praise"
+
+                android:layout_width="@dimen/comment_14_dip"
+                android:layout_height="@dimen/comment_14_dip"
+                android:layout_marginTop="@dimen/comment_14_dip"
+                android:src="@drawable/icon_big_unpraise" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_5_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_toRightOf="@id/iv_big_praise"
+                android:text="5205"
+                android:textColor="@color/alpha_15_black"
+                android:textSize="@dimen/comment_16_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_below="@id/recycler"
+        android:layout_marginEnd="@dimen/comment_2_dip"
+        android:layout_marginStart="@dimen/comment_9_dip"
+        android:layout_marginTop="@dimen/comment_11_dip"
+        android:layout_toRightOf="@+id/iv_title"
+        android:layout_marginBottom="@dimen/comment_6_dip"
+        />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comment_50_dip"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_25_dip"
+            android:text="意见反馈"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size" />
+    <View
+        android:id="@+id/view1"
+        style="@style/Mineview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_1_dip"
+        android:layout_below="@+id/layout_privacy"
+        android:background="@color/alpha_05_black" />
+
+</LinearLayout>

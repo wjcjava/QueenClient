@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    android:background="@color/tranparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_home_page_dissmiss"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/home_page_diss">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/tranparent">
+
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:src="@drawable/mine_red_packet_sealed"/>
+
+
+        <LinearLayout
+            android:id="@+id/li_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_red_packet_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:paddingStart="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/comment_50_size"
+                android:textColor="@color/third_login">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_red_packet_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元      "
+                android:textSize="@dimen/comment_24_size"
+                android:textColor="@color/third_login">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="恭喜女王大人获得首单红包"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/comment_16_size"
+            android:textColor="@color/third_login">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rl_red_packet_buy"
+            android:layout_width="241dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/tv_red_packet_regist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="红包现金已存入我的红包中，请查\n收查看我的红包>>"
+                android:textSize="@dimen/comment_12_size"
+                android:textColor="@color/mine_red_packet_text"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_red_packet_bootom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女王还要买买买"
+                android:gravity="center"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/red_packet_button"
+                android:layout_below="@id/tv_red_packet_regist"
+                android:textColor="@color/third_login"
+                android:layout_centerInParent="true">
+            </TextView>
+        </RelativeLayout>
+        <!--android:background="@drawable/red_packet_button"-->
+    </RelativeLayout>
+
+
+</LinearLayout>

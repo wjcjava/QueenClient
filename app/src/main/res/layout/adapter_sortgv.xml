@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/comment_70_dip"
+        android:layout_height="@dimen/comment_70_dip">
+
+        <ImageView
+            android:id="@+id/sort_gv_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_mine_homepager"/>
+
+        <TextView
+            android:id="@+id/sort_gv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sort_img"
+            android:gravity="center"
+            android:text="¥500"
+            android:textColor="@color/sort_tvcolor1"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sort_gv_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="你好世界"
+        android:textColor="@color/order_number"
+        android:textSize="@dimen/comment_12_size"/>
+</LinearLayout>

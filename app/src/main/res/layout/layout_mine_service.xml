@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_180_dip"
+        android:background="@drawable/icon_home_groups">
+
+        <ImageView
+            android:id="@+id/img_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/comment_41_dip"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            app:srcCompat="@mipmap/ic_queen" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_service"
+            android:layout_marginBottom="@dimen/comment_15_dip"
+            android:layout_marginStart="@dimen/comment_19_dip"
+            android:layout_toEndOf="@+id/img_service"
+            android:text="@string/service"
+            android:textColor="@color/alpha_95_white"
+            android:textSize="@dimen/comment_18_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_90_dip"
+        android:layout_marginLeft="@dimen/comment_30_dip"
+        android:layout_marginRight="@dimen/comment_30_dip"
+        android:layout_marginTop="@dimen/comment_120_dip"
+        android:background="@drawable/et_shap">
+
+        <LinearLayout
+            android:id="@+id/layout_schedule"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_90_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_mine_service_schedule" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:textSize="@dimen/comment_12_size"
+                android:text="@string/refund_progress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_service"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_90_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_mine_service" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/comment_12_size"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="@string/service_progress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_magessage"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_90_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_mine_service_messgae" />
+
+            <TextView
+                android:textSize="@dimen/comment_12_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="@string/message_center" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

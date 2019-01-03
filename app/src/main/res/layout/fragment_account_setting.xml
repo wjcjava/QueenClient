@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.master.fragment.AccountSettingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:layout_marginLeft="@dimen/comment_15_dip"
+        android:text="简介"
+        />
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.LinesEditView
+
+        android:id="@+id/multiline_edit_text"
+        android:layout_width="match_parent"
+        app:classic_hintText="请输入一句话简介"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/comment_10_dip"
+
+        ></com.ainisi.queenmirror.queenmirrorcduan.utils.LinesEditView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/comment_10_dip"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[女王魔镜全面上市]"
+        android:textSize="@dimen/comment_14_size"
+        android:textColor="@color/alpha_85_black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2018-07-09"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:textSize="@dimen/comment_14_size"
+        android:textColor="@color/alpha_85_black">
+    </TextView>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_back_gray"
+        android:layout_marginTop="10dp">
+    </View>
+
+</LinearLayout>

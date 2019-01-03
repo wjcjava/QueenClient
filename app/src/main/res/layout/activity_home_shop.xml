@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_10_dip">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/comment_85_dip"
+                    android:layout_height="@dimen/comment_25_dip"
+                    android:src="@drawable/icon_home_ancrown" />
+                <View
+                    android:id="@+id/view_homeshop_view"
+                    android:layout_width="@dimen/comment_2_dip"
+                    android:layout_height="18dp"
+                    android:layout_toEndOf="@id/imageView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/comment_8_dip"
+                    android:background="@color/alpha_05_black">
+                </View>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/comment_330_dip"
+                android:layout_height="@dimen/comment_2_dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:background="@color/alpha_05_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_10_dip">
+
+                <LinearLayout
+                    android:id="@+id/home_esthetics"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/comment_35_dip"
+                        android:layout_height="@dimen/comment_39_dip"
+                        android:src="@drawable/icon_home_meixuehui" />
+
+                    <TextView
+                        android:id="@+id/tv_home_esthetics"
+                        android:textSize="@dimen/comment_12_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comment_2_dip"
+                        android:gravity="center"
+                        android:textColor="@color/home_queen_middle_color"
+                        android:text="@string/aesthetic_remittance" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_home_nailart"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_35_dip"
+                        android:layout_height="@dimen/comment_39_dip"
+                        android:src="@drawable/icon_home_manicure" />
+
+                    <TextView
+                        android:id="@+id/tv_home_nailart"
+                        android:textSize="@dimen/comment_12_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comment_2_dip"
+                        android:gravity="center"
+                        android:textColor="@color/home_queen_middle_color"
+                        android:text="@string/manicure" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_home_haircustom"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_35_dip"
+                        android:layout_height="@dimen/comment_39_dip"
+                        android:src="@drawable/icon_home_hairdcus" />
+
+                    <TextView
+                        android:id="@+id/tv_home_haircustom"
+                        android:textSize="@dimen/comment_12_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/home_queen_middle_color"
+                        android:layout_marginTop="@dimen/comment_2_dip"
+                        android:text="@string/hairdressing_custom" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_home_beauty"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_35_dip"
+                        android:layout_height="@dimen/comment_39_dip"
+                        android:src="@drawable/icon_home_meirongmeiti" />
+
+                    <TextView
+                        android:textSize="@dimen/comment_12_size"
+                        android:id="@+id/tv_home_beauty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comment_2_dip"
+                        android:gravity="center"
+                        android:textColor="@color/home_queen_middle_color"
+                        android:text="@string/cosmetology_and_body" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_home_permanent"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_35_dip"
+                        android:layout_height="@dimen/comment_39_dip"
+                        android:src="@drawable/icon_home_lipstick" />
+
+                    <TextView
+                        android:textSize="@dimen/comment_12_size"
+                        android:id="@+id/tv_home_permanent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comment_2_dip"
+                        android:gravity="center"
+                        android:textColor="@color/home_queen_middle_color"
+                        android:text="@string/semi_permanent" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/home_shop_middle">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/li_home_newuserprg"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="@dimen/comment_202_dip"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/comment_10_dip"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/comment_74_dip"
+                    android:layout_height="@dimen/comment_14_dip"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/icon_home_newuserprg" />
+
+                <TextView
+                    android:layout_width="41dp"
+                    android:layout_height="9dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/free_shipping"
+                    android:textColor="@color/home_queen_9_9"
+                    android:textSize="8sp" />
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="@dimen/comment_114_dip"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:src="@drawable/icon_home_minus" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/comment_202_dip"
+                android:background="@color/home_shop_middle" />
+
+            <LinearLayout
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="@dimen/comment_202_dip"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:paddingTop="@dimen/comment_10_dip"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/linear_home_freetrial"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="@dimen/comment_14_dip"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/icon_home_freetrial" />
+
+                <TextView
+                    android:layout_width="@dimen/comment_83_dip"
+                    android:layout_height="9dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/home_queen_9_9"
+                    android:text="5249人免费试用过"
+                    android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/comment_83_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_5_dip">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="@dimen/comment_38_dip"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_home_lipstick" />
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="@dimen/comment_38_dip"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_home_perfume" />
+                </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:background="@color/home_shop_middle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/li_home_specialoffer"
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center"
+                            android:text="@string/dily_special_price"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_12_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/home_queen_9_9"
+                            android:text="1元换10元劵"
+                            android:textSize="@dimen/comment_8_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/comment_47_dip"
+                            android:layout_height="@dimen/comment_47_dip"
+                            android:layout_marginTop="@dimen/comment_5_dip"
+                            android:src="@drawable/icon_home_special" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/home_shop_middle" />
+
+                    <LinearLayout
+                        android:id="@+id/li_home_goodshop"
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center"
+                            android:text="@string/good_store"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_12_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/home_queen_9_9"
+                            android:text="人人都在买"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/comment_47_dip"
+                            android:layout_height="@dimen/comment_47_dip"
+                            android:layout_marginTop="@dimen/comment_5_dip"
+                            android:src="@drawable/icon_home_price"
+
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/home_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@color/home_shop_middle"-->
+            <!--android:paddingTop="@dimen/comment_5_dip"-->
+            <!--android:paddingBottom="@dimen/comment_5_dip"-->
+            <!--android:paddingStart="@dimen/comment_10_dip"-->
+            <!--tools:ignore="RtlSymmetry">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/comment_70_dip"-->
+                <!--android:layout_height="@dimen/comment_30_dip"-->
+                <!--android:src="@drawable/icon_home_recommend" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/comment_30_dip"-->
+                <!--android:layout_marginStart="@dimen/comment_8_dip"-->
+                <!--android:gravity="center|left"-->
+                <!--android:textColor="@color/home_queen_full"-->
+                <!--android:text="@string/satisfy" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <include layout="@layout/home_appbarlayout" />
+</LinearLayout>

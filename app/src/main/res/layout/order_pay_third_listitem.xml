@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_taocan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/comment_13_dip"
+            android:layout_toLeftOf="@id/textView19"
+
+            android:text="商品名称1"
+            android:textSize="@dimen/comment_14_size" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/comment_13_dip"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            android:text="X1"
+            android:textSize="@dimen/comment_14_size"/>
+
+</RelativeLayout>

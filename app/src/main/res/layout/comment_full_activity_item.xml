@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/tv_img"
+        android:layout_width="@dimen/comment_50_dip"
+        android:layout_height="@dimen/comment_50_dip"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/icon_home_beautiful" />
+
+</LinearLayout>

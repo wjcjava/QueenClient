@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_back_gray"
+    android:orientation="vertical"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.ReplyCommentActivity">
+
+    <include
+        android:id="@+id/ic_head"
+        layout="@layout/layout_title"/>
+
+    <!--这里是底面部分-->
+    <LinearLayout
+        android:id="@+id/li_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/li_reply_comment_zhuiping"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_big_message"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="追评"
+                android:layout_marginStart="@dimen/comment_10_dip"
+                android:textSize="@dimen/comment_14_size"
+                android:textColor="@color/alpha_75_black">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li_reply_comment_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_reply_comment_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请输入追评内容"
+                android:background="@null"
+                android:textSize="@dimen/comment_14_size"
+                android:textColor="@color/alpha_75_black">
+            </EditText>
+            <TextView
+                android:id="@+id/tv_reply_comment_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="追评"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/button_shap_queen"
+                android:layout_marginStart="@dimen/comment_10_dip"
+                android:textSize="@dimen/comment_14_size"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ic_head"
+        android:layout_above="@id/li_bottom"
+        android:background="@color/mine_back_gray">
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <ImageView
+                        android:id="@+id/iv_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="@dimen/comment_14_dip"
+                        app:srcCompat="@drawable/inco_shop" />
+                    <TextView
+                        android:id="@+id/tv_reply_comment_shopname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/comment_10_dip"
+                        android:layout_toEndOf="@+id/iv_shop"
+                        android:layout_centerVertical="true"
+                        android:text="Dear Skin形象工作室"
+                        android:textSize="@dimen/comment_14_dip" />
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_7_dip"
+                        android:layout_height="@dimen/comment_12_dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_11_dip"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/icon_full_right" />
+                </RelativeLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <View android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="1dp"
+                        android:background="@color/mine_back_gray">
+                    </View>
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_title"
+                            android:layout_width="57dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="@dimen/comment_14_dip"
+                            android:backgroundTintMode="@color/white"
+                            android:src="@drawable/icon_portrait"
+                            app:civ_border_color="@color/alpha_95_black"
+                            app:civ_border_width="@dimen/comment_2_dip" />
+                        <LinearLayout android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="15dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_reply_comment_nickname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="jialiang1000"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="@dimen/comment_12_size"
+                                android:textColor="@color/alpha_85_black">
+                            </TextView>
+                            <LinearLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="商家："
+                                    android:layout_marginEnd="10dp"
+                                    android:textSize="@dimen/comment_12_size"
+                                    android:textColor="@color/alpha_75_black">
+                                </TextView>
+
+                                <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+                                    android:id="@+id/score_reply_comment_evaluate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/tv_service"
+                                    app:mode="random"
+                                    app:ratingProgress="4"
+                                    app:starDistance="@dimen/comment_6_dip"
+                                    app:starEmpty="@mipmap/empty"
+                                    app:starFill="@mipmap/fill"
+                                    app:starNum="5"
+                                    app:starSize="@dimen/comment_10_dip"
+                                    app:touchAble="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_reply_comment_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017.03.25"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="@dimen/comment_12_size"
+                            android:textColor="@color/alpha_75_black">
+                        </TextView>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_reply_comment_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务：满意      态度：满意"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/comment_12_size"
+                        android:textColor="@color/alpha_75_black">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_reply_comment_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="技术服务态度好，质量也很棒"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="85dp"
+                        android:textSize="@dimen/comment_14_size"
+                        android:textColor="@color/alpha_95_black">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_reply_comment_goodsname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单人纯色美甲"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/comment_12_size"
+                        android:textColor="@color/alpha_75_black">
+                    </TextView>
+
+
+                    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                        android:id="@+id/gv_mineevaluate_gridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:layout_marginStart="@dimen/comment_85_dip"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:focusableInTouchMode="false"
+                        android:verticalSpacing="@dimen/comment_10_dip"
+                        android:horizontalSpacing="@dimen/comment_10_dip"
+                        android:numColumns="4"
+                        android:visibility="visible" />
+
+                    <View android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/mine_back_gray"
+                        android:layout_marginStart="60dp">
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/li_reply_comment_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

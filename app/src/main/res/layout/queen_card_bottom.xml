@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <ImageView android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:src="@drawable/queen_card_tequan">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/li_mine_queen_card_discount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/queen_card_zhekou">
+            </ImageView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/queen_card_color"
+                android:text="女王折扣"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li_mine_queen_card_gift"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/queen_card_huiyuan">
+            </ImageView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/queen_card_color"
+                android:text="会员礼包"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li_mine_queen_card_kefu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/queen_card_kefu">
+            </ImageView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/queen_card_color"
+                android:text="专属客服"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/li_mine_queen_card_buy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/queen_card_gouwu">
+            </ImageView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/queen_card_color"
+                android:text="专属购物节"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li_mine_queen_card_bean"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/queen_card_modou">
+            </ImageView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/queen_card_color"
+                android:text="双倍魔豆"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li_mine_queen_card_birthday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/queen_card_shengri">
+            </ImageView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/queen_card_color"
+                android:text="生日礼包"
+                android:textSize="@dimen/comment_13_size"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

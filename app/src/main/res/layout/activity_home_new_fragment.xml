@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/home_shop_middle"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:id="@+id/home_app_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/tranparent"-->
+    <!--android:elevation="@dimen/comment_0_dip"-->
+    <!--android:gravity="bottom">-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/home_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+            android:id="@+id/sc_home_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <include layout="@layout/home_new_top"/>
+
+                <include layout="@layout/home_appbarlayout"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/shop_list_null"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+                            android:id="@+id/nl_home_list_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/comment_10_dip"
+                            android:divider="@color/tranparent"
+                            android:dividerHeight="@dimen/comment_10_dip"
+                            android:visibility="gone"/>
+
+                        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+                            android:id="@+id/nl_home_list_view_sales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/comment_10_dip"
+                            android:divider="@color/tranparent"
+                            android:dividerHeight="@dimen/comment_10_dip"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                            android:id="@+id/gv_home_gridView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/comment_10_dip"
+                            android:layout_marginTop="@dimen/comment_5_dip"
+                            android:layout_marginRight="@dimen/comment_10_dip"
+                            android:horizontalSpacing="@dimen/comment_5_dip"
+                            android:numColumns="3"
+                            android:verticalSpacing="5dp"
+                            android:visibility="visible"/>
+
+                        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                            android:id="@+id/gv_home_gridView_sales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/comment_10_dip"
+                            android:layout_marginTop="@dimen/comment_5_dip"
+                            android:layout_marginRight="@dimen/comment_10_dip"
+                            android:horizontalSpacing="@dimen/comment_5_dip"
+                            android:numColumns="3"
+                            android:verticalSpacing="5dp"
+                            android:visibility="visible"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_home_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/comment_100_dip"
+                        android:layout_height="@dimen/comment_88_dip"
+                        android:background="@drawable/list_null"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="—   我也是有底线的    —"
+                        android:textColor="@color/alpha_55_black"
+                        android:textSize="@dimen/comment_14_size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_list_bottom"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="我对女王魔镜有话要说"
+                        android:textColor="@color/alpha_55_black"
+                        android:textSize="@dimen/comment_14_size"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+
+
+        <com.scwang.smartrefresh.layout.footer.ballpulse.BallPulseView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/home_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/comment_35_dip"
+        android:paddingBottom="@dimen/comment_10_dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/comment_14_dip"
+                android:layout_height="@dimen/comment_18_dip"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:src="@mipmap/location_home"/>
+
+            <TextView
+                android:id="@+id/tv_home_bustling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_14_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iv_home_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_15_dip"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@drawable/shape_home_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/comment_3_dip"
+            android:paddingBottom="@dimen/comment_3_dip">
+
+            <ImageView
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:src="@mipmap/search_home"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="搜索“美妆”试试"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/comment_14_size"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_information"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/comment_10_dip"
+            android:src="@mipmap/icon_home_information"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_stick_header_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_app_bar"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/li_top_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/li_homenew_near_shop"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+                    android:id="@+id/bt_up_home"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:text="附近商家"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size"/>
+
+                <ImageView
+                    android:id="@+id/iv_near_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_dwon_blue"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sales"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+                android:text="@string/sales"
+                android:textColor="@color/alpha_55_black"
+                android:textSize="@dimen/comment_12_size"/>
+
+            <LinearLayout
+                android:id="@+id/li_sales_bottom"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:text="综合排序"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size"/>
+
+                <ImageView
+                    android:id="@+id/iv_distance_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_dwon_blue"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_home_screen"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+                android:layout_marginEnd="@dimen/comment_5_dip">
+
+                <TextView
+                    android:id="@+id/tv_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/comment_5_dip"
+                    android:text="@string/screen"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size"/>
+
+                <RadioButton
+
+                    android:id="@+id/bt_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_1_dip"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/icon_home_screen"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_uspension_surface"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="@dimen/comment_40_dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingEnd="@dimen/comment_10_dip">
+
+                <ImageView
+                    android:id="@+id/iv_uspension_surface"
+                    android:layout_width="@dimen/comment_15_dip"
+                    android:layout_height="@dimen/comment_12_dip"
+                    app:srcCompat="@drawable/icon_home_recycler">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.DragFloatActionButton
+        android:id="@+id/home_new_fragment_shopcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="center"
+        android:src="@drawable/home_shopcart"
+        app:backgroundTint="@color/tranparent"
+        app:elevation="0dp"
+        app:layout_anchorGravity="bottom|right">
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.DragFloatActionButton>
+
+    <ImageView
+        android:id="@+id/iv_homepage_activity"
+        android:layout_width="89sp"
+        android:layout_height="68sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:visibility="gone">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_homepage_redpacket"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone">
+    </ImageView>
+
+</RelativeLayout>

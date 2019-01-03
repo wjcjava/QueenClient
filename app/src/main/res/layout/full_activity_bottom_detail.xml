@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+        android:id="@+id/nsli_fullactivity_detail_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_12_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:text="精品推荐"
+        android:textColor="@color/gray_E7370C"
+        android:textSize="@dimen/comment_14_dip"/>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+        android:id="@+id/nsgd_fullactivity_jingpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="@dimen/comment_10_dip"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/comment_10_dip"/>
+
+</LinearLayout>

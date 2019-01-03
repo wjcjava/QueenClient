@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.RealNameActivity">
+
+    <include
+        android:id="@+id/pass"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_real_surnames"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginStart="@dimen/comment_20_dip"
+            android:gravity="center"
+            android:text="姓氏"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_real_surnames"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toEndOf="@id/tv_real_surnames"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:hint="@string/add_real_name"
+            android:paddingEnd="@dimen/comment_20_dip"
+            android:textSize="@dimen/comment_14_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_marginEnd="@dimen/comment_20_dip"
+        android:background="@color/alpha_05_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginStart="@dimen/comment_20_dip"
+            android:gravity="center"
+            android:text="名字"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toEndOf="@id/tv_real_name"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:hint="@string/add_real_name"
+            android:paddingEnd="@dimen/comment_20_dip"
+            android:textSize="@dimen/comment_14_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_marginEnd="@dimen/comment_20_dip"
+        android:background="@color/alpha_05_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_real_card"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginStart="@dimen/comment_20_dip"
+            android:gravity="center"
+            android:text="身份账号码"
+            android:textColor="@color/black" />
+
+        <EditText
+
+            android:id="@+id/et_real_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toEndOf="@id/tv_real_card"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:hint="@string/add_real_card"
+            android:inputType="phone"
+            android:maxLength="18"
+            android:paddingEnd="@dimen/comment_20_dip"
+            android:textSize="@dimen/comment_14_size" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_real_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_45_dip"
+        android:layout_marginTop="@dimen/comment_30_dip"
+        android:layout_marginLeft="@dimen/comment_30_dip"
+        android:layout_marginRight="@dimen/comment_30_dip"
+        android:background="@drawable/icon_login_squareness"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/determine" />
+</LinearLayout>

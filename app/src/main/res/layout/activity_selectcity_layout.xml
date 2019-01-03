@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="GPS定位城市"
+        android:padding="10dp"
+        android:background="@color/home_shop_middle"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/comment_14_dip"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_select_city_gps"
+        android:layout_width="match_parent"
+        android:text="苏州"
+        android:padding="10dp"
+        android:textSize="@dimen/comment_14_dip"
+        android:background="@color/white"
+        android:textColor="@color/alpha_95_black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="已开通城市"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/home_shop_middle"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_selsctcity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

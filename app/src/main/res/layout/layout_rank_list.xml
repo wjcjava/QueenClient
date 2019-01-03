@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView android:id="@+id/tv_rank_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textColor="@color/alpha_85_black">
+    </TextView>
+    <TextView android:id="@+id/tv_rank_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3KM"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textColor="@color/alpha_85_black">
+    </TextView>
+    <TextView android:id="@+id/tv_rank_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5KM"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textColor="@color/alpha_85_black">
+    </TextView>
+
+
+</LinearLayout>

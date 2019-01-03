@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/li_new_top"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--顶部Banner-->
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_180_dip"
+        android:background="@color/white"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_img1"
+            android:gravity="center"
+            android:text="@string/home_my"
+            android:textSize="@dimen/comment_15_size"
+            android:textStyle="bold"/>
+        <!--分类店铺-->
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+            android:id="@+id/li_home_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:verticalSpacing="@dimen/comment_20_dip">
+
+        </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView>
+
+        <!--女王头条-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_marginBottom="@dimen/comment_14_dip">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/comment_31_dip"
+                android:layout_height="@dimen/comment_33_dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_home_ancrown"/>
+
+            <View
+                android:id="@+id/view_homeshop_view"
+                android:layout_width="@dimen/comment_1_dip"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/comment_9_dip"
+                android:layout_toEndOf="@id/imageView"
+                android:background="@color/alpha_05_black"/>
+
+            <com.gongwen.marqueen.MarqueeView
+                android:id="@+id/mv_home_marqueeView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/comment_9_dip"
+                android:layout_marginRight="@dimen/comment_10_dip"
+                android:layout_toEndOf="@id/view_homeshop_view"
+                android:flipInterval="2500"
+                android:inAnimation="@anim/in_top"
+                android:outAnimation="@anim/out_bottom"
+                app:marqueeAnimDuration="2000"></com.gongwen.marqueen.MarqueeView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--人气好店模块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="@color/home_shop_middle">
+
+        <ImageView
+            android:id="@+id/iv_home_newuserprg"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_200_dip"
+            android:layout_weight="1.64"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:scaleType="fitXY">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_200_dip"
+            android:layout_marginLeft="@dimen/comment_2_dip"
+            android:layout_weight="2.08"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="99dp">
+
+                <ImageView
+                    android:id="@+id/iv_home_specialoffer"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_home_goodshop"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comment_2_dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_home_freetrial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_100_dip"
+                android:layout_marginTop="@dimen/comment_1_dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--精选服务-->
+    <LinearLayout
+        android:id="@+id/home_server_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/comment_16_dip"
+        android:paddingTop="@dimen/comment_10_dip"
+        android:paddingRight="@dimen/comment_10_dip"
+        android:paddingBottom="@dimen/comment_10_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_server"
+            android:textSize="@dimen/comment_14_size"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_more"
+            android:textSize="@dimen/comment_14_size"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:src="@drawable/more"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+        android:id="@+id/home_server_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:paddingLeft="@dimen/comment_13_dip"
+        android:paddingRight="@dimen/comment_13_dip">
+
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView>
+
+    <!--推荐活动-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="@color/white"
+        android:paddingStart="@dimen/comment_16_dip"
+        android:paddingTop="@dimen/comment_10_dip"
+        android:paddingBottom="@dimen/comment_10_dip">
+
+        <TextView
+            android:id="@+id/middle_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_tuijian"
+            android:textSize="@dimen/comment_14_size"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_queen_shop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"/>
+
+    <!--体验官-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/comment_3_dip"
+        android:paddingRight="@dimen/comment_3_dip"
+        android:paddingBottom="@dimen/comment_5_dip">
+
+        <ImageView
+            android:id="@+id/iv_good_itemShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/iv_modou_convert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_3_dip"
+            android:layout_marginRight="@dimen/comment_3_dip"
+            android:layout_weight="0.96"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/iv_invitation_prize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.87"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+    <!--每日新店-->
+    <LinearLayout
+        android:id="@+id/home_new_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/comment_16_dip"
+        android:paddingTop="@dimen/comment_10_dip"
+        android:paddingRight="@dimen/comment_10_dip"
+        android:paddingBottom="@dimen/comment_10_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_newday"
+            android:textSize="@dimen/comment_14_size"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_more"
+            android:textSize="@dimen/comment_14_size"
+            />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:src="@drawable/more"/>
+    </LinearLayout>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView
+        android:id="@+id/rv_home_new_every"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+    <!--底部Banner-->
+    <com.youth.banner.Banner
+        android:id="@+id/banner_middle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_150_dip"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

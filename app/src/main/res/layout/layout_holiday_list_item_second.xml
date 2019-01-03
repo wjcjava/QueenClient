@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/li_holiday_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/holiday_list_first">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/holiday_list_second"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/iv_holiday_list_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_holiday_list_people"
+                android:layout_width="@dimen/comment_67_dip"
+                android:layout_height="@dimen/comment_26_dip"
+                android:background="@color/third_login"
+                android:text="2人团"
+                android:textColor="@color/white"
+                android:gravity="center">
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_holiday_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单人纯色美甲单人纯色美甲单人纯色美甲单人纯色美甲"
+            android:maxLines="1"
+            android:gravity="center_horizontal"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/third_login">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拼团价"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/comment_12_size"
+                android:textStyle="bold"
+                android:textColor="@color/alpha_95_black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_holiday_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:maxLines="1"
+                android:textSize="@dimen/comment_18_size"
+                android:textStyle="bold"
+                android:textColor="@color/third_login">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去开团"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="3dp"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="3dp"
+                android:background="@drawable/holiday_list_third"
+                android:textSize="@dimen/comment_12_size"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

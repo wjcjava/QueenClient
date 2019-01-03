@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/fightfight_ll"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/black"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/comment_35_dip"
+        android:paddingBottom="@dimen/comment_5_dip">
+
+        <ImageView
+            android:id="@+id/fight_return"
+            android:layout_width="@dimen/comment_10_dip"
+            android:layout_height="@dimen/comment_20_dip"
+            android:layout_marginLeft="@dimen/comment_20_dip"
+            android:src="@mipmap/white_return"/>
+
+        <LinearLayout
+            android:id="@+id/iv_home_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_20_dip"
+            android:layout_marginRight="@dimen/comment_20_dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape_fightgroup_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/comment_3_dip"
+            android:paddingBottom="@dimen/comment_3_dip">
+
+            <ImageView
+                android:layout_width="@dimen/comment_15_dip"
+                android:layout_height="@dimen/comment_15_dip"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:src="@mipmap/fightgroup_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="单人纯色美甲"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_14_size"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_information"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/comment_20_dip"
+            android:src="@mipmap/icon_home_information"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_home_fightalone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip"
+        app:tabBackground="@color/tranparent"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="@dimen/comment_0_dip"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/color_coupon_bg"/>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollViewPager
+        android:id="@+id/pager_home_fightalone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

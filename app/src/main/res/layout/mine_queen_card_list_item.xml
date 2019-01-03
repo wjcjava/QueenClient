@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/li_mine_queen_card_listitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_mine_queen_card_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/queen_card_zhekou">
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_mine_queen_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/queen_card_color"
+        android:text="女王折扣"
+        android:textSize="@dimen/comment_13_size"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+</LinearLayout>

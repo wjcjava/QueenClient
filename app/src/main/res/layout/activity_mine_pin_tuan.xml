@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context=".ui.home.activity.MinePinTuanActivity">
+    <include layout="@layout/layout_title"/>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_pintuan_head"
+                    android:layout_width="@dimen/comment_80_dip"
+                    android:layout_height="@dimen/comment_80_dip"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/dismiss">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_pintuan_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/comment_16_size"
+                        android:textColor="@color/alpha_85_black">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_pintuan_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/comment_16_size"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/alpha_violet">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_pintuan_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/comment_13_size"
+                        android:textColor="@color/alpha_65_black">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/mine_back_gray">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/ic_mine_pintuan_two"
+                    layout="@layout/success_pintuan_two"/>
+                <include
+                    android:id="@+id/ic_mine_pintuan_three"
+                    layout="@layout/success_pintuan_three"
+                    android:visibility="gone"/>
+                <include
+                    android:id="@+id/ic_mine_pintuan_five"
+                    layout="@layout/success_pintuan_five"
+                    android:visibility="gone"/>
+                <include
+                    android:id="@+id/ic_mine_pintuan_eight"
+                    layout="@layout/success_pintuan_eight"
+                    android:visibility="gone"/>
+                <include
+                    android:id="@+id/ic_mine_pintuan_ten"
+                    layout="@layout/success_pintuan_ten"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_pintuan_head"
+                        android:layout_width="@dimen/comment_57_dip"
+                        android:layout_height="@dimen/comment_57_dip"
+                        android:layout_marginStart="@dimen/comment_25_dip"
+                        android:backgroundTintMode="@color/white"
+                        android:src="@drawable/dismiss"
+                        app:civ_border_color="@color/alpha_95_black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:src="@drawable/ic_pinzhu">
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/comment_57_dip"
+                    android:layout_height="@dimen/comment_57_dip"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/fightalone">
+                </ImageView>
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已参团人数"
+                    android:textColor="@color/alpha_75_black"
+                    android:textSize="@dimen/comment_14_size">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_pintuan_number_bottom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorPri"
+                    android:textSize="@dimen/comment_14_size">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人，"
+                    android:textColor="@color/alpha_75_black"
+                    android:textSize="@dimen/comment_14_size">
+                </TextView>
+                <TextView
+                    android:id="@+id/tvpintuan_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018年8月1日后结束"
+                    android:textColor="@color/alpha_75_black"
+                    android:textSize="@dimen/comment_14_size">
+                </TextView>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已参与拼团"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_back_gray"
+                android:padding="6dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:textSize="@dimen/comment_14_size"
+                android:textColor="@color/alpha_85_black">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拼团须知"
+                    android:textSize="@dimen/comment_14_size"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/alpha_95_black">
+                </TextView>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人满成功 人不满退款"
+                        android:textSize="@dimen/comment_14_size"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/alpha_95_black">
+                    </TextView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_back_gray">
+            </View>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="15dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="精品推荐"
+                    android:textSize="@dimen/comment_16_size"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/alpha_violet">
+                </TextView>
+
+                <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                    android:id="@+id/nsgd_fullactivity_jingpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:numColumns="2"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</LinearLayout>

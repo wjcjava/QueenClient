@@ -1,0 +1,525 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">"女王魔镜"</string>
+    <string name="home_page">首页</string>
+    <string name="shopping_mall">商城</string>
+    <string name="order">订单</string>
+    <string name="master">大咖</string>
+
+    <string name="common_problem">常见问题</string>
+    <string name="payment_setting">支付设置</string>
+    <string name="paymentpassword">支付密码</string>
+    <string name="message_center">消息中心</string>
+    <string name="rcharge">充值</string>
+    <string name="customer_service">客服</string>
+    <string name="shop">店铺</string>
+    <string name="Collection">收藏</string>
+    <string name="add_to_cart">加入购物车</string>
+    <string name="purchase_immediately">立即购买</string>
+    <string name="cancel">取消</string>
+    <string name="not_to_see">不让看</string>
+    <string name="complete">完成</string>
+    <string name="opinion_and_feedback">意见与反馈</string>
+    <string name="search_the_shop">搜索店铺</string>
+    <string name="app_Valuable_advice">请留下您的宝贵意见或建议，我们将努力改进(不少于五个字)</string>
+    <string name="app_Phone">请留下手机号码，以便我们回复您</string>
+    <string name="privacy">隐私</string>
+    <string name="receiving_notification">接收通知</string>
+    <string name="service">Hi,我是您的客服Angle</string>
+    <string name="refund_progress">退款进度</string>
+    <string name="service_progress">服务进度</string>
+    <string name="guarantee_assets">为保证您的资金安全，绑定账户本人的银行卡</string>
+    <string name="card_number">卡   号</string>
+    <string name="exemption_fee">无需网银/免手续费</string>
+    <string name="next_step">下一步</string>
+    <string name="real_name">   真实姓名</string>
+    <string name="id_card_no">身份证号码</string>
+    <string name="phone_number">手机号码</string>
+    <string name="trained">我受过专业培训</string>
+    <string name="untrained">我未受过专业培训</string>
+    <string name="submit">提交</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="balance">余额</string>
+    <string name="money">¥0.00</string>
+    <string name="real_name_authentication">实名认证</string>
+    <string name="to_authenticate">去认证</string>
+    <string name="payment_management">支付管理</string>
+    <string name="Setting_the_payment_password">设置支付密码</string>
+    <string name="new_receiving_address">新增收货地址</string>
+    <string name="card_payment">卡支付</string>
+    <string name="face_to_face_payment">该功能用于向商家当面付款</string>
+    <string name="want_to_recharge">我要充值</string>
+    <string name="view_the_order_record">查看订单记录</string>
+    <string name="verification_code">验证码</string>
+    <string name="sms_authentication_code">短信验证码</string>
+    <string name="no_verification_code">收不到验证码?</string>
+    <string name="verification">验证</string>
+    <string name="head_portrait">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="account_password">账号密码</string>
+    <string name="beauty_living_room">多米美容生活馆</string>
+    <string name="single_product_coupons">单品抵扣劵</string>
+    <string name="shop_general_voucher">单品券选择</string>
+    <string name="availability">张可用</string>
+    <string name="recharge_amount">充值金额：</string>
+    <string name="recharge_amount_one">充值金额</string>
+    <string name="actual_acquisition">实际获得</string>
+    <string name="element">币</string>
+    <string name="payment_method">支付方式：</string>
+    <string name="wechat">微信</string>
+    <string name="input_recharge_amount">请输入您需要充值的金额</string>
+    <string name="reading_consent">已阅读并同意</string>
+    <string name="recharge_protocol">《会员卡充值协议》</string>
+    <string name="view_the_recharge_record"><![CDATA[查看充值记录>>]]></string>
+    <string name="be_careful">注：女王卡支持所有加盟店我使用，安全，便捷；</string>
+    <string name="recharge_activity">充值优惠活动：</string>
+    <string name="family_friend">加我好友时需要验证</string>
+    <string name="not_to_see_me">不让他(她)看我的动态</string>
+    <string name="not_to_see_her">不看他(她)的动态</string>
+    <string name="allow_friends_see">允许朋友查看动态的范围</string>
+    <string name="allow_Stranger_see">允许陌生人查看十条动态</string>
+    <string name="three_days">最近三天</string>
+    <string name="no_historical_Search">暂无历史记录</string>
+    <string name="historical_Search">历史搜索</string>
+    <string name="hot_search">热门搜索</string>
+    <string name="payment_order">支付订单</string>
+    <string name="remaining_time">支付剩余时间</string>
+    <string name="wechat_payment">微信支付</string>
+    <string name="queen_payment">女王卡支付</string>
+    <string name="confirmation_of_payment">确认支付</string>
+    <string name="add_phone_number">请输入手机号</string>
+    <string name="add_verification">请输入验证码</string>
+    <string name="add_password">请输入密码</string>
+    <string name="add_password_two">请再次输入密码</string>
+    <string name="add_password_no">两次输入密码不一致</string>
+    <string name="get_message_information">获取短息验证码</string>
+    <string name="determine">确定</string>
+    <string name="secure_environment">您的账户当前处于安全环境，可直接输入要更换的新手机号</string>
+    <string name="change_immediately">立即更换</string>
+    <string name="photograph">拍照</string>
+    <string name="photo_selection">从相册选择</string>
+    <string name="recommendable_projects">推荐项目</string>
+    <string name="more"><![CDATA[更多>]]></string>
+    <string name="sort">综合排序</string>
+    <string name="sales">销量最高</string>
+    <string name="distance">距离最近</string>
+    <string name="screen">筛选</string>
+    <string name="aesthetic_remittance">美学汇</string>
+    <string name="manicure">美甲美手</string>
+    <string name="hairdressing_custom">美发定制</string>
+    <string name="cosmetology_and_body">美容美体</string>
+    <string name="semi_permanent">半永久</string>
+    <string name="free_shipping">九块九包邮</string>
+    <string name="dily_special_price">天天特价</string>
+    <string name="good_store">人气好店</string>
+    <string name="satisfy">满足挑剔的您</string>
+    <string name="personal_information"><![CDATA[个人信息>]]></string>
+    <string name="gold_member">黄金会员</string>
+    <string name="myposition">我的收货地址</string>
+    <string name="myfriend">我的好友</string>
+    <string name="more_recommendation">更多推荐</string>
+    <string name="myassets">我的资产</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="follow_shop">关注店铺</string>
+    <string name="my_Tracks">我的足迹</string>
+    <string name="evaluate">我的评价</string>
+    <string name="Coupon">优惠券</string>
+    <string name="invincible_coupon">无敌劵</string>
+    <string name="queen">女王会员</string>
+    <string name="member_management">会员专属特权</string>
+    <string name="notused">0张未使用</string>
+    <string name="mywallet">我的钱包</string>
+    <string name="my_magic_beans">我的魔豆</string>
+    <string name="gift">邀请有奖</string>
+    <string name="beauty">成为美业人</string>
+    <string name="mine_crown">我要认证</string>
+    <string name="help_and_feedback">帮助与反馈</string>
+    <string name="customer_service_center">客服中心</string>
+    <string name="enter_the_shop">请输入店铺名称或商品名称</string>
+    <string name="business_features">商家特色</string>
+    <string name="new_business">新商家</string>
+    <string name="brand_business">品牌商家</string>
+    <string name="consumer_security">消费者保障</string>
+    <string name="return_goods">7天内退货</string>
+    <string name="support_Invoicing">支持开发票</string>
+    <string name="beans_to_money">魔豆抵钱</string>
+    <string name="price_range">价格区间（元）</string>
+    <string name="minimum_price">最低价</string>
+    <string name="highest_price">最高价</string>
+    <string name="preferential_activities">优惠活动</string>
+    <string name="preferential_merchants">优惠商家</string>
+    <string name="discounted_goods">折扣商品</string>
+    <string name="full_reduction">满减优惠</string>
+    <string name="collar_coupons">进店领劵</string>
+    <string name="full_gift">满赠活动</string>
+    <string name="scavenging_screening">取消筛选</string>
+    <string name="withdrawals">提现</string>
+    <string name="account_balance">账户余额</string>
+    <string name="fine_balance">余额明细</string>
+    <string name="RMB">¥</string>
+    <string name="binding_recharge">绑定银行卡充值</string>
+    <string name="balance_recharge">余额充值</string>
+    <string name="amount_of_cash">提现金额</string>
+    <string name="present_balance">可提现余额</string>
+    <string name="full_presentation">全部提现</string>
+    <string name="bring_new_card">提现至新卡</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="magic_bean">魔豆</string>
+    <string name="reservation">保存</string>
+    <string name="administration">管理</string>
+    <string name="coupon">优惠券</string>
+    <string name="Selectiontime">选择时间</string>
+    <string name="Startdate">请选择开始日期</string>
+    <string name="EndDate">请选择结束日期</string>
+    <string name="Monthlysettlement">按月计算</string>
+    <string name="Bytheday">按日计算</string>
+    <string name="entertainment">休闲娱乐</string>
+    <string name="bank_insurance">银行保险</string>
+    <string name="jewellery">珠宝首饰</string>
+    <string name="medicalcare">医疗保健</string>
+    <string name="motion">活动健身</string>
+    <string name="photography">婚庆摄影</string>
+    <string name="car_service">汽车服务</string>
+    <string name="trazin">教育培训</string>
+    <string name="Big_shot">大咖</string>
+    <string name="recommendable_store">推荐门店</string>
+    <string name="wechat_alipay">支付宝支付</string>
+    <string name="di_san_fang_login">你也可以用以下方式登录</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="reg_agreement">轻触上面的“立即注册”按钮，即表示您同意</string>
+    <string name="reg_agreement_name">《女王魔镜用户协议与隐私条件》</string>
+    <string name="forgetcipher">忘记密码</string>
+    <string name="hintorder">满足您的期待吗？说说它的缺点和美中不足的地方吧。</string>
+    <string name="anonymous">匿名</string>
+    <string name="anonymousshow">你写的评论会以匿名的形式展现</string>
+    <string name="serviceattitude">服务态度</string>
+    <string name="tv_commodity_grade">商品评分</string>
+    <string name="store_environment">门店环境</string>
+    <string name="published_order">发表评论</string>
+    <string name="release">发布</string>
+    <string name="phone">电话</string>
+    <string name="evaluation">评价</string>
+    <string name="tips">说说分享心得...</string>
+    <string name="rll_footer_hint_normal">上拉加载更多</string>
+    <string name="rll_header_hint_normal">下拉更新</string>
+    <string name="rll_header_last_time">上次更新时间</string>
+    <string name="rll_footer_no_more_data">没有更多了</string>
+    <string name="rll_footer_hint_ready">松开加载更多</string>
+    <string name="rll_footer_hint_loading">正在努力加载</string>
+    <string name="rll_header_hint_ready">松开更新</string>
+    <string name="rll_header_hint_loading">正在努力更新</string>
+    <string name="rll_header_time_justnow">刚刚</string>
+    <string name="rll_header_time_minutes">分钟以前</string>
+    <string name="rll_header_time_houxrs">小时以前</string>
+    <string name="rll_header_time_days">天以前</string>
+    <string name="arefund">申请退款</string>
+    <string name="confirm_arefund">确认退款</string>
+    <string name="arefund_reason">退款原因</string>
+    <string name="tv_arefund_select">请选择</string>
+    <string name="_refund_amount">退款金额：</string>
+    <string name="refund_instructions">退款说明：</string>
+    <string name="refund_credentials">上传凭证</string>
+    <string name="city_suzhou">苏州</string>
+    <string name="my_address">我的地址</string>
+    <string name="MyHomepage">我的主页</string>
+    <string name="Modelshop">魔豆商城</string>
+    <string name="mondelNumber">我的魔豆数</string>
+    <string name="mondelService">魔豆服务</string>
+    <string name="exchangeShop">兑换好物</string>
+    <string name="user_nickname">昵称</string>
+    <string name="modify_payment_password">修改支付密码</string>
+    <string name="back_payment_password">忘记支付密码</string>
+    <string name="add_login_number">请输入登陆账号/手机号</string>
+    <string name="add_login_password">请输入登陆密码</string>
+    <string name="add_pay_password">请输入支付密码</string>
+    <string name="subscribe">在线预约</string>
+    <string name="facepay">到店付款</string>
+    <string name="startspellorder">开启拼单</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="Nails">美甲</string>
+    <string name="pricetobuy">原价购买</string>
+    <string name="balance_payment">余额支付</string>
+    <string name="paypass">支付密码</string>
+    <string name="currentpaypass">当前密码</string>
+    <string name="add_currentpay_password">请输入新的支付密码</string>
+    <string name="newpaypass">新密码</string>
+    <string name="add_real_name">请输入您的名字</string>
+    <string name="add_real_surnames">请输入您的姓氏</string>
+    <string name="add_real_card">请输入您的身份证号码</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="ainisi_big_classroom">艾尼斯大课堂</string>
+    <string name="home_news">最新</string>
+    <string name="home_my">美业排行榜</string>
+    <string name="home_server">精选服务</string>
+    <string name="home_more">更多</string>
+    <string name="home_tuijian">推荐活动</string>
+    <string name="home_newday">每日新店</string>
+    <string name="sort_list">排行榜</string>
+    <string name="sort_title">分类</string>
+    <string name="sort_ofyou">为你推荐</string>
+    <string name="sort_all">全部分类</string>
+    <string name="baidu">百度地图</string>
+    <string name="gaode">高德地图</string>
+    <string name="tenxun">腾讯地图</string>
+
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="pause_button">Pause</string>
+    <string name="resume_button">Resume</string>
+    <string name="replay_button">Replay</string>
+    <string name="mute_label">Mute:</string>
+    <string name="on_radiobutton">On</string>
+    <string name="off_radiobutton">Off</string>
+    <string name="volume_label">Volume</string>
+    <string name="brightness_label">Brightness</string>
+    <string name="scale_model">Scale model</string>
+    <string name="aspect_fit">Aspect fit</string>
+    <string name="aspect_fill">Aspect fill</string>
+    <string name="drop_buffer_duration">Drop buffer duration</string>
+    <string name="time_unit_label">ms</string>
+    <string name="goto_play">Open interface of player</string>
+    <string name="input_url">input url here</string>
+    <string name="vod_basic_function">Basic function demo of Vod</string>
+    <string name="live_basic_function">Basic functon demo of live</string>
+    <string name="multiple_video_list_auto_play">Autoplay demo of multi-video</string>
+    <string name="debug_tools">Debug tools demo</string>
+    <string name="url_is_empty">The url is empty</string>
+    <string name="player_log">Player Logs：</string>
+    <string name="video_width">Video width：</string>
+    <string name="video_height">Video height：</string>
+    <string name="toast_prepare_success">Prepared successfully</string>
+    <string name="toast_fail_msg">Fail!! Reason:</string>
+    <string name="log_start_get_data">start to get a streaming</string>
+    <string name="log_strart_play">start to play</string>
+    <string name="log_prepare_success"> prepared successfully</string>
+    <string name="log_player_create_success"> create a player successfully</string>
+    <string name="log_open_url_success"> open an url successfully</string>
+    <string name="log_request_stream_success"> get a streaming successfully</string>
+    <string name="log_start_open_stream"> start to open a streaming</string>
+    <string name="log_first_frame_played"> the first frame showed</string>
+    <string name="log_seek_completed">seek operation completed</string>
+    <string name="log_play_stopped">play operation stopped</string>
+    <string name="log_seek_start">seek operation started</string>
+    <string name="net_change_to_4g">Network switched to cell-network</string>
+    <string name="net_change_to_wifi">Network switched to WIFI</string>
+    <string name="net_disconnect">Network disconnected</string>
+    <string name="net_change_to_continue">Continue to play？</string>
+    <string name="copyright_title">Copyright Info</string>
+    <string name="copyright_ali">Aliyun copyright©2017, Alibaba-inc</string>
+    <string name="fd_definition">FD</string>
+    <string name="ld_definition">LD</string>
+    <string name="sd_definition">SD</string>
+    <string name="hd_definition">HD</string>
+    <string name="k2_definition">2K</string>
+    <string name="k4_definition">4K</string>
+    <string name="od_definition">OD</string>
+    <string name="no_download_right">No permission for downloading</string>
+    <string name="encrypted">Encrypted</string>
+    <string name="encrypted_no">Unencrypted</string>
+    <string name="choose_a_definition_to_download">Please choose a definition to download</string>
+    <string name="info_is_empty">Incomplete information</string>
+    <string name="request_vidsts_fail">Request a vidsts failed</string>
+    <string name="request_authinfo_fail">Request an authinfo failed</string>
+    <string name="please_fill_atleast_one_info">Please fill in at least one information about source-url or vid</string>
+    <string name="ok">OK</string>
+    <string name="log_change_quality">To request video quality switched to：</string>
+    <string name="toast_no_local_storage_permission">No local storage permission</string>
+    <string name="log_change_quality_success">Video quality switched successfully</string>
+    <string name="log_change_quality_fail">Video quality switched unsuccessfully</string>
+    <string name="log_play_completion">video ended</string>
+    <string name="toast_play_compleion">video ended</string>
+    <string name="require_permision_msg">The permission of sd-card is required</string>
+    <string name="input_vid_here">Please input vid here</string>
+    <string name="input_authinfo_here">Please input AuthInfo here</string>
+    <string name="fix_port">Fixed portrail</string>
+    <string name="add_download">To add</string>
+    <string name="download_tip">Please set downloaded path and password in \'Application\', if password changed, the downloaded video cannot play</string>
+    <string name="local_source_tip">Local address, example:/mnt/sdcard/test.pm4  URL address, example:http://XXX.xx.com/test.mp4</string>
+    <string name="input_local_or_net_source">Please input url</string>
+    <string name="play_with_no_skin">No UI player</string>
+    <string name="play_with_skin">Full UI player</string>
+    <string name="vod_player_basic_function">Basic function demo of Vod by using vid and palyAuth</string>
+    <string name="full_screen_slide_play">Full screen slide play demo by using url</string>
+    <string name="breakpoints_download">Breakpoints download demo</string>
+    <string name="auto_play">Auto-play:</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="change_quality_label">Video quality switched to：</string>
+    <string name="diagnosis_tip">Please input source-url or vid to diagnose</string>
+    <string name="input_net_source_here">please input url here</string>
+    <string name="goto_diagnosis">Start to diagnose</string>
+    <string name="remove_button">Remove</string>
+    <string name="play_button">Play</string>
+    <string name="prepare_download_item">To prepare download-item</string>
+    <string name="add_to_download">To add</string>
+    <string name="half_times">0.5X</string>
+    <string name="one_times">1.0X</string>
+    <string name="one_and_a_half_times">1.5X</string>
+    <string name="twice_times">2.0X</string>
+    <string name="speed_mode">Variable speed model</string>
+    <string name="play_localsource">play demo by LocalSource</string>
+    <string name="vidsource">play demo by VidSource</string>
+    <string name="alivc_theme_blue">Blue Theme</string>
+    <string name="alivc_theme_green">Green Theme</string>
+    <string name="alivc_theme_orange">Orange Theme</string>
+    <string name="alivc_theme_red">Red Theme</string>
+    <string name="title_activity_demo_base_player">DemoBasePlayerActivity</string>
+    <string name="title_activity_demo_advance_player">DemoAdvancePlayerActivity</string>
+    <string name="vid_sts">Basic function demo of Vod by using vid and sts</string>
+
+    <string name="no">No</string>
+    <string name="max_buffer_duration_nagtive">Drop buffer duration can not be a negative</string>
+    <string name="basic_player">Basic player</string>
+    <string name="advance_player">Advanced player</string>
+    <string name="full_ui_player_demo">UI player</string>
+    <string name="inout_accesskeyid_here">input accesskeyId here </string>
+    <string name="input_accesskeysecret_here">input accesskeySecret here</string>
+    <string name="input_securitytoken_here">input securityToken here </string>
+    <string name="snapshot">SnapShot</string>
+    <string name="snapshot_success">snapshot success </string>
+    <string name="snapshot_fail">snapshot fail</string>
+    <string name="change_source">change source</string>
+    <string name="basic_input_url">Input url</string>
+    <string name="continue_to_download">Continue to download?</string>
+    <string name="download_has_compeleted">Item has download completed!</string>
+    <string name="show_log">show log</string>
+
+    <string name="education_video">相关教学视频</string>
+    <string name="pay_rest_time">支付剩余时间</string>
+    <string name="seckill_1">秒杀中 先下单先得哦</string>
+    <string name="seckill_2">结束啦，下次早点哦！</string>
+    <string name="seckill_3">即将开始，不要错过哦</string>
+    <string name="seckill_4">已结束</string>
+    <string name="seckill_5">距结束</string>
+    <string name="seckill_6">距开始</string>
+    <string name="seckill_7">去秒杀</string>
+    <string name="seckill_8">已结束</string>
+    <string name="seckill_9">即将开始</string>
+    <string name="seckill_10">距结束还剩:</string>
+    <string name="seckill_11">套餐详情</string>
+    <string name="seckill_12">温馨提示</string>
+    <string name="seckill_13">距开始还剩:</string>
+    <string name="seckill_14">抢光了</string>
+    <string name="buy_now">立即购买</string>
+    <string name="tcnr">套餐内容</string>
+    <string name="dialog_order">商家还未接单，暂不能进行核单，你可以联系商家或者客服解决。</string>
+    <string name="order_detail">商家地址：</string>
+    <string-array name="minegiftlv">
+        <item>小妮子邀请了1人，获得了20个魔豆</item>
+        <item>长不大邀请了1人，获得了30个魔豆</item>
+        <item>皮女友邀请了1人，获得了4个魔豆</item>
+        <item>提刀战情场邀请了15人，获得了360个魔豆</item>
+        <item>干脆点邀请了11人，获得了300个魔豆</item>
+        <item>软甜kiss邀请了8人，获得了320个魔豆</item>
+        <item>萌吟邀请了7人，获得了310个魔豆</item>
+        <item>你也走了邀请了21人，获得了606个魔豆</item>
+        <item>小祸害邀请了20人，获得了800个魔豆</item>
+        <item>归期可爱邀请了10人，获得了304个魔豆</item>
+        <item>梦压星河邀请了10人，获得了269个魔豆</item>
+        <item>可爱仙女邀请了10人，获得了420个魔豆</item>
+        <item>琉璃娃娃邀请了2人，获得了30个魔豆</item>
+        <item>草莓邀请了6人，获得了198个魔豆</item>
+        <item>萌个兔邀请了14人，获得了310个魔豆</item>
+        <item>猫系少女邀请了1人，获得了20个魔豆</item>
+        <item>你眼中邀请了1人，获得了50个魔豆</item>
+        <item>浅浅倒影邀请了1人，获得了12个魔豆</item>
+        <item>橙子爱人邀请了2人，获得了18个魔豆</item>
+        <item>男女通吃邀请了2人，获得了26个魔豆</item>
+        <item>怪咖女王邀请了2人，获得了8个魔豆</item>
+        <item>新童鞋邀请了2人，获得了89个魔豆</item>
+        <item>小猪猪邀请了1人，获得了8个魔豆</item>
+        <item>老子可爱不邀请了1人，获得了3个魔豆</item>
+        <item>逗比式邀请了8人，获得了86个魔豆</item>
+        <item>西瓜邀请了4人，获得了150个魔豆</item>
+        <item>哆哆邀请了4人，获得了16个魔豆</item>
+        <item>萌哒哒邀请了78人，获得了531个魔豆</item>
+        <item>生气叻邀请了24人，获得了158个魔豆</item>
+        <item>我会放电啪啪邀请了16人，获得了3个魔豆</item>
+        <item>平乳萌妹邀请了35人，获得了983个魔豆</item>
+        <item>幼懵少女邀请了9人，获得了241个魔豆</item>
+        <item>小萌怪邀请了8人，获得了52个魔豆</item>
+        <item>嘟嘟宝邀请了4人，获得了14个魔豆</item>
+        <item>糖小沫邀请了2人，获得了23个魔豆</item>
+        <item>小野猫邀请了1人，获得了30个魔豆</item>
+        <item>长耳朵兔邀请了1人，获得了8个魔豆</item>
+        <item>萌阿边邀请了11人，获得了3个魔豆</item>
+        <item>萌态尤物邀请了7人，获得了5个魔豆</item>
+        <item>喵了个汪邀请了1人，获得了4个魔豆</item>
+        <item>七欢，邀请了1人，获得了9个魔豆</item>
+        <item>旧心酸邀请了6人，获得了36个魔豆</item>
+        <item>北归途邀请了4人，获得了20个魔豆</item>
+        <item>忙着可爱邀请了4人，获得了84个魔豆</item>
+        <item>可爱的害羞鬼邀请了1人，获得了8个魔豆</item>
+        <item>奶汁樱桃邀请了10人，获得了38个魔豆</item>
+        <item>明酥邀请了20人，获得了800个魔豆</item>
+        <item>奶气缠身邀请了16人，获得了300个魔豆</item>
+        <item>亲亲肠邀请了7人，获得了105个魔豆</item>
+        <item>兔兔丢了邀请了5人，获得了85个魔豆</item>
+        <item>雲朵兒邀请了3人，获得了25个魔豆</item>
+        <item>大眼萌嘟宝邀请了3人，获得了9个魔豆</item>
+        <item>猫猫怪邀请了2人，获得了81个魔豆</item>
+        <item>我素光芒邀请了2人，获得了65个魔豆</item>
+        <item>撩汉小仙女邀请了2人，获得了51个魔豆</item>
+        <item>甜宠软妹邀请了2人，获得了25个魔豆</item>
+        <item>安琪拉屎邀请了2人，获得了25个魔豆</item>
+        <item>果味仙女邀请了2人，获得了25个魔豆</item>
+        <item>小丸子邀请了1人，获得了20个魔豆</item>
+        <item>芒果很黄邀请了1人，获得了9个魔豆</item>
+        <item>合衬绅士邀请了1人，获得了50个魔豆</item>
+        <item>乖一点邀请了2人，获得了65个魔豆</item>
+        <item>相爱邀请了13人，获得了214个魔豆</item>
+        <item>battle邀请了25人，获得了625个魔豆</item>
+        <item>浪归邀请了8人，获得了207个魔豆</item>
+        <item>无敌邀请了5人，获得了38个魔豆</item>
+        <item>妍妹子邀请了4人，获得了80个魔豆</item>
+        <item>雅宫足浴邀请了2人，获得了55个魔豆</item>
+        <item>爱你邀请了6人，获得了215个魔豆</item>
+        <item>清白野酒邀请了10人，获得了360个魔豆</item>
+        <item>妃。邀请了3人，获得了60个魔豆</item>
+        <item>英雄梦邀请了1人，获得了30个魔豆</item>
+        <item>感性邀请了1人，获得了5个魔豆</item>
+        <item>少女邀请了1人，获得了12个魔豆</item>
+        <item>小时光 邀请了2人，获得了13个魔豆</item>
+        <item>红颜醉邀请了1人，获得了20个魔豆</item>
+        <item>荒城邀请了1人，获得了16个魔豆</item>
+        <item>念念不忘邀请了1人，获得了5个魔豆</item>
+        <item>一指流砂邀请了1人，获得了8个魔豆</item>
+        <item>倾城之泪邀请了21人，获得了10个魔豆</item>
+        <item>旧人不覆邀请了1人，获得了50个魔豆</item>
+        <item>瞄了一眼邀请了2人，获得了50个魔豆</item>
+        <item>天生萌妹纸邀请了2人，获得了45个魔豆</item>
+        <item>巷尾姑娘邀请了1人，获得了36个魔豆</item>
+        <item>篆刻眉眼邀请了2人，获得了40个魔豆</item>
+        <item>小棉袄邀请了1人，获得了50个魔豆</item>
+        <item>咸鱼妹妹邀请了1人，获得了50个魔豆</item>
+        <item>眉眼笑意邀请了1人，获得了25个魔豆</item>
+        <item>笑多缘邀请了1人，获得了26个魔豆</item>
+        <item>萌癌萝莉邀请了1人，获得了18个魔豆</item>
+        <item>柠檬味的萌邀请了1人，获得了8个魔豆</item>
+        <item>笑弯了眉邀请了1人，获得了32个魔豆</item>
+        <item>油炸小可爱邀请了1人，获得了49个魔豆</item>
+        <item>春梦少女邀请了1人，获得了24个魔豆</item>
+        <item>小情人邀请了1人，获得了27个魔豆</item>
+        <item>蜜心萝莉酱邀请了1人，获得了17个魔豆</item>
+        <item>听风讲你邀请了1人，获得了50个魔豆</item>
+        <item>傻得可爱邀请了1人，获得了33个魔豆</item>
+        <item>稚颜少女邀请了1人，获得了41个魔豆</item>
+        <item>我真窝囊邀请了1人，获得了29个魔豆</item>
+    </string-array>
+    <string name="htjx">话题精选</string>
+    <string name="dkrz">大咖认证</string>
+    <string name="gz">关注</string>
+    <string name="allview">全文</string>
+    <string name="closeview">收起</string>
+    <string name="report">举报</string>
+    <string name="password_setting">密码设置</string>
+    <string name="changepassword_true">密码设置成功</string>
+</resources>

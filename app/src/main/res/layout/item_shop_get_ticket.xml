@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+
+        android:layout_marginStart="@dimen/comment_12_dip"
+        android:src="@drawable/icon_invincible_stamps"
+        android:id="@+id/iv_invincible_stamps"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_width="@dimen/comment_20_dip"
+        android:layout_height="@dimen/comment_20_dip" />
+    <TextView
+        android:id="@+id/ttv_ping"
+        android:layout_toRightOf="@id/iv_invincible_stamps"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/comment_5_dip"
+        android:textColor="@color/alpha_95_black"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/comment_13_size"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:text="无敌券领取"
+        />
+    <RelativeLayout
+        android:id="@+id/re_invincible_stamps"
+        android:layout_below="@id/iv_invincible_stamps"
+        android:layout_marginTop="@dimen/comment_27_dip"
+        android:layout_marginBottom="@dimen/comment_71_dip"
+        android:background="@drawable/icon_shop_get_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_77_dip">
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥300"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_20_size"
+            android:layout_marginStart="@dimen/comment_18_dip"
+            android:layout_marginTop="@dimen/comment_24_dip"
+            />
+        <TextView
+            android:id="@+id/tv_consumption"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/tv_money"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:textColor="@color/white"
+            android:text="消费2000元可用"
+            android:layout_marginTop="@dimen/comment_12_dip"
+            android:textSize="@dimen/comment_13_size"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/tv_money"
+            android:layout_below="@id/tv_consumption"
+            android:textSize="@dimen/comment_13_size"
+            android:text="有效期至2020-01-14"
+            />
+        <TextView
+            android:layout_below="@id/tv_time"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/tv_money"
+            android:text="限本店使用"
+
+            android:textSize="@dimen/comment_13_size"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_shop_couponget"
+            android:layout_width="@dimen/comment_80_dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center|right"
+            android:text="领取"
+            android:textSize="@dimen/comment_15_size"
+            android:textColor="@color/white"
+            android:paddingEnd="@dimen/comment_27_dip"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

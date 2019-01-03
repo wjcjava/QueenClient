@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/mine_back_gray"
+              tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.QueenPayRecordActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <include layout="@layout/queen_buy_record_item"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/queen_record_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

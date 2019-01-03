@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.master.activity.MasterActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_title"
+
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@color/alpha_05_black"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:id="@+id/recycler"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_212_dip"
+                    android:src="@drawable/icon_big_coffeetattoos" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_title"
+                    android:layout_width="@dimen/comment_44_dip"
+                    android:layout_height="@dimen/comment_44_dip"
+                    android:layout_below="@id/iv_shop"
+                    android:layout_marginStart="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_11_dip"
+                    android:backgroundTintMode="@color/white"
+                    android:src="@drawable/icon_portrait"
+                    app:civ_border_color="@color/alpha_95_black"
+                    app:civ_border_width="@dimen/comment_2_dip" />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_shop"
+                    android:layout_marginLeft="@dimen/comment_9_dip"
+                    android:layout_marginTop="@dimen/comment_15_dip"
+                    android:layout_toRightOf="@id/iv_title"
+                    android:text="纹身大师"
+                    android:textColor="@color/gray_E7370C"
+                    android:textSize="@dimen/comment_16_size" />
+
+                <TextView
+                    android:id="@+id/tv_upload_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_name"
+                    android:layout_marginLeft="@dimen/comment_9_dip"
+                    android:layout_toRightOf="@id/iv_title"
+                    android:text="4月10日" />
+
+                <ImageView
+                    android:layout_width="@dimen/comment_40_dip"
+                    android:layout_height="@dimen/comment_21_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/iv_shop"
+                    android:layout_marginEnd="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_21_dip"
+                    app:srcCompat="@drawable/icon_item_rueen" />
+
+                <TextView
+                    android:id="@+id/tv_big_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/tv_upload_time"
+                    android:layout_marginStart="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:text="讲讲如何纹身"
+                    android:textColor="@color/alpha_95_black"
+                    android:textSize="@dimen/comment_15_size" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_2_dip"
+                    android:layout_below="@id/tv_big_content"
+                    android:layout_marginEnd="@dimen/comment_15_dip"
+                    android:layout_marginStart="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_8_dip"
+                    android:background="@color/alpha_05_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view"
+                    android:layout_marginBottom="@dimen/comment_8_dip"
+                    android:layout_marginEnd="@dimen/comment_20_dip"
+                    android:layout_marginTop="@dimen/comment_8_dip"
+                    android:text="点赞178"
+                    android:textColor="@color/alpha_15_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/ttv_ping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_15_dip"
+                    android:text="评价（0）"
+                    android:textColor="@color/alpha_95_black"
+                    android:textSize="@dimen/comment_15_size" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/re_master_evaluation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ttv_ping"
+                    android:layout_marginLeft="@dimen/comment_3_dip"
+                    android:layout_marginTop="@dimen/comment_11_dip" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</RelativeLayout>

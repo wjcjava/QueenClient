@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_05_black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_160_dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_setting_breake">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_mine_title"
+            android:layout_width="@dimen/comment_57_dip"
+            android:layout_height="@dimen/comment_57_dip"
+            android:layout_marginStart="@dimen/comment_25_dip"
+            android:layout_marginTop="@dimen/comment_50_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/dismiss"
+            app:civ_border_color="@color/alpha_95_black"
+            app:civ_border_width="@dimen/comment_2_dip" />
+
+        <TextView
+            android:id="@+id/tv_mine_uername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/comment_70_dip"
+            android:layout_toRightOf="@+id/iv_mine_title"
+            android:text="点击登录"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_mine_qiandao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已签到"
+                android:textSize="@dimen/comment_14_size"
+                android:background="@drawable/button_mine_qiandao"
+                android:textColor="@color/white">
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/tv_mine_qiandao_not"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到"
+                    android:textSize="@dimen/comment_14_size"
+                    android:background="@drawable/button_mine_qiandao_not"
+                    android:textColor="@color/alpha_violet">
+                </TextView>
+
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/select"
+                    android:layout_alignParentEnd="true">
+                </ImageView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:scrollbars="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+
+                android:id="@+id/re_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/comment_20_dip"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_mine_collection" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/re_friends"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/comment_10_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:text="@string/myassets"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_1_dip"
+                    android:layout_below="@+id/tv_assets"
+                    android:layout_marginLeft="@dimen/comment_12_dip"
+                    android:layout_marginRight="@dimen/comment_20_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:background="@color/alpha_05_black" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_mine_collection_two" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/re_layout"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/comment_10_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:text="@string/more_recommendation"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_1_dip"
+                    android:layout_below="@+id/tv_head"
+                    android:layout_marginLeft="@dimen/comment_12_dip"
+                    android:layout_marginRight="@dimen/comment_20_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:background="@color/alpha_05_black" />
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginTop="@dimen/comment_10_dip">
+
+                    <include layout="@layout/layout_mine_recommend" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</RelativeLayout>

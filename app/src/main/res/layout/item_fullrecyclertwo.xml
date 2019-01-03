@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/comment_15_dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_title"
+            android:layout_width="@dimen/comment_40_dip"
+            android:layout_height="@dimen/comment_40_dip"
+            android:src="@drawable/dismiss"
+            app:civ_border_color="@color/alpha_95_black"
+            app:civ_border_width="@dimen/comment_1_dip"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_20_dip"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_toRightOf="@+id/iv_title"
+            android:text="啧啧啧"/>
+
+        <ImageView
+            android:id="@+id/tv_shop"
+            android:layout_width="@dimen/comment_50_dip"
+            android:layout_height="@dimen/comment_10_dip"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="@dimen/comment_20_dip"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_toRightOf="@+id/iv_title"
+            android:src="@drawable/ic_sortrecyke_stars"
+            android:visibility="gone"/>
+
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+            android:id="@+id/score_goods_comment_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="@dimen/comment_20_dip"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_toRightOf="@+id/iv_title"
+            app:mode="random"
+            app:ratingProgress="4"
+            app:starDistance="@dimen/comment_6_dip"
+            app:starEmpty="@mipmap/empty"
+            app:starFill="@mipmap/fill"
+            app:starNum="5"
+            app:starSize="@dimen/comment_10_dip"
+            app:touchAble="false"/>
+
+        <TextView
+            android:id="@+id/tv_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/comment_10_dip"
+            android:text="01-17"/>
+
+        <TextView
+            android:id="@+id/tv_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_60_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="离公司近，方便，经济，实惠，服务态度很好"/>
+
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+            android:id="@+id/gv_fullactivity_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_evaluate"
+            android:layout_marginStart="@dimen/comment_60_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:horizontalSpacing="@dimen/comment_10_dip"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/comment_10_dip"
+            android:visibility="visible"/>
+
+
+        <TextView
+            android:id="@+id/tv_consum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_fullactivity_gridView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_60_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="消费评价 - Dear Skin形象工作室"
+            android:textColor="@color/alpha_35_black"
+            android:textSize="@dimen/comment_12_dip"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

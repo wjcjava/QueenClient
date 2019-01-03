@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tab_seckill_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_3_dip"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/comment_18_size"/>
+
+    <TextView
+        android:id="@+id/tab_seckill_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/comment_3_dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/comment_12_size"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/comment_70_dip">
+        <TextView
+            android:layout_marginTop="@dimen/comment_15_dip"
+            android:id="@+id/tv_phone_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/black"
+            android:text="艾尼斯美容美发化妆摄影学校 3楼"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_below="@id/tv_phone_category"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/comment_14_size"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_marginStart="@dimen/comment_15_dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/alpha_35_black"
+            android:text="黄 先生     1377158974"
+            />
+
+        <ImageView
+            android:id="@+id/iv_phone_chosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_unchecked"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_70_dip"
+        android:background="@drawable/icon_home">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:text="@string/Big_shot"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_18_size" />
+
+        <ImageView
+            android:id="@+id/iv_master_news"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="@dimen/comment_21_dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/comment_12_dip"
+            android:layout_marginEnd="@dimen/comment_20_dip"
+            app:srcCompat="@mipmap/message" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/re_big_shot"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

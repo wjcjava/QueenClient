@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/mine_back_gray"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_back_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_purchase_bean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="魔豆"
+            android:textColor="@color/alpha_65_black"
+            android:textSize="@dimen/comment_14_size"
+            android:padding="10dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_purchase_right_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_dwon_blue"
+            android:layout_marginEnd="10dp"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_red_packet_modou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-0"
+            android:textColor="@color/third_login"
+            android:layout_toLeftOf="@id/iv_purchase_right_zero"
+            android:textSize="@dimen/comment_14_size"
+            android:padding="10dp">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_purchase_queencard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女王会员优惠"
+            android:textColor="@color/alpha_65_black"
+            android:textSize="@dimen/comment_14_size"
+            android:padding="10dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_purchase_right_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_dwon_blue"
+            android:layout_marginEnd="10dp"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_red_packet_queen_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-¥0"
+            android:textColor="@color/third_login"
+            android:layout_toLeftOf="@id/iv_purchase_right_one"
+            android:textSize="@dimen/comment_14_size"
+            android:padding="10dp">
+        </TextView>
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_back_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_purchase_red_packet_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_purchase_red_packet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择红包"
+            android:textColor="@color/alpha_65_black"
+            android:textSize="@dimen/comment_14_size"
+            android:padding="10dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_purchase_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_up_black"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_purchase_red_packet_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-¥0"
+            android:textColor="@color/third_login"
+            android:layout_toLeftOf="@id/iv_purchase_right"
+            android:textSize="@dimen/comment_14_size"
+            android:padding="10dp">
+        </TextView>
+    </RelativeLayout>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView
+        android:id="@+id/purchase_red_packet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:scrollbars="none">
+    </com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView>
+
+    <TextView
+        android:id="@+id/tv_purchase_non"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂无红包"
+        android:padding="10dp"
+        android:background="@color/mine_back_gray">
+    </TextView>
+
+</LinearLayout>

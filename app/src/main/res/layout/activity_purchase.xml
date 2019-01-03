@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.PurchaseActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/ic_title"
+            layout="@layout/layout_title"/>
+        <LinearLayout
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_44_dip"
+            android:gravity="center"
+            android:background="@color/alpha_75_black"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="@dimen/comment_0_dip"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/tv_purcharse_cpmount"
+                    android:text="已优惠¥0.00"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:textSize="@dimen/comment_16_size"
+                    android:gravity="center"
+                    android:textColor="@color/order_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="合计"
+                        android:textSize="@dimen/comment_16_size"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/order_bottom"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_shopping_cart_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥222"
+                        android:textColor="@color/gray_E7370C"
+                        android:textSize="@dimen/comment_16_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_height="@dimen/comment_50_dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_setting_breake"
+                    android:gravity="center"
+                    android:text="提交订单"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/ic_title"
+            android:layout_above="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_purchase_top"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_55_dip">
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/alpha_95_black"
+                    android:layout_marginTop="@dimen/comment_20_dip"
+                    android:layout_marginLeft="@dimen/comment_15_dip"
+                    android:text="刘德华" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/alpha_95_black"
+                    android:layout_marginTop="@dimen/comment_20_dip"
+                    android:layout_marginStart="@dimen/comment_39_dip"
+                    android:visibility="gone"
+                    android:layout_toEndOf="@+id/tv_name"
+                    android:text="先生" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/alpha_95_black"
+                    android:layout_marginTop="@dimen/comment_20_dip"
+                    android:layout_marginStart="@dimen/comment_36_dip"
+                    android:layout_toEndOf="@+id/tv_sex"
+                    android:text="13771889001" />
+
+                <ImageView
+                    android:id="@+id/img_into"
+                    android:layout_width="@dimen/comment_7_dip"
+                    android:layout_height="@dimen/comment_12_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/comment_22_dip"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/comment_20_dip"
+                    app:srcCompat="@drawable/icon_full_right" />
+            </RelativeLayout>
+            <ListView
+                android:divider="@color/white"
+                android:id="@+id/list_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <View style="@style/dash_line"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

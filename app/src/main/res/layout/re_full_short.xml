@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view"
+        android:layout_marginStart="@dimen/comment_14_dip"
+        android:layout_marginEnd="@dimen/comment_15_dip"
+        android:background="@color/alpha_05_black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <ImageView
+        android:layout_below="@id/view"
+        android:id="@+id/iv_full_shopimage"
+        android:layout_width="@dimen/comment_32_dip"
+        android:layout_height="@dimen/comment_32_dip"
+        android:layout_marginStart="@dimen/comment_24_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        app:srcCompat="@drawable/ic_sortrecyle_logo" />
+
+    <TextView
+        android:layout_below="@id/view"
+        android:id="@+id/tv_full_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_7_dip"
+        android:layout_toRightOf="@id/iv_full_shopimage"
+
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_14_size" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="店铺评分4.5"
+        android:layout_marginTop="@dimen/comment_9_dip"
+        android:layout_marginEnd="@dimen/comment_26_dip"
+        android:textColor="@color/alpha_05_black"
+        android:textSize="@dimen/comment_12_size"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="@dimen/comment_40_dip"
+        android:layout_height="@dimen/comment_15_dip"
+        android:layout_below="@id/tv_full_shopname"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_1_dip"
+        android:layout_toRightOf="@id/iv_full_shopimage"
+        app:srcCompat="@drawable/icon_item_rueen" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_full_shopimage"
+        android:layout_marginTop="@dimen/comment_15_dip">
+
+        <ImageView
+            android:id="@+id/iv_full_commodity_picture"
+            android:layout_width="@dimen/comment_80_dip"
+            android:layout_height="@dimen/comment_80_dip"
+            android:layout_marginStart="@dimen/comment_24_dip"
+            app:srcCompat="@drawable/icon_home_beautiful" />
+
+
+        <TextView
+            android:id="@+id/tv_commodity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_toRightOf="@id/iv_full_commodity_picture"
+                      android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_16_size" />
+        <TextView
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:id="@+id/tv_full_commodity_introduction"
+            android:text="商品介绍商品"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:textColor="@color/alpha_05_black"
+            android:layout_toRightOf="@id/iv_full_commodity_picture"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_below="@id/tv_commodity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_full_group_purchase"
+            android:layout_width="@dimen/comment_60_dip"
+            android:layout_height="@dimen/comment_13_dip"
+            android:layout_below="@id/tv_full_commodity_introduction"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:layout_toRightOf="@id/iv_full_commodity_picture"
+            app:srcCompat="@drawable/ic_sortrecyke_stars" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_full_group_purchase"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_toRightOf="@id/iv_full_commodity_picture"
+            android:text="¥138"
+            android:layout_marginBottom="@dimen/comment_5_dip"
+            android:textColor="@color/gray_E7370C"
+            android:textSize="@dimen/comment_18_size" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="店铺评分4.5"
+            android:layout_below="@id/iv_full_group_purchase"
+            android:layout_marginTop="@dimen/comment_9_dip"
+            android:layout_marginEnd="@dimen/comment_26_dip"
+            android:textColor="@color/alpha_05_black"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

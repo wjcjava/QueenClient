@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comment_60_dip"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/title_shopcart_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_back"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:paddingStart="@dimen/comment_10_dip"
+        android:paddingTop="@dimen/comment_10_dip"
+        android:paddingBottom="@dimen/comment_10_dip"
+        android:paddingRight="@dimen/comment_10_dip"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/shoppingcat_num"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_16_size"
+        android:text="购物车(0)"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="@dimen/comment_60_dip" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/comment_14_size"
+        android:textColor="@color/alpha_80_black"
+        android:text="编辑"
+        android:gravity="center"
+        android:id="@+id/actionBar_edit"
+        android:layout_width="@dimen/comment_60_dip"
+        android:layout_height="@dimen/comment_60_dip" />
+</RelativeLayout>

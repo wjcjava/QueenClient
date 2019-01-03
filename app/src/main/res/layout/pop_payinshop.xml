@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:background="@color/alpha_05_black">
+
+        <RelativeLayout
+            android:id="@+id/recycler_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:background="@drawable/et_shap">
+
+            <ImageView
+                android:id="@+id/img_wechat"
+                android:layout_width="@dimen/comment_18_dip"
+                android:layout_height="@dimen/comment_17_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                app:srcCompat="@drawable/icon_submit_wechat" />
+
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                android:layout_toRightOf="@id/img_wechat"
+                android:text="@string/wechat_payment" />
+
+            <CheckBox
+                android:id="@+id/check_wechat"
+                android:layout_width="@dimen/comment_25_dip"
+                android:layout_height="@dimen/comment_25_dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comment_22_dip"
+                android:layout_marginTop="@dimen/comment_13_dip"
+                android:background="@color/white"
+                android:button="@drawable/selector_home_submit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recycler_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_below="@id/recycler_wechat"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:background="@drawable/et_shap">
+
+            <ImageView
+                android:id="@+id/img_alipay"
+                android:layout_width="@dimen/comment_18_dip"
+                android:layout_height="@dimen/comment_17_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                app:srcCompat="@drawable/icon_alipay" />
+
+            <TextView
+                android:id="@+id/tv_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                android:layout_toRightOf="@id/img_alipay"
+                android:text="@string/wechat_alipay" />
+
+            <CheckBox
+                android:id="@+id/check_alipay"
+                android:layout_width="@dimen/comment_25_dip"
+                android:layout_height="@dimen/comment_25_dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comment_22_dip"
+                android:layout_marginTop="@dimen/comment_13_dip"
+                android:background="@color/white"
+                android:button="@drawable/selector_home_submit" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_queen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_below="@+id/recycler_alipay"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:background="@drawable/et_shap">
+
+            <ImageView
+                android:id="@+id/img_queen"
+                android:layout_width="@dimen/comment_18_dip"
+                android:layout_height="@dimen/comment_17_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                app:srcCompat="@drawable/icon_submit_queen" />
+
+
+            <TextView
+                android:id="@+id/tv_queen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                android:layout_toRightOf="@id/img_queen"
+                android:text="@string/queen_payment"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check_queen"
+                android:layout_width="@dimen/comment_25_dip"
+                android:layout_height="@dimen/comment_25_dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comment_22_dip"
+                android:layout_marginTop="@dimen/comment_13_dip"
+                android:background="@color/white"
+                android:button="@drawable/selector_home_submit" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/re_balance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_below="@+id/re_queen"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:background="@drawable/et_shap">
+
+            <ImageView
+                android:id="@+id/img_balance"
+                android:layout_width="@dimen/comment_18_dip"
+                android:layout_height="@dimen/comment_17_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                app:srcCompat="@drawable/icon_submit_queen" />
+
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_17_dip"
+                android:layout_toRightOf="@id/img_balance"
+                android:text="@string/balance_payment"
+
+                />
+
+            <CheckBox
+                android:id="@+id/check_balance"
+                android:layout_width="@dimen/comment_25_dip"
+                android:layout_height="@dimen/comment_25_dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comment_22_dip"
+                android:layout_marginTop="@dimen/comment_13_dip"
+                android:background="@color/white"
+                android:button="@drawable/selector_home_submit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/li_confirm_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_50_dip"
+        android:layout_gravity="center"
+        android:background="@color/alpha_25_black"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_of_payment"
+            android:textColor="@color/black"
+            android:textSize="@dimen/comment_12_size" />
+
+    </LinearLayout>
+</LinearLayout>

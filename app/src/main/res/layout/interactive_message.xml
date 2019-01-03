@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/ic_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:background="@color/alpha_05_black"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:background="@color/alpha_05_black">
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.customview.RefreshLoadMoreLayout
+            android:id="@+id/rlm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rll_header_hint_normal="下拉给我试试看"
+            app:rll_header_hint_ready="主淫我已经准备好了">
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recycler_interactivemessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ainisi.queenmirror.queenmirrorcduan.utils.customview.RefreshLoadMoreLayout>
+    </RelativeLayout>
+</RelativeLayout>

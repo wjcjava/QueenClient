@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity=""
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_pintuan_head_10_first"
+                android:layout_width="@dimen/comment_57_dip"
+                android:layout_height="@dimen/comment_57_dip"
+                android:backgroundTintMode="@color/white"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fightalone"
+                app:civ_border_color="@color/alpha_95_black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:src="@drawable/ic_pinzhu">
+            </ImageView>
+
+        </RelativeLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_second"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            android:layout_height="@dimen/comment_57_dip"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_third"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_forth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_fivth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_sixth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_sevth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            android:layout_height="@dimen/comment_57_dip"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_eight"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_nine"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_10_ten"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/comment_57_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/fightalone"
+            app:civ_border_color="@color/alpha_95_black" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/layout_esthetics"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+
+              tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.EstheticsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar_esthetice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_setting_breake">
+
+        <include layout="@layout/inner_sleeveshop_title" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_shap">
+
+
+            <TextView
+                android:id="@+id/tv_recommendable_projects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_17_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:text="推荐好店"
+                android:textColor="@color/gray_E7370C"
+                android:textSize="@dimen/comment_16_size" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/comment_14_dip"
+               android:paddingTop="@dimen/comment_15_dip"
+                android:text="更多>>"
+                android:textSize="@dimen/comment_11_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/re_recommendable_projects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_recommendable_projects">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_middle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/relativeLayout"
+            android:background="@color/home_shop_middle"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/comment_3_dip"
+            android:layout_marginStart="@dimen/comment_3_dip"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/li_esthetics_nearshop"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_36_dip">
+
+                <TextView
+                    android:id="@+id/bt_esthetics_up_home"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:text="附近商家"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size"/>
+
+                <ImageView
+                    android:id="@+id/iv_esthetics_near_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_dwon_blue"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/full_esthetics_rb_sales"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+                android:text="@string/sales"
+                android:textColor="@color/alpha_55_black"
+                android:textSize="@dimen/comment_12_size" />
+
+            <LinearLayout
+                android:id="@+id/li_esthetics_zonghe"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+                    android:id="@+id/full_esthetics_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="综合排序"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <ImageView
+                    android:id="@+id/iv_esthetics_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_dwon_blue" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/li_esthetics_shaixuan"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+                    android:id="@+id/full_rb_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/screen"
+                    android:layout_marginEnd="@dimen/comment_5_dip"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/comment_8_dip"
+                    android:layout_height="@dimen/comment_9_dip"
+                    android:layout_marginTop="@dimen/comment_1_dip"
+                    android:src="@drawable/icon_home_screen" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/esthetrics_refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/shop_list_null"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/full_sore_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <com.scwang.smartrefresh.layout.footer.ballpulse.BallPulseView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

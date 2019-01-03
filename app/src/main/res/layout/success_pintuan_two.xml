@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pintuan_head_2_first"
+            android:layout_width="@dimen/comment_57_dip"
+            android:layout_height="@dimen/comment_57_dip"
+            android:layout_marginStart="@dimen/comment_25_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/dismiss"
+            app:civ_border_color="@color/alpha_95_black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:src="@drawable/ic_pinzhu">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_pintuan_head_2_second"
+        android:layout_width="@dimen/comment_57_dip"
+        android:layout_height="@dimen/comment_57_dip"
+        android:layout_marginStart="@dimen/comment_25_dip"
+        android:backgroundTintMode="@color/white"
+        android:src="@drawable/fightalone"
+        app:civ_border_color="@color/alpha_95_black" />
+
+</LinearLayout>

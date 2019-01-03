@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/sc_fightalone_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/alpha_05_black">
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:id="@+id/sc_fightalone_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <!--顶部到服务时长-->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="@dimen/comment_8_dip"
+                tools:layout_editor_absoluteY="@dimen/comment_8_dip">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/full_activity_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_200_dip"
+                    android:background="@color/white"
+                    android:focusable="true"/>
+
+                <RelativeLayout
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_48_dip"
+                    android:background="@drawable/ic_setting_breake">
+
+                    <TextView
+                        android:id="@+id/full_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/comment_20_size"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/fightalone_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_21_dip"
+                        android:layout_toEndOf="@+id/full_cash"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/comment_16_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_full_buyonly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/fightalone_text_view"
+                        android:background="@color/color_FF374F"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="2dp"
+                        android:text="限拼一次"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/comment_12_size"/>
+
+                    <TextView
+                        android:id="@+id/full_gp_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/comment_20_size"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_shap">
+
+
+                    <TextView
+                        android:id="@+id/tv_spell_shopname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/comment_15_dip"
+                        android:layout_marginTop="@dimen/comment_5_dip"
+                        android:textColor="@color/alpha_95_black"
+                        android:textSize="@dimen/comment_16_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_spell_shopabstract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_spell_shopname"
+                        android:layout_alignStart="@+id/tv_spell_shoptime"
+                        android:textSize="@dimen/comment_13_size"/>
+
+                    <View
+                        android:id="@+id/view0"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_below="@+id/tv_spell_shopabstract"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/mine_back_gray">
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/li_fighta_modou"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view0"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="抵扣"
+                            android:textSize="13sp">
+                        </TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/fullactivity_detail_back"
+                            android:text="魔豆"
+                            android:textColor="@color/color_FF4A4A"
+                            android:textSize="12sp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_full_buy_bean"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="抵扣0魔豆"
+                            android:textColor="@color/sort_tvcolor"
+                            android:textSize="@dimen/comment_12_size"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_below="@+id/li_fighta_modou"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/mine_back_gray">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_spell_shoptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_one"
+                        android:layout_alignStart="@+id/tv_spell_shopname"
+                        android:layout_marginBottom="@dimen/comment_15_dip"
+                        android:text="服务时长：60分钟"
+                        android:textSize="@dimen/comment_13_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_spell_shopbrowse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_spell_shoptime"
+                        android:layout_alignBottom="@+id/tv_spell_shoptime"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="@dimen/comment_15_dip"
+                        android:layout_toEndOf="@+id/tv_spell_shoptime"
+                        android:text="已浏览：48次"
+                        android:textSize="@dimen/comment_13_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_spell_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_spell_shoptime"
+                        android:layout_alignStart="@+id/tv_spell_shopname"
+                        android:layout_marginBottom="@dimen/comment_15_dip"
+                        android:textSize="@dimen/comment_13_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/tv_full_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_spell_date"
+                        android:layout_alignStart="@+id/tv_spell_shopname"
+                        android:layout_marginRight="@dimen/comment_15_dip"
+                        android:layout_marginBottom="@dimen/comment_9_dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_full_navigation_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_brief"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textSize="@dimen/comment_12_size"/>
+
+                        <View
+                            android:layout_width="@dimen/comment_2_dip"
+                            android:layout_height="@dimen/comment_25_dip"
+                            android:layout_marginLeft="@dimen/comment_10_dip"
+                            android:layout_marginRight="@dimen/comment_10_dip"
+                            android:background="@drawable/shape_full_line"
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/comment_22_dip"
+                            android:layout_height="@dimen/comment_22_dip"
+                            android:src="@drawable/daohang"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_fullactivity_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="女王会员立减：¥0.00"
+                    android:textColor="@color/color_FF374F"
+                    android:textSize="@dimen/comment_12_size"
+                    android:visibility="gone"></TextView>
+
+            </LinearLayout>
+
+            <!--拼团模块-->
+            <RelativeLayout
+                android:id="@+id/rl_fightalone_hight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:background="@drawable/et_shap">
+
+                <TextView
+                    android:id="@+id/tv_collage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_13_dip"
+                    android:text="0人在拼团，可直接参与"
+                    android:textColor="@color/alpha_95_black"
+                    android:textSize="@dimen/comment_14_size"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_look_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/comment_14_dip"
+                        android:layout_marginEnd="@dimen/comment_40_dip"
+                        android:text="查看更多"
+                        android:textSize="@dimen/comment_12_size"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv_look_more"
+                        android:layout_width="@dimen/comment_8_dip"
+                        android:layout_height="@dimen/comment_14_dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/comment_16_dip"
+                        android:layout_marginEnd="@dimen/comment_21_dip"
+                        app:srcCompat="@drawable/icon_full_right"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_fightalone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_2_dip"
+                    android:layout_below="@+id/tv_collage"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_12_dip"
+                    android:layout_marginEnd="@dimen/comment_13_dip"
+                    android:background="@color/alpha_05_black"/>
+
+                <!--第一个拼团-->
+                <RelativeLayout
+                    android:id="@+id/re_surplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_fightalone">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_title"
+                        android:layout_width="@dimen/comment_45_dip"
+                        android:layout_height="@dimen/comment_45_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_18_dip"
+                        android:backgroundTintMode="@color/white"
+                        android:src="@drawable/dismiss"
+                        app:civ_border_color="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tv_fightalone_textname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_8_dip"
+                        android:layout_toRightOf="@id/civ_title"
+                        android:textSize="@dimen/comment_14_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_home_goShare"
+                        android:layout_width="@dimen/comment_69_dip"
+                        android:layout_height="@dimen/comment_29_dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_12_dip"
+                        android:background="@drawable/icon_home_fightalone"
+                        android:gravity="center"
+                        android:text="去拼单"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/tv_home_goShare"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_surplus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:text="还差2人"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_12_size"/>
+
+                        <TextView
+                            android:id="@+id/tv_fightalone_shengyu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="剩余00:00:00"
+                            android:textColor="@color/colorPri"
+                            android:textSize="@dimen/comment_10_size"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_fightaltwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_2_dip"
+                    android:layout_below="@+id/re_surplus"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_12_dip"
+                    android:layout_marginEnd="@dimen/comment_13_dip"
+                    android:background="@color/alpha_05_black"
+                    android:visibility="gone"/>
+
+                <!--第二个拼团-->
+                <RelativeLayout
+                    android:id="@+id/re_surplustwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_fightaltwo"
+                    android:visibility="gone">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_titletwo"
+                        android:layout_width="@dimen/comment_45_dip"
+                        android:layout_height="@dimen/comment_45_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_18_dip"
+                        android:backgroundTintMode="@color/white"
+                        android:src="@drawable/icon_home_beautiful"
+                        app:civ_border_color="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tv_fightalone_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_8_dip"
+                        android:layout_toRightOf="@id/iv_titletwo"
+                        android:textSize="@dimen/comment_14_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_home_goShare1"
+                        android:layout_width="@dimen/comment_69_dip"
+                        android:layout_height="@dimen/comment_29_dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_12_dip"
+                        android:background="@drawable/icon_home_fightalone"
+                        android:gravity="center"
+                        android:text="去拼单"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/tv_home_goShare1"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_surplustwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:text="还差2人"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_12_size"/>
+
+                        <TextView
+                            android:id="@+id/tv_fightalone_shengyu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="剩余00:00:00"
+                            android:textColor="@color/colorPri"
+                            android:textSize="@dimen/comment_10_size"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_back_gray"></View>
+
+
+            <!--项目详情-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fullactivity_detail_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="商品详情"
+                    android:textColor="@color/alpha_95_black"
+                    android:textSize="@dimen/comment_14_size"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/li_fullactivity_comment_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/mine_back_gray"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_fullactivity_comment_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评论（100）"
+                        android:textColor="@color/alpha_75_black"
+                        android:textSize="@dimen/comment_14_size"></TextView>
+
+                    <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+                        android:id="@+id/score_fight_evaluate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:visibility="gone"
+                        app:mode="half"
+                        app:ratingProgress="4"
+                        app:starDistance="@dimen/comment_3_dip"
+                        app:starEmpty="@mipmap/empty"
+                        app:starFill="@mipmap/fill"
+                        app:starNum="5"
+                        app:starSize="@dimen/comment_14_dip"
+                        app:touchAble="false"/>
+
+                    <TextView
+                        android:id="@+id/tv_fullactivity_comment_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="4"
+                        android:textColor="@color/alpha_violet"
+                        android:textSize="@dimen/comment_14_size"
+                        android:visibility="gone"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_fullactivity_tishi_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/mine_back_gray"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="温馨提示"
+                    android:textColor="@color/alpha_95_black"
+                    android:textSize="@dimen/comment_14_size"></TextView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <include
+                    android:id="@+id/ic_fullactivity_detail"
+                    layout="@layout/full_activity_bottom_detail"/>
+
+                <include
+                    android:id="@+id/ic_fullactivity_comment"
+                    layout="@layout/full_activity_bottom_comment"
+                    android:visibility="gone"/>
+
+                <include
+                    android:id="@+id/ic_fullactivity_tishi"
+                    layout="@layout/full_activity_bottom_tishi"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</RelativeLayout>

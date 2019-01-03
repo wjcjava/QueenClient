@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.order.activity.ArefundActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_below="@id/ic_title"
+        android:background="@color/alpha_05_black" />
+    <TextView
+        android:id="@+id/tv_refund_goods"
+        android:layout_below="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="选择退款商品"
+        android:textSize="@dimen/comment_14_size" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/re_arefund"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_below="@id/tv_refund_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/bt_confirm_refund"
+        android:layout_width="@dimen/comment_335_dip"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/comment_15_size"
+        android:textColor="@color/white"
+        android:text="@string/confirm_arefund"
+        android:layout_below="@id/re_arefund"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/comment_40_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:background="@mipmap/icon_login_squareness"
+        android:layout_height="@dimen/comment_40_dip" />
+
+
+</RelativeLayout>

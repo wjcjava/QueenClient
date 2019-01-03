@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+
+android {
+//    signingConfigs {
+//        release {
+//            keyAlias 'ainisi'
+//            keyPassword 'ainisi123'
+//            storeFile file('ainisi.jks')
+//            storePassword 'ainisi123'
+//        }
+//        debug {
+//            keyAlias 'ainisi'
+//            keyPassword 'ainisi123'
+//            storeFile file('ainisi.jks')
+//            storePassword 'ainisi123'
+//        }
+//    }
+    compileSdkVersion 28
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.ainisi.queenmirror.queenmirrorcduan"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 15
+        versionName "1.0.15"
+        multiDexEnabled true
+        manifestPlaceholders = [qqappid: "tencent1106548988"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //APP的build.gradle设置支持的SO库架构                用来管理so大小文件ndk过滤
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+        }
+        debug {
+//            signingConfig signingConfigs.release
+        }
+    }
+    allprojects {
+        repositories {
+            maven {
+                url 'https://jitpack.io'
+                'https://dl.bintray.com/wangyuwei/maven'
+            }
+        }
+    }
+    dexOptions {
+        jumboMode = true
+        preDexLibraries = false
+        javaMaxHeapSize "2g"//支持2g
+    }
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '25.3.1'
+
+                }
+            }
+        }
+    }
+    repositories {
+        flatDir { dirs 'libs' }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:28.0.0-alpha3'
+    //配置权限
+    compile 'com.lovedise:permissiongen:0.0.6'
+    //    compile 'com.jakewharton:butterknife:6.1.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31'
+    compile 'com.google.code.gson:gson:2.8.0'
+    testCompile 'junit:junit:4.12'
+    //上下拉
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    //okgo
+    compile 'com.ansen.http:okhttpencapsulation:1.0.1'
+    /*compile files('libs/okgo-2.1.4.jar')
+                                                                                                                    compile files('libs/okhttp-3.4.1.jar')
+                                                                                                                    compile files('libs/okio-1.9.0.jar')*/
+    //用于防止apk达到一定大小后出现问题
+    //compile files('libs/okio-1.9.0.jar')
+    //强大的下拉刷新控件
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.qbw.log:xlog:1.7.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile files('libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar')
+    //跑马灯
+    compile 'com.gongwen:marqueelibrary:1.1.3'
+    compile project(':common')
+    //    compile project(':umenglib')
+    compile files('libs/alipaySdk-20180403.jar')
+    compile 'q.rorbin:badgeview:1.1.3'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    compile 'com.umeng.sdk:utdid:1.1.5.3'
+    //PushSDK
+    compile 'com.umeng.sdk:push:4.2.0'
+    compile files('libs/umeng-share-core-6.9.2.jar')
+    compile files('libs/umeng-share-QQ-simplify-6.9.2.jar')
+    compile files('libs/umeng-share-wechat-simplify-6.9.2.jar')
+    compile files('libs/umeng-shareboard-widget-6.9.2.jar')
+    compile files('libs/umeng-sharetool-6.9.2.jar')
+    compile 'com.umeng.sdk:share-sina:latest.integration'
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+    /**
+     * 二维码相关
+     */
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4'
+    compile 'com.aliyun.dpa:oss-android-sdk:2.8.4'
+    /**
+     * 图片选择器
+     */
+    compile 'com.ufo:DWImageSelector:0.9.5'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
+    compile project(':library')
+    compile 'top.zibin:Luban:1.1.8'
+    compile 'jp.wasabeef:recyclerview-animators:2.3.0'
+    compile 'com.android.support:cardview-v7:28.0.0-rc02'
+    compile(name: 'AlivcPlayer', ext: 'aar')
+    compile(name: 'AliyunVodPlayer', ext: 'aar')
+    compile(name: 'AliyunVodPlayerView', ext: 'aar')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.borjabravo:readmoretextview:2.1.0'
+    compile 'com.github.iielse:ImageWatcher:1.1.3'
+}

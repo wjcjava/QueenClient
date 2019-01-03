@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/re_infor_massage"
+                android:visibility="gone"
+                android:background="@color/alpha_05_black"
+                android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/workroom_recycler"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_information_one"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:layout_marginTop="@dimen/comment_27_dip"
+            android:layout_width="@dimen/comment_67_dip"
+            android:layout_height="@dimen/comment_67_dip"
+            android:scaleType="center"
+            android:src="@drawable/dismiss" />
+        <ImageView
+            android:id="@+id/iv_information_two"
+            android:layout_toRightOf="@id/iv_information_one"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:layout_marginTop="@dimen/comment_27_dip"
+            android:layout_width="@dimen/comment_67_dip"
+            android:layout_height="@dimen/comment_67_dip"
+            android:scaleType="center"
+            android:src="@drawable/dismiss" />
+        <ImageView
+            android:id="@+id/iv_information_three"
+            android:layout_toRightOf="@id/iv_information_two"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:layout_marginTop="@dimen/comment_27_dip"
+            android:layout_width="@dimen/comment_67_dip"
+            android:layout_height="@dimen/comment_67_dip"
+            android:scaleType="center"
+            android:src="@drawable/dismiss" />
+
+        <ImageView
+            android:id="@+id/iv_information_four"
+            android:layout_toRightOf="@id/iv_information_three"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:layout_marginTop="@dimen/comment_27_dip"
+            android:layout_width="@dimen/comment_67_dip"
+            android:layout_height="@dimen/comment_67_dip"
+            android:scaleType="center"
+            android:src="@drawable/dismiss" />
+        <TextView
+            android:id="@+id/tv_industry_division"
+            android:layout_below="@id/iv_information_one"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:text="行业分类"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_work_detail_hangye"
+            android:layout_below="@id/iv_information_one"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/comment_15_dip"
+            android:text="美甲"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/comment_12_dip"
+            android:layout_below="@id/tv_industry_division"
+            android:background="@color/alpha_05_black"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_marginEnd="@dimen/comment_13_dip"
+            android:layout_height="@dimen/comment_2_dip"/>
+        <TextView
+
+            android:id="@+id/tv_business_address"
+            android:layout_below="@id/view_one"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:text="商家地址"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_work_detail_address"
+            android:layout_below="@id/view_one"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tv_business_address"
+            android:layout_marginEnd="@dimen/comment_15_dip"
+            android:text="苏州市人民北路3333号BC-17"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/comment_12_dip"
+            android:layout_below="@id/tv_business_address"
+            android:background="@color/alpha_05_black"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_marginEnd="@dimen/comment_13_dip"
+            android:layout_height="@dimen/comment_2_dip"/>
+
+        <TextView
+
+            android:id="@+id/tv_business_hours"
+            android:layout_below="@id/view_two"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:text="营业时间"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_work_detail_time"
+            android:layout_below="@id/view_two"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/comment_15_dip"
+            android:text="09:00~21:30"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/comment_12_dip"
+            android:layout_below="@id/tv_business_hours"
+            android:background="@color/alpha_05_black"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_marginEnd="@dimen/comment_13_dip"
+            android:layout_height="@dimen/comment_2_dip"/>
+        <TextView
+            android:id="@+id/tv_business_profile"
+            android:layout_below="@id/view_three"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_marginStart="@dimen/comment_12_dip"
+            android:text="商家简介"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_work_detail_introduce"
+            android:layout_below="@id/view_three"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tv_business_profile"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="@dimen/comment_15_dip"
+            android:text="专注美业15年，服务好，质量好！"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view_four"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/comment_12_dip"
+            android:layout_below="@id/tv_work_detail_introduce"
+            android:background="@color/alpha_05_black"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_marginEnd="@dimen/comment_13_dip"
+            android:layout_height="@dimen/comment_2_dip"/>
+
+        <LinearLayout
+            android:id="@+id/li_workroom_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_four"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/white">
+
+            <ImageView android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/red_phone">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="联系店家"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/red_phone"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_workroom_service_jubao"
+        android:background="@color/white"
+        android:text="举报商家"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/comment_83_dip"
+        android:layout_below="@id/recycler"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_16_size"
+        android:layout_marginBottom="@dimen/comment_21_dip"
+        android:layout_width="@dimen/comment_335_dip"
+        android:layout_height="@dimen/comment_35_dip" />
+</RelativeLayout>

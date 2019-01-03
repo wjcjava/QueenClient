@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.order.activity.ConfirmRefundActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_below="@id/ic_title"
+        android:background="@color/alpha_05_black" />
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/view"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/alpha_05_black">
+            <TextView
+                android:id="@+id/tv_refund_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/comment_5_dip"
+                android:paddingBottom="@dimen/comment_5_dip"
+                android:paddingStart="@dimen/comment_20_dip"
+                android:text="退款商品"
+                android:textSize="@dimen/comment_14_size" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/tv_refund_goods"
+                android:background="@color/white"
+                android:id="@+id/re_arefund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_arefund_reason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_50_dip"
+                android:layout_below="@+id/re_arefund"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:background="@color/white">
+
+                <TextView
+
+                    android:id="@+id/tv_arefund_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/comment_18_dip"
+                    android:text="@string/arefund_reason"
+                    android:textSize="@dimen/comment_14_size" />
+
+                <TextView
+                    android:id="@+id/tv_arefund_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/comment_30_dip"
+                    android:text="@string/tv_arefund_select"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/comment_15_dip"
+                    android:layout_height="@dimen/comment_15_dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/comment_11_dip"
+                    app:srcCompat="@drawable/icon_full_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_refund_amount"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/comment_50_dip"
+                android:layout_below="@+id/layout_arefund_reason"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_refund_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/comment_18_dip"
+                    android:text="@string/_refund_amount"
+                    android:textSize="@dimen/comment_14_size" />
+
+                <TextView
+                    android:id="@+id/tv_confirm_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/comment_30_dip"
+                    android:layout_toRightOf="@+id/tv_refund_amount"
+                    android:text="¥68"
+                    android:textColor="@color/gray_E7370C"
+                    android:textSize="@dimen/comment_14_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_refund_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_100_dip"
+                android:layout_below="@+id/layout_refund_amount"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:paddingTop="@dimen/comment_10_dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_refund_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/comment_18_dip"
+                    android:text="@string/refund_instructions"
+                    android:textSize="@dimen/comment_14_size" />
+
+                <TextView
+                    android:id="@+id/tv_instructions_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/comment_30_dip"
+                    android:layout_toRightOf="@+id/tv_refund_instructions"
+                    android:text="选填"
+                    android:textSize="@dimen/comment_14_size" />
+
+                <EditText
+                    android:id="@+id/et_confirm_backresuion"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_50_dip"
+                    android:hint="请输入退款原因"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:layout_marginEnd="@dimen/comment_18_dip"
+                    android:background="@color/mine_back_gray"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:layout_marginStart="@dimen/comment_18_dip"
+                    android:layout_below="@id/tv_refund_instructions"
+                    android:textSize="@dimen/comment_12_size">
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/layout_refund_instructions"
+                android:id="@+id/layout_credentials"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="@dimen/comment_20_dip"
+                    android:id="@+id/tv_refund_credentials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refund_credentials"
+                    />
+
+                <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                    android:id="@+id/gv_refund_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:layout_marginStart="@dimen/comment_20_dip"
+                    android:layout_marginEnd="@dimen/comment_20_dip"
+                    android:layout_marginBottom="@dimen/comment_10_dip"
+                    android:layout_below="@id/tv_refund_credentials"
+                    android:focusableInTouchMode="false"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="3"/>
+            <!--    <ImageView
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:layout_marginStart="@dimen/comment_20_dip"
+                    android:layout_below="@id/tv_refund_credentials"
+                    android:layout_width="@dimen/comment_80_dip"
+                    android:layout_height="@dimen/comment_80_dip"
+                    android:layout_marginBottom="@dimen/comment_10_dip"
+                    android:src="@mipmap/icon_order_add"
+                    />-->
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:id="@+id/bt_confirm_refund"
+                android:layout_below="@id/layout_credentials"
+                android:layout_width="@dimen/comment_335_dip"
+                android:layout_height="@dimen/comment_40_dip"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/icon_login_squareness"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:layout_marginBottom="@dimen/comment_50_dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_15_size" />
+
+        </RelativeLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</RelativeLayout>

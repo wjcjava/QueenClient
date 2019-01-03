@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/huangguan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mine_queen_huanguan">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_buyrecord_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女王会员3天"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_16_size"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/huangguan">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_buyrecord_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费赠送"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/alpha_55_black">
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_buyrecord_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购买时间：2018-08-13 15:23"
+        android:padding="10dp"
+        android:textColor="@color/alpha_75_black"
+        android:textSize="@dimen/comment_13_size"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/huangguan">
+    </TextView>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_back_gray">
+    </View>
+
+</LinearLayout>

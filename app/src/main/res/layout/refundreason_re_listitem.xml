@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_arefund_reason"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_50_dip"
+        android:layout_below="@+id/re_arefund"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_arefund_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/comment_18_dip"
+            android:text=""
+            android:textSize="@dimen/comment_15_size" />
+
+        <CheckBox
+            android:id="@+id/check_refundreason_check"
+            android:layout_width="@dimen/comment_21_dip"
+            android:layout_height="@dimen/comment_21_dip"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/comment_11_dip"
+            android:background="@drawable/purchase_checkbox"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_below="@id/layout_arefund_reason"
+        android:background="@color/alpha_05_black" />
+</RelativeLayout>

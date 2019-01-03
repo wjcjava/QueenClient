@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@color/white"
+                tools:context=".ui.mine.activity.MineBalanceActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_below="@id/ic_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:text="@string/account_balance"
+        android:textColor="@color/alpha_95_black" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_balance"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:layout_toStartOf="@+id/tv_balance"
+        android:text="¥"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_25_size" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/comment_5_dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/alpha_95_black"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:layout_below="@id/tv_balance"
+        android:layout_toEndOf="@+id/tv_text"
+        android:text="0.00"
+        android:textSize="@dimen/comment_40_size" />
+
+    <Button
+        android:id="@+id/bt_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip"
+        android:layout_alignEnd="@+id/ic_title"
+        android:layout_below="@+id/tv_money"
+        android:layout_marginLeft="@dimen/comment_20_dip"
+        android:layout_marginRight="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_90_dip"
+        android:background="@drawable/icon_home_groups"
+        android:text="@string/rcharge"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bt_withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip"
+        android:layout_below="@+id/bt_recharge"
+        android:layout_marginLeft="@dimen/comment_20_dip"
+        android:layout_marginRight="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_brack_shape"
+        android:text="@string/withdrawals"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv_problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="@dimen/comment_45_dip"
+        android:text="@string/common_problem" />
+
+
+</RelativeLayout>

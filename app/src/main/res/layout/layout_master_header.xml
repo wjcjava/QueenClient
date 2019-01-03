@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/comment_10_dip">
+
+        <RelativeLayout
+            android:id="@+id/rl_master_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_marginLeft="@dimen/comment_12_dip"
+                android:layout_marginTop="@dimen/comment_12_dip"
+                android:layout_width="@dimen/comment_55_dip"
+                android:layout_height="@dimen/comment_55_dip"
+                android:src="@drawable/icon_mine_homepager"/>
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_20_dip"
+                android:layout_toRightOf="@id/profile_image"
+                android:text="我的名字"
+                android:textSize="@dimen/comment_16_size" />
+
+            <TextView
+                android:id="@+id/recommend_item_lv_gz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_recommend_tv_bac"
+                android:paddingLeft="@dimen/comment_13_dip"
+                android:paddingTop="@dimen/comment_5_dip"
+                android:paddingRight="@dimen/comment_13_dip"
+                android:layout_marginRight="@dimen/comment_20_dip"
+                android:paddingBottom="@dimen/comment_5_dip"
+                android:text="@string/gz"
+                android:textColor="@color/color_EC77AB"
+                android:textSize="@dimen/comment_12_size"/>
+
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/cb_detail"-->
+                <!--style="@style/CustomCheckboxRecruitmentTheme"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/common_25_dip" />-->
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_0.5_dip"
+            android:layout_marginTop="@dimen/comment_35_dip"
+            android:background="@color/common_bg"
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_master_base_info"
+            android:background="@color/white">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_marginBottom="@dimen/comment_10_dip"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+                    android:textSize="@dimen/comment_14_size"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="关注"
+                    android:textColor="@color/text_fans"
+                    android:textSize="@dimen/comment_12_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_marginBottom="@dimen/comment_10_dip"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+
+                    android:textSize="@dimen/comment_14_size"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="粉丝"
+
+                    android:textColor="@color/text_fans"
+                    android:textSize="@dimen/comment_12_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:layout_marginBottom="@dimen/comment_10_dip"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+
+                    android:textSize="@dimen/comment_14_size"
+
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="动态"
+
+                    android:textColor="@color/text_fans"
+                    android:textSize="@dimen/comment_12_size" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>

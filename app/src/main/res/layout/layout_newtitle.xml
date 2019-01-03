@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/comment_10_dip"
+        android:paddingEnd="@dimen/comment_10_dip"
+        android:background="@color/white"
+        android:src="@mipmap/icon_back" />
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/comment_10_dip"
+        android:layout_toRightOf="@id/title_back">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/search_search_biankuang"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/comment_20_dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_5_dip"
+                android:src="@mipmap/icon_home_search" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_5_dip"
+                android:background="@null"
+                android:hint="@string/enter_the_shop"
+                android:padding="@dimen/comment_8_dip"
+                android:singleLine="true"
+                android:textSize="@dimen/comment_12_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_search"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_4_dip"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/comment_6_dip"
+            android:textColor="@color/search_color"
+            android:text="搜索" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:layout_marginLeft="@dimen/comment_40_dip"
+        android:layout_marginRight="@dimen/comment_40_dip"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="@dimen/comment_5_dip"
+        android:background="@color/white"
+        android:text="美甲美手"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_18_size" />
+
+
+    <ImageView
+
+        android:id="@+id/titleimg_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:layout_marginEnd="@dimen/comment_10_dip"
+        android:src="@drawable/icon_home_search" />
+</RelativeLayout>

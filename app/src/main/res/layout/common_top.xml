@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comment_40_dip"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <android.support.design.widget.TabLayout
+       android:id="@+id/tab_workroom"
+       app:tabMaxWidth="0dp"
+       app:tabGravity="fill"
+       app:tabMode="fixed"
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.BuyClassVideoActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/pay_rest_time"
+        android:textColor="@color/color_929191" />
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.CountdownView
+        android:id="@+id/cv_countdownViewTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:timeBgDivisionLineSize="1dp"
+        app:timeBgSize="50dp"
+        app:isShowDay="false"
+        app:isShowHour="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isShowMillisecond="false"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="30sp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="30sp"
+        app:isHideTimeBackground="false"
+        app:timeBgRadius="3dp"
+        ></com.ainisi.queenmirror.queenmirrorcduan.utils.CountdownView>
+
+    <TextView
+        android:id="@+id/tv_order_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:text="¥0.01"
+        android:textSize="@dimen/comment_18_size" />
+
+
+    <include layout="@layout/layout_pay_panel"></include>
+</LinearLayout>

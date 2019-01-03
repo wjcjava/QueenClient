@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".ui.mine.activity.SeeActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/or_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_title"
+        app:tabSelectedTextColor="#FFFF0202" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_1_dip"
+        android:layout_below="@id/or_tab"
+        android:background="@color/alpha_15_black" />
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollViewPager
+        android:id="@+id/or_mypager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:layout_marginTop="@dimen/comment_20_dip" />
+</RelativeLayout>

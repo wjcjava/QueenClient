@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/li_queen_buy_record"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/comment_10_dip">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_queen_buy_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="序号"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_85_black">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_queen_buy_buyno"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="购买女王币"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_85_black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_queen_buy_getbean"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="获得魔豆"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_85_black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_queen_buy_time"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="购买时间"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_85_black">
+        </TextView>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_back_gray">
+    </View>
+
+</LinearLayout>

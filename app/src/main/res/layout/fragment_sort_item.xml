@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/comment_10_dip">
+
+        <LinearLayout
+            android:id="@+id/sort_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/comment_15_dip"
+            android:paddingTop="@dimen/comment_5_dip">
+
+            <LinearLayout
+                android:id="@+id/sort_screen_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sort_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/screen"
+                    android:textColor="@color/sort_tvcolor"
+                    android:textSize="@dimen/comment_14_size"/>
+
+                <RadioButton
+                    android:id="@+id/sort_bt_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_2_dip"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/icon_home_screen"
+                    android:textColor="@color/sort_tvcolor"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="范围"
+                android:textColor="@color/sort_tvcolor"
+                android:textSize="@dimen/comment_14_size"/>
+
+            <LinearLayout
+                android:id="@+id/sort_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/sort_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全城"
+                    android:textColor="@color/sort_tvcolor"
+                    android:textSize="@dimen/comment_14_size"/>
+
+                <ImageView
+                    android:id="@+id/sort_distance_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_2_dip"
+                    android:background="@drawable/arrow_dwon_blue"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/sort_refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <GridView
+                android:id="@+id/sort_gv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_home_white"
+                android:gravity="center"
+                android:numColumns="3"
+                android:padding="@dimen/comment_10_dip"
+                android:verticalSpacing="@dimen/comment_10_dip"
+                android:visibility="gone">
+
+            </GridView>
+
+            <com.scwang.smartrefresh.layout.footer.ballpulse.BallPulseView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

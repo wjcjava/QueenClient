@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_160_dip"
+        android:background="@drawable/ic_setting_breake">
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/tranparent">
+
+            <ImageView
+                android:id="@+id/title_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:paddingRight="@dimen/comment_10_dip"/>
+            <TextView
+                android:id="@+id/title_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/comment_40_dip"
+                android:paddingTop="@dimen/comment_5_dip"
+                android:textSize="@dimen/comment_16_size"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:focusableInTouchMode="true" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+
+            android:id="@+id/img_addcart"
+            android:layout_width="@dimen/comment_40_dip"
+            android:layout_height="@dimen/comment_29_dip"
+            android:layout_below="@+id/top"
+            android:layout_marginStart="@dimen/comment_100_dip"
+            android:layout_marginTop="@dimen/comment_20_dip"
+            app:srcCompat="@drawable/icon_mine_addcart" />
+
+        <ImageView
+            android:id="@+id/img_balance"
+            android:layout_width="@dimen/comment_40_dip"
+            android:layout_height="@dimen/comment_29_dip"
+            android:layout_below="@id/top"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/comment_100_dip"
+            android:layout_marginTop="@dimen/comment_20_dip"
+            app:srcCompat="@drawable/icon_mine_money"/>
+
+        <TextView
+            android:id="@+id/tv_addcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_addcart"
+            android:layout_marginStart="@dimen/comment_84_dip"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:text="@string/add_bank_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_14_size" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/img_balance"
+            android:layout_marginRight="@dimen/comment_108_dip"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:text="@string/balance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_14_size" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_balance"
+            android:layout_marginRight="@dimen/comment_107_dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_12_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/li_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rc_layout"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rc_name"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/comment_20_dip"
+                android:text="@string/real_name_authentication"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_14_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginBottom="@dimen/comment_10_dip"
+                android:text="@string/to_authenticate"
+                android:textSize="@dimen/comment_12_size" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/alpha_05_black" />
+
+        <RelativeLayout
+            android:id="@+id/rc_setup"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/comment_44_dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/comment_20_dip"
+                android:text="@string/payment_setting"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_14_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_setup"
+                android:layout_marginBottom="@dimen/comment_10_dip"
+                android:text="@string/payment_management"
+               android:textSize="@dimen/comment_12_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mine_back_gray"
+        android:layout_below="@id/li_middle">
+    </RelativeLayout>
+
+
+</RelativeLayout>

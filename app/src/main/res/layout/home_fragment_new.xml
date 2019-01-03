@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/frame"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <com.cjj.MaterialRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_refresh"
+        app:overlay="true"
+        app:wave_show="false"
+        app:isLoadMore="true">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.cjj.MaterialRefreshLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/top_bar_home" />
+
+        <LinearLayout
+            android:id="@+id/layout_stick_header_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/comment_3_dip"
+                android:layout_marginRight="@dimen/comment_3_dip"
+                android:background="#FFF"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_sort_bottom"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip">
+
+                    <TextView
+                        android:id="@+id/tv_home_comprehensive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort"
+                        android:textSize="@dimen/comment_12_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/arrow_dwon_blue" />
+
+                    <ImageView
+                        android:id="@+id/iv_sort1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/arrow_up_black"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rb_sales"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:text="@string/sales"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <TextView
+
+                    android:id="@+id/rb_distance"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:text="@string/distance"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <LinearLayout
+                    android:id="@+id/li_home_screen"
+                    style="@style/Recommend_layout"
+                    android:layout_height="@dimen/comment_40_dip"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/rb_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/screen"
+                        android:textSize="@dimen/comment_12_size" />
+
+                    <RadioButton
+
+                        android:id="@+id/bt_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comment_1_dip"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/icon_home_screen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_uspension_surface"
+                    android:layout_width="@dimen/comment_0_dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="@dimen/comment_40_dip">
+
+                    <ImageView
+                        android:id="@+id/iv_uspension_surface"
+                        android:layout_width="@dimen/comment_15_dip"
+                        android:layout_height="@dimen/comment_12_dip"
+                        app:srcCompat="@drawable/icon_home_list" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

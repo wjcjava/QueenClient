@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景色 -->
+    <solid android:color="@color/tranparent" />
+    <!-- 边框色 -->
+    <stroke
+        android:width="@dimen/comment_1_dip"
+        android:color="@color/white" />
+    <corners
+        android:radius="@dimen/comment_5_dip"/>
+    <padding android:top="5dp"
+        android:bottom="5dp"
+        android:left="15dp"
+        android:right="15dp"/>
+</shape>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/comment_5_dip"
+    android:layout_marginRight="@dimen/comment_5_dip"
+    android:layout_marginTop="@dimen/comment_5_dip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/comment_17_dip"
+        android:layout_marginTop="@dimen/comment_14_dip"
+        android:text="订单已接单"
+        android:textColor="@color/alpha_95_black" />
+
+    <TextView
+        android:id="@+id/tv_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_order"
+        android:layout_below="@+id/tv_order"
+        android:layout_marginTop="@dimen/comment_12_dip"
+        android:text="单人美甲套餐"
+        android:textColor="@color/alpha_95_black" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_single"
+        android:layout_below="@+id/tv_single"
+        android:layout_marginBottom="@dimen/comment_14_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="订单编号：2000001180125001"
+        android:textColor="@color/alpha_95_black" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_single"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/comment_13_dip"
+        android:text="18/01/26"
+        android:textColor="@color/alpha_95_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tv_number"
+        android:layout_alignEnd="@+id/tv_date"
+        android:layout_alignStart="@+id/tv_date"
+        android:layout_alignTop="@+id/tv_single"
+        app:srcCompat="@drawable/icon_home_beautiful" />
+</RelativeLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.MineQueenCardFreeActivity">
+
+    <include layout="@layout/mine_queen_card_free"/>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/mine_queen_card_free_1"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="78dp"
+                    android:src="@drawable/mine_queen_card_gray"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp">
+                </ImageView>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_mine_title"
+                            android:layout_width="@dimen/comment_35_dip"
+                            android:layout_height="@dimen/comment_35_dip"
+                            android:backgroundTintMode="@color/white"
+                            android:src="@drawable/dismiss"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="@dimen/comment_1_dip" />
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="name"
+                            android:textSize="@dimen/comment_16_size"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="10dp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:visibility="invisible"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal">
+                        <ImageView android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/mine_queen_card_chengjiu">
+                        </ImageView>
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的成就：已领取0个"
+                            android:textSize="@dimen/comment_16_size"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="10dp">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:visibility="invisible"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal">
+                        <ImageView android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/mine_queen_card_shengyu">
+                        </ImageView>
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="剩余数量：0个"
+                            android:textSize="@dimen/comment_16_size"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="10dp">
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_queen_card_regist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_regist"
+                    android:layout_width="@dimen/comment_40_dip"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/mine_queen_card_regist">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/mine_queen_card_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="领取"
+                    android:gravity="center"
+                    android:background="@drawable/button_mine_queen_card_five"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+                </TextView>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/iv_regist"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toLeftOf="@id/mine_queen_card_get">
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="完成注册登录"
+                            android:textSize="@dimen/comment_13_size"
+                            android:textColor="@color/alpha_85_black">
+                        </TextView>
+
+                        <RelativeLayout android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="83dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/mine_queen_card_dengji">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/tv_mine_queen_card_regist_day"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+30天VIP"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="30dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_10_size"
+                                android:layout_marginTop="5dp">
+                            </TextView>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="成为女王会员，享更多福利"
+                        android:textColor="@color/alpha_55_black"
+                        android:textSize="@dimen/comment_10_size"
+                        android:layout_marginTop="5dp">
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_regist1"
+                    android:layout_width="@dimen/comment_40_dip"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/mine_queen_card_yaoqing">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/mine_queen_card_get1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="领取"
+                    android:gravity="center"
+                    android:background="@drawable/button_mine_queen_card_six"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+                </TextView>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/iv_regist1"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toLeftOf="@id/mine_queen_card_get1">
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="邀请好友"
+                            android:textSize="@dimen/comment_13_size"
+                            android:textColor="@color/alpha_85_black">
+                        </TextView>
+
+                        <RelativeLayout android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="83dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/mine_queen_card_dengji">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+15天VIP"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="30dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_10_size"
+                                android:layout_marginTop="5dp">
+                            </TextView>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="邀请好友加入女王会员，享更多福利"
+                        android:textColor="@color/alpha_55_black"
+                        android:textSize="@dimen/comment_10_size"
+                        android:layout_marginTop="5dp">
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_queen_card_free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_regist2"
+                    android:layout_width="@dimen/comment_40_dip"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/mine_queen_card_free">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/mine_queen_card_get2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="领取"
+                    android:gravity="center"
+                    android:background="@drawable/button_mine_queen_card_seven"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/queen_card_two"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+                </TextView>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/iv_regist2"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toLeftOf="@id/mine_queen_card_get2">
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_freetext"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="免费试用"
+                            android:textSize="@dimen/comment_13_size"
+                            android:textColor="@color/alpha_85_black">
+                        </TextView>
+
+                        <RelativeLayout android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="83dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/mine_queen_card_dengji">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/tv_mine_queen_card_free_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+3天VIP"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="30dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_10_size"
+                                android:layout_marginTop="5dp">
+                            </TextView>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="免费试用女王会员，畅享女王福利"
+                        android:textColor="@color/alpha_55_black"
+                        android:textSize="@dimen/comment_10_size"
+                        android:layout_marginTop="5dp">
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView android:layout_width="95dp"
+                android:layout_height="17dp"
+                android:src="@drawable/queen_card_tequan">
+            </ImageView>
+
+            <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                android:id="@+id/re_shop_mall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:numColumns="3"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

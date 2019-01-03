@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/comment_10_dip"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/ic_setting_breake"
+    android:layout_marginLeft="@dimen/comment_10_dip"
+    android:layout_marginRight="@dimen/comment_10_dip"
+    android:layout_marginBottom="@dimen/comment_5_dip"
+    android:layout_height="@dimen/comment_85_dip">
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥58"
+        android:textColor="@color/white"
+        android:textSize="@dimen/comment_30_size"
+        android:layout_marginStart="@dimen/comment_11_dip"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_money"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:textSize="@dimen/comment_15_size" />
+
+    <View
+        android:layout_below="@+id/tv_discount"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/tv_money"
+        android:layout_marginStart="@dimen/comment_11_dip"
+        android:layout_marginEnd="@dimen/comment_8_dip"
+        android:layout_marginRight="@dimen/comment_20_dip"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dash_dashed_shape"
+        android:layout_height="@dimen/comment_2_dip"
+        android:id="@+id/tv_facevalue" />
+
+
+    <TextView
+        android:id="@+id/tv_youxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_discount"
+        android:layout_below="@+id/tv_facevalue"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:textSize="@dimen/comment_11_size"
+        android:text="有效期：" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/comment_11_size"
+        android:layout_alignTop="@+id/tv_youxiao"
+        android:layout_toEndOf="@+id/tv_youxiao" />
+
+    <TextView
+        android:id="@+id/tv_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:layout_alignStart="@+id/tv_youxiao"
+        android:layout_below="@+id/tv_youxiao"
+        android:textColor="@color/white"
+        android:textSize="@dimen/comment_12_size"
+        />
+
+    <ImageView
+        android:id="@+id/iv_minediscount"
+        android:layout_width="@dimen/comment_58_dip"
+        android:layout_height="@dimen/comment_57_dip"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/comment_61_dip"
+        app:srcCompat="@drawable/icon_minediscount_use" />
+    <ImageView
+        android:id="@+id/iv_overdued"
+        android:layout_width="@dimen/comment_58_dip"
+        android:layout_height="@dimen/comment_57_dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/comment_61_dip"
+        app:srcCompat="@drawable/icon_minediscount_overdued" />
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="@color/tranparent"
+              android:fitsSystemWindows="true"
+              android:paddingStart="@dimen/comment_2_dip"
+              android:paddingEnd="@dimen/comment_2_dip">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_rl"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_shap"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_iamge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/comment_10_dip">
+
+            <ImageView
+                android:id="@+id/iv_homepage_shop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_sortrecyle_logo"/>
+
+            <ImageView
+                android:id="@+id/fire"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/shop_produce_fire">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top_iamge"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="MOCO美容美发沙龙"
+            android:textColor="@color/alpha_95_black"/>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+            android:id="@+id/iv_xingxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shopName"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:layout_marginTop="@dimen/comment_3_dip"
+            app:mode="random"
+            app:ratingProgress="4"
+            app:starDistance="@dimen/comment_6_dip"
+            app:starEmpty="@mipmap/empty"
+            app:starFill="@mipmap/fill"
+            app:starNum="5"
+            app:starSize="@dimen/comment_10_dip"
+            app:touchAble="false"/>
+
+        <TextView
+            android:id="@+id/tv_shop_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_xingxing"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_3_dip"
+            android:layout_marginBottom="@dimen/comment_5_dip"
+            android:singleLine="true"
+            android:text="营业时间：09:00~20:00"
+            android:textColor="@color/alpha_55_black"
+            android:textSize="@dimen/comment_10_size"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_top_rl2"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/et_shap"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/comment_51_dip"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rank_more"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_25_dip"
+            android:text="查看更多"
+            android:textColor="@color/color_FF4A4A"/>
+    </LinearLayout>
+</LinearLayout>

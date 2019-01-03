@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="@dimen/comment_50_dip"
+        android:layout_height="@dimen/comment_50_dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_18_dip"
+        android:scaleType="center"
+        app:srcCompat="@drawable/shop" />
+
+    <LinearLayout
+        android:id="@+id/li_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/img_title">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shangpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_13_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:text="商品名称"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_16_size"/>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_shangpin"
+                android:layout_marginEnd="@dimen/comment_14_dip"
+                android:text="待付款"
+                android:textSize="@dimen/comment_14_size" />
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_1_dip"
+            android:layout_below="@+id/tv_shangpin"
+            android:layout_marginLeft="@dimen/comment_15_dip"
+            android:layout_marginRight="@dimen/comment_15_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@color/alpha_05_black" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_orderpay_second_listitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/li_top"
+        android:layout_marginTop="10dp"
+        android:background="@color/alpha_05_black">
+    </View>
+
+</RelativeLayout>

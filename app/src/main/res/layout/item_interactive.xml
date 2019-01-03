@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_title"
+        android:layout_width="@dimen/comment_48_dip"
+        android:layout_height="@dimen/comment_48_dip"
+        android:layout_marginStart="@dimen/comment_14_dip"
+        android:backgroundTintMode="@color/white"
+        android:src="@drawable/icon_portrait"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        app:civ_border_color="@color/alpha_95_black"
+        app:civ_border_width="@dimen/comment_2_dip" />
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/iv_title"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_6_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:text="小明 评论了你"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_14_size" />
+
+    <TextView
+        android:id="@+id/tv_single"
+        android:layout_width="@dimen/comment_255_dip"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_order"
+        android:layout_below="@+id/tv_order"
+        android:layout_marginTop="@dimen/comment_3_dip"
+        android:text="充值2000元获得200积分已到账了！"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_13_size" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_single"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/comment_13_dip"
+        android:text="16:39"
+        android:textColor="@color/alpha_60_black"
+        android:textSize="@dimen/comment_12_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/comment_50_dip"
+        android:layout_alignParentEnd="true"
+        android:layout_height="@dimen/comment_2_dip"
+        android:background="@color/alpha_05_black"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_marginBottom="@dimen/comment_15_dip"
+        android:layout_below="@id/tv_single"
+        />
+
+</RelativeLayout>

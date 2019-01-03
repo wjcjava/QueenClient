@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:id="@+id/sc_home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_home_shop" />
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview>
+
+                <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3">
+
+                </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_70_dip"
+        android:background="@drawable/icon_home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/txt_bustling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:drawableRight="@drawable/xiaosanjiao"
+                android:text="繁华中心"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_16_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="@dimen/comment_40_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_5_dip"
+                    android:src="@mipmap/icon_home_search" />
+
+                <ImageView
+                    android:id="@+id/img_information"
+                    android:layout_width="@dimen/comment_40_dip"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_home_information" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_stick_header_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/comment_3_dip"
+            android:layout_marginRight="@dimen/comment_3_dip"
+            android:background="#FFF"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/li_sort_bottom"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <ImageView
+                    android:id="@+id/iv_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_dwon_blue" />
+
+                <ImageView
+                    android:id="@+id/iv_sort1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_up_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rb_sales"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+                android:text="@string/sales"
+                android:textSize="@dimen/comment_12_size" />
+
+            <TextView
+
+                android:id="@+id/rb_distance"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+                android:text="@string/distance"
+                android:textSize="@dimen/comment_12_size" />
+
+            <LinearLayout
+                android:id="@+id/li_home_screen"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+
+                >
+
+                <TextView
+                    android:id="@+id/rb_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/screen"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <RadioButton
+
+                    android:id="@+id/bt_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_1_dip"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/icon_home_screen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_uspension_surface"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <ImageView
+                    android:id="@+id/iv_uspension_surface"
+                    android:layout_width="@dimen/comment_15_dip"
+                    android:layout_height="@dimen/comment_12_dip"
+                    app:srcCompat="@drawable/icon_home_list" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.MineQueenCardPayActivity">
+
+    <include
+        android:id="@+id/ic_top"
+        layout="@layout/mine_queen_card_free"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_queen_card_personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_top"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/black">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_mine_queencard_title"
+            android:layout_width="@dimen/comment_55_dip"
+            android:layout_height="@dimen/comment_55_dip"
+            android:backgroundTintMode="@color/white"
+            android:src="@drawable/dismiss"
+            android:layout_marginStart="10dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/comment_1_dip" />
+
+        <TextView
+            android:id="@+id/tv_mine_queen_card_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买记录"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_14_size"
+            android:layout_alignParentEnd="true">
+        </TextView>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/tv_mine_queen_card_buy"
+            android:layout_toRightOf="@id/iv_mine_queencard_title">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name1000"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_14_size"
+                android:layout_alignParentEnd="true">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息>"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_12_size"
+                android:layout_alignParentEnd="true">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_queen_card_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mine_back_gray">
+
+        <TextView
+            android:id="@+id/tv_queen_card_buy_pay_submit"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:text="立即支付"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_16_size"
+            android:background="@drawable/mine_queen_card_pay_now">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_queen_card_zongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计："
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/comment_16_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_queen_card_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥15.00"
+            android:layout_toRightOf="@id/tv_queen_card_zongji"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/comment_16_size"
+            android:textColor="@color/third_login">
+        </TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_queen_card_personal"
+        android:layout_above="@id/rl_queen_card_bottom"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开通女王会员"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/comment_16_size"
+                android:textColor="@color/alpha_95_black">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/li_mine_queen_card_one"
+                        android:layout_width="110dp"
+                        android:layout_height="123dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/mine_queen_card_select">
+
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_first_yuefen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/comment_13_size"
+                            android:text="0个月"
+                            android:textColor="@color/queen_card_text_1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_first_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/comment_20_size"
+                            android:text="¥0"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/queen_card_text_2">
+                        </TextView>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/comment_64_dip"
+                        android:layout_height="@dimen/comment_22_dip"
+                        android:background="@drawable/mine_queen_card_top">
+
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_first_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="赠0天"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/comment_12_size"
+                            android:layout_centerInParent="true">
+                        </TextView>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/li_mine_queen_card_two"
+                        android:layout_width="110dp"
+                        android:layout_height="123dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/mine_queen_card_select_not">
+
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_second_yuefen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/comment_13_size"
+                            android:text="0个月"
+                            android:textColor="@color/queen_card_text_1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_second_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/comment_20_size"
+                            android:text="¥00"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/third_login">
+                        </TextView>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/comment_64_dip"
+                        android:layout_height="@dimen/comment_22_dip"
+                        android:background="@drawable/mine_queen_card_top">
+
+                        <TextView
+                            android:id="@+id/tv_mine_queen_card_second_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="赠0天"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/comment_12_size"
+                            android:layout_centerInParent="true">
+                        </TextView>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/all_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_home_submit"
+                    android:drawablePadding="@dimen/comment_10_dip"
+                    android:text="到期自动续费，自动续费每个月10元，随时可取消"
+                    android:textColor="@color/alpha_70_black"
+                    android:textSize="@dimen/comment_14_size" />
+            </LinearLayout>
+
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mine_back_gray"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp">
+            </View>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员抵扣红包"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/alpha_95_black"
+                    android:textSize="@dimen/comment_14_size">
+                </TextView>
+                <ImageView
+                    android:id="@+id/iv_queen_card_right"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无抵扣红包"
+                    android:textSize="@dimen/comment_12_size"
+                    android:textColor="@color/alpha_55_black"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/iv_queen_card_right">
+                </TextView>
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_back_gray">
+            </View>
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付方式"
+                android:padding="10dp"
+                android:textSize="@dimen/comment_16_size"
+                android:textColor="@color/alpha_95_black">
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/recycler_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_50_dip"
+                android:background="@drawable/et_shap">
+
+                <ImageView
+                    android:id="@+id/img_wechat"
+                    android:layout_width="@dimen/comment_18_dip"
+                    android:layout_height="@dimen/comment_17_dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_17_dip"
+                    app:srcCompat="@drawable/icon_submit_wechat" />
+
+                <TextView
+                    android:id="@+id/tv_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_17_dip"
+                    android:layout_toRightOf="@id/img_wechat"
+                    android:text="@string/wechat_payment" />
+
+                <CheckBox
+                    android:id="@+id/check_mine_queen_wechat"
+                    android:layout_width="@dimen/comment_25_dip"
+                    android:layout_height="@dimen/comment_25_dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/comment_22_dip"
+                    android:layout_marginTop="@dimen/comment_13_dip"
+                    android:checked="true"
+                    android:background="@color/white"
+                    android:button="@drawable/selector_home_submit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recycler_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_50_dip"
+                android:layout_below="@id/recycler_wechat"
+                android:layout_marginTop="@dimen/comment_2_dip"
+                android:background="@drawable/et_shap">
+
+                <ImageView
+                    android:id="@+id/img_alipay"
+                    android:layout_width="@dimen/comment_18_dip"
+                    android:layout_height="@dimen/comment_17_dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_17_dip"
+                    app:srcCompat="@drawable/icon_alipay" />
+
+                <TextView
+                    android:id="@+id/tv_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/comment_13_dip"
+                    android:layout_marginTop="@dimen/comment_17_dip"
+                    android:layout_toRightOf="@id/img_alipay"
+                    android:text="@string/wechat_alipay" />
+
+                <CheckBox
+                    android:id="@+id/check_mine_queen_alipay"
+                    android:layout_width="@dimen/comment_25_dip"
+                    android:layout_height="@dimen/comment_25_dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/comment_22_dip"
+                    android:layout_marginTop="@dimen/comment_13_dip"
+                    android:background="@color/white"
+                    android:button="@drawable/selector_home_submit" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

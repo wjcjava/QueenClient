@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.MajorClassDetailActivity">
+
+    <include
+
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_screen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_video_thumbnail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="185dp"-->
+        <!--android:background="@color/color_929191" />-->
+
+
+        <!--<com.aliyun.vodplayerview.widget.AliyunVodPlayerView-->
+        <!--android:id="@+id/video_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp" />-->
+
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_full_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/alivc_screen_mode_small"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_class_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_play_video"-->
+        <!--android:layout_width="@dimen/comment_25_dip"-->
+        <!--android:layout_height="@dimen/comment_25_dip"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/comment_10_dip"-->
+        <!--android:background="@null"-->
+        <!--android:button="@null"-->
+        <!--android:checked="true"-->
+        <!--android:clickable="true"-->
+        <!--android:drawableLeft="@drawable/checkbox_play_style"-->
+        <!--android:drawablePadding="8dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl_control"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+            <ImageView
+                android:id="@+id/iv_play_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/comment_5_dip"
+                android:layout_marginLeft="@dimen/comment_15_dip"
+                android:background="@drawable/alivc_playstate_play" />
+
+            <ImageView
+                android:id="@+id/iv_pause_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/comment_5_dip"
+                android:layout_marginLeft="@dimen/comment_15_dip"
+                android:layout_toRightOf="@id/iv_play_video"
+
+                android:background="@drawable/alivc_playstate_pause"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/comment_5_dip"
+                android:layout_marginLeft="@dimen/comment_15_dip"
+                android:layout_marginRight="@dimen/comment_20_dip"
+                android:background="@mipmap/alivc_screen_mode_large" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:id="@+id/ssv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_ssv"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currentPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <SeekBar
+                    android:id="@+id/progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/totalDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!---->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+            <!--android:id="@+id/play"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/start_button" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/stop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/stop_button" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/pause"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/pause_button" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/replay"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/replay_button" />-->
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:id="@+id/tv_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_play_nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_12_dip"
+                android:drawableLeft="@drawable/ic_play_count"
+                android:drawablePadding="@dimen/comment_7_dip"
+                android:textColor="@color/home_queen_9_9"
+                android:textSize="12sp"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_20_dip"
+                    android:layout_marginRight="@dimen/comment_20_dip"
+                    android:layout_weight="9"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/home_queen_9_9"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_get_more"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/comment_20_dip"
+                    android:layout_toRightOf="@id/tv_remarks"
+                    android:src="@mipmap/ic_down_pull" />
+
+                <!--<TextView-->
+
+                <!--android:id="@+id/tv_remarks"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:maxLines="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/comment_12_dip"-->
+                <!--android:text=""-->
+                <!--android:layout_marginRight="@dimen/comment_12_dip"-->
+                <!--android:layout_marginTop="@dimen/comment_14_dip"-->
+                <!--android:textColor="@color/home_queen_9_9"-->
+                <!--android:textSize="12sp"-->
+
+                <!--/>-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_get_more"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@id/tv_remarks"-->
+                <!--android:src="@mipmap/ic_down_pull"-->
+
+                <!--/>-->
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_0.5_dip"
+                android:layout_marginTop="@dimen/comment_14_dip"
+                android:background="@color/view_line"></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="选课节"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_video_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/comment_5_dip"
+                android:layout_marginRight="@dimen/comment_5_dip"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_0.5_dip"
+                android:layout_marginTop="@dimen/comment_14_dip"
+                android:background="@color/view_line"></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/education_video"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_education_course_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/comment_5_dip"
+                android:layout_marginRight="@dimen/comment_5_dip"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+
+
+</LinearLayout>

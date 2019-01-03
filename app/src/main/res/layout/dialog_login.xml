@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/comment_10_dip"
+                android:text="安全验证"
+                android:textColor="@color/grey_color3"
+                android:textSize="@dimen/comment_14_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="请输入下方图形验证"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/comment_17_size"/>
+
+            <ImageView
+                android:id="@+id/dialog_login_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/comment_10_dip"
+                android:background="@color/sort"
+                android:paddingLeft="@dimen/comment_10_dip"
+                android:paddingRight="@dimen/comment_10_dip"
+                android:scaleType="fitXY"/>
+
+            <EditText
+                android:id="@+id/dialog_login_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginRight="@dimen/comment_10_dip"
+                android:background="@drawable/shape_dialog_login"
+                android:hint="请输入验证码"
+                android:padding="@dimen/comment_10_dip"
+                android:textColor="@color/grey_color1"
+                android:textColorHint="@color/color_EEEEEE"
+                android:textSize="@dimen/comment_14_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_1_dip"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:background="@color/color_EEEEEE"/>
+
+            <Button
+                android:id="@+id/dialog_login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_40_dip"
+                android:background="@color/tranparent"
+                android:text="确定"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/comment_15_size"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

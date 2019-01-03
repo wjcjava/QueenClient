@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/comment_44_dip">
+
+                <ImageView
+                    android:id="@+id/com_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_214_dip"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/com_ll1"
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.3"
+                        android:background="@color/color_FF3428"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/comment_28_dip">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/comment_8_dip"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="¥"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_12_size"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/com_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_24_size"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/comment_4_dip"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/com_img"
+                                android:layout_width="@dimen/comment_64_dip"
+                                android:layout_height="@dimen/comment_13_dip"
+                                android:src="@drawable/seckill_com"/>
+
+                            <TextView
+                                android:id="@+id/com_old_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/comment_9_dip"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_15_size"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/com_ll2"
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_FFD5D2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/com_type_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seckill_10"
+                            android:textColor="@color/color_FF3428"
+                            android:textSize="@dimen/comment_10_size"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_miaosha_shi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_miaosha_time_red"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/comment_2_dip"
+                                android:paddingTop="@dimen/comment_1_dip"
+                                android:paddingRight="@dimen/comment_2_dip"
+                                android:paddingBottom="@dimen/comment_1_dip"
+                                android:text="00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_10_size"/>
+
+                            <TextView
+                                android:id="@+id/tv_miaosha_shi_dian1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/comment_2_dip"
+                                android:text=":"
+                                android:textColor="@color/color_FF3428"
+                                android:textSize="@dimen/comment_10_size"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_miaosha_minter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/comment_2_dip"
+                                android:background="@drawable/shape_miaosha_time_red"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/comment_2_dip"
+                                android:paddingTop="@dimen/comment_1_dip"
+                                android:paddingRight="@dimen/comment_2_dip"
+                                android:paddingBottom="@dimen/comment_1_dip"
+                                android:text="00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_10_size"/>
+
+                            <TextView
+                                android:id="@+id/tv_miaosha_shi_dian2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/comment_2_dip"
+                                android:text=":"
+                                android:textColor="@color/color_FF3428"
+                                android:textSize="@dimen/comment_10_size"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_miaosha_second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/comment_2_dip"
+                                android:background="@drawable/shape_miaosha_time_red"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/comment_2_dip"
+                                android:paddingTop="@dimen/comment_1_dip"
+                                android:paddingRight="@dimen/comment_2_dip"
+                                android:paddingBottom="@dimen/comment_1_dip"
+                                android:text="00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_10_size"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/com_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_15_dip"
+                    android:layout_marginRight="@dimen/comment_15_dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/comment_18_size"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/com_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_6_dip"
+                    android:layout_marginRight="@dimen/comment_15_dip"
+                    android:textColor="@color/search_text_color"
+                    android:textSize="@dimen/comment_12_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_10_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:background="@color/color_F4F4F4"/>
+
+                <TextView
+                    android:id="@+id/com_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_14_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:textColor="@color/home_bottom_radio_text"
+                    android:textSize="@dimen/comment_14_size"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/com_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:layout_marginBottom="@dimen/comment_10_dip">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_15_dip"
+                    android:layout_marginTop="@dimen/comment_10_dip"
+                    android:background="@color/color_F4F4F4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_F4F4F4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/com_detail_btn"
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_seckill_white"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/comment_13_dip"
+                        android:paddingBottom="@dimen/comment_14_dip"
+                        android:text="@string/seckill_11"
+                        android:textColor="@color/video_title"/>
+
+                    <TextView
+                        android:id="@+id/com_hint_btn"
+                        android:layout_width="@dimen/comment_0_dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/comment_13_dip"
+                        android:paddingBottom="@dimen/comment_14_dip"
+                        android:text="@string/seckill_12"
+                        android:textColor="@color/color_666666"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/com_ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+                        android:id="@+id/com_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/comment_13_dip"
+                        android:layout_marginTop="@dimen/comment_15_dip"
+                        android:layout_marginRight="@dimen/comment_13_dip"
+                        android:layout_marginBottom="@dimen/comment_15_dip"/>
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="@dimen/comment_14_dip"
+                        android:layout_marginStart="@dimen/comment_12_dip"
+                        android:layout_marginTop="@dimen/comment_15_dip"
+                        android:src="@drawable/jptj"/>
+
+                    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                        android:id="@+id/com_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="14dp"
+                        android:horizontalSpacing="@dimen/comment_10_dip"
+                        android:numColumns="2"
+                        android:verticalSpacing="@dimen/comment_10_dip"/>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/com_ll4"
+                    layout="@layout/full_activity_bottom_tishi"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/com_buy_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_44_dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/seckill_btn"
+            android:text="@string/buy_now"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>

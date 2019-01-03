@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/ic_title"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/alpha_05_black">
+
+        <TextView
+            android:id="@+id/tv_pager_timeone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_15_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="4月10日"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/black" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/re_mine_pager"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_below="@id/tv_pager_timeone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_pager_timetwo"
+            android:layout_below="@id/re_mine_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/comment_14_size"
+            android:layout_marginStart="@dimen/comment_15_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="4月10日"
+            android:textColor="@color/black" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/re_mine_pagertwo"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_below="@id/tv_pager_timetwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</RelativeLayout>

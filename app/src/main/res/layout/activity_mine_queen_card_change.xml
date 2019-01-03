@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/mine_back_gray"
+              tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.MineQueenCardChangeActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:background="@drawable/mine_queen_card_back">
+                <TextView
+                    android:id="@+id/tv_mine_queen_card_change"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/comment_16_size"
+                    android:textColor="@color/queen_card_color"
+                    android:text="您好，name（189XXXX2222）">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="15dp">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/comment_12_size"
+                        android:textColor="@color/queen_card_color"
+                        android:text="激活码：">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_mine_queen_card_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="请输入XXXX-XXXX-XXXX格式激活码"
+                        android:textSize="@dimen/comment_12_size"
+                        android:textColorHint="@color/queen_card_two"
+                        android:background="@drawable/button_mine_queen_card_two">
+                    </EditText>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_queen_card_validation"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:visibility="invisible"
+                    android:layout_height="@dimen/comment_40_dip">
+
+                    <TextView
+                        android:id="@+id/tv_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/comment_12_size"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/queen_card_color"
+                        android:text="验证码：">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_mine_queen_card_validation"
+                        android:layout_width="@dimen/comment_160_dip"
+                        android:layout_height="@dimen/comment_24_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_10_dip"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/tv_left"
+                        android:background="@drawable/button_mine_queen_card_two"
+                        android:gravity="center|left"
+                        android:hint="请输入图形验证码"
+                        android:textColorHint="@color/queen_card_two"
+                        android:inputType="number"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:textSize="@dimen/comment_12_size" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_mine_queen_card_graphics_validation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_20_dip"
+                        android:layout_toRightOf="@id/et_mine_queen_card_validation"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_mine_queen_card_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/comment_16_size"
+                    android:gravity="center"
+                    android:background="@drawable/button_mine_queencard_three"
+                    android:padding="8dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="立即激活">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/mine_queen_card_back_jihuo"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="使用须知"
+                    android:textColor="@color/queen_card_text"
+                    android:background="@color/queen_card_balck_2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="@dimen/comment_16_size">
+                </TextView>
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/queen_card_text"
+                    android:text="        1.注册登录后，进入“我的>女王会员“，输入女王密钥进行兑换女王会员；\n        2.女王会员兑换成功后，即可享受女王会员尊享权益；\n        3.如有疑问，请咨询客服400-088-5115；\n        4.女王魔镜平台拥有最终解释权。">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView android:layout_width="95dp"
+                android:layout_height="17dp"
+                android:src="@drawable/queen_card_tequan">
+            </ImageView>
+
+            <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                android:id="@+id/re_shop_mall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:numColumns="3"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

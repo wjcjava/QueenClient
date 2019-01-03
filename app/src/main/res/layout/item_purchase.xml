@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_purchase_new_top"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_10_dip"
+        android:background="@color/alpha_05_black"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_below="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_shap">
+
+
+        <TextView
+            android:id="@+id/purchase_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_13_dip"
+            android:layout_marginStart="@dimen/comment_22_dip"
+            android:text=""
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_16_size" />
+
+        <ImageView
+            android:layout_width="@dimen/comment_7_dip"
+            android:layout_height="@dimen/comment_12_dip"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_marginTop="@dimen/comment_18_dip"
+            android:layout_toRightOf="@id/purchase_shop_name"
+            app:srcCompat="@drawable/icon_full_right" />
+
+        <View
+            android:id="@+id/view_one"
+            style="@style/dash_line"
+            android:layout_below="@id/purchase_shop_name"
+            android:layout_marginEnd="@dimen/comment_22_dip"
+            android:layout_marginStart="@dimen/comment_22_dip"
+            android:layout_marginTop="@dimen/comment_13_dip" />
+
+        <LinearLayout
+            android:id="@+id/li_purchase_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_one"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_purch_beannumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/comment_12_size"
+            android:text="账户现有魔豆：100      本店所需魔豆：80"
+            android:textColor="@color/colorPri"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left|center_vertical">
+        </TextView>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mine_back_gray">
+            <TextView
+                android:id="@+id/tv_pur_youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/back_pur_right_select"
+                android:textSize="@dimen/comment_14_size"
+                android:text="优惠券"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/alpha_85_black"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_pur_modou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/back_pur_select"
+                android:textSize="@dimen/comment_14_size"
+                android:text="魔豆"
+                android:textColor="@color/white"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_purchase_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_pur_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/right_arrow">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_pur_selectname"
+                android:layout_toLeftOf="@id/iv_pur_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alpha_85_black"
+                android:text="请选择优惠券"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:textSize="@dimen/comment_14_size">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shop_list_null"
+    android:visibility="gone"
+    android:background="@color/mine_back_gray">
+    <!--这个是商铺列表没有数据的情况-->
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shop_null">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_shop_null_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/alpha_85_black"
+            android:textSize="@dimen/comment_14_size"
+            android:text="暂无店铺信息"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

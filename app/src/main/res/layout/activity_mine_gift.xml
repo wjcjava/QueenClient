@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/mine_firends_back"
+              android:fitsSystemWindows="true"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:context=".ui.mine.activity.MineGiftActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/tv_gift_sll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="259dp"
+                android:layout_height="234dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/mine_gift_yaoqing">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:gravity="center_horizontal"
+                android:text="邀请新用户领取魔豆"
+                android:textColor="@color/mine_gift"
+                android:textSize="@dimen/comment_12_size">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:gravity="center_horizontal"
+                android:text="您将获得最高50魔豆"
+                android:textColor="@color/mine_gift"
+                android:textSize="@dimen/comment_20_size">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_gift_firend"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_gift_tuoyuan"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="邀请好友"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/comment_14_size"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_gift_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_gift_tuoyuan"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="邀请开店"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/comment_14_size"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/tranparent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="累计获得"
+                        android:textColor="@color/alpha_95_black"
+                        android:textSize="@dimen/comment_12_size">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_mine_modou_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="0"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_16_size"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:paddingStart="20dp"
+                            android:text="魔豆"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_16_size">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="累计邀请"
+                        android:textColor="@color/alpha_95_black"
+                        android:textSize="@dimen/comment_12_size">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_mine_people_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="0"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_16_size"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:paddingStart="20dp"
+                            android:text="人"
+                            android:textColor="@color/alpha_95_black"
+                            android:textSize="@dimen/comment_16_size">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/tranparent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/mine_gift_bottom"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="邀请名单"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/comment_16_size">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mine_gift_bottom_ground"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingTop="@dimen/comment_10_dip">
+
+                <ListView
+                    android:id="@+id/lv_gift_aggrement"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:divider="@color/tranparent"
+                    android:dividerHeight="5dp">
+
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/tranparent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/mine_gift_bottom"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="活动规则"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/comment_16_size">
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mine_gift_bottom_ground"
+                android:padding="10dp"
+                android:paddingTop="@dimen/comment_10_dip">
+
+                <WebView
+                    android:id="@+id/wb_gift_aggrement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </WebView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

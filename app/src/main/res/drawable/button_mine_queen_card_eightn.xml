@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景色 -->
+    <solid android:color="@color/queen_card_back_3" />
+    <!-- 边框色 -->
+    <stroke
+        android:width="@dimen/comment_1_dip"
+        android:color="@color/mine_back_gray" />
+    <corners
+        android:radius="0dp"/>
+</shape>

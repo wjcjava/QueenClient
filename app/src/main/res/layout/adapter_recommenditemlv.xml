@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/comment_20_dip"
+              android:paddingTop="@dimen/comment_20_dip"
+              android:paddingRight="@dimen/comment_20_dip"
+              android:paddingBottom="@dimen/comment_10_dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recommend_item_lv_img"
+            android:layout_width="@dimen/comment_42_dip"
+            android:layout_height="@dimen/comment_42_dip"
+            android:src="@drawable/icon_mine_homepager"/>
+
+        <TextView
+            android:id="@+id/recommend_item_lv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_9_dip"
+            android:layout_toRightOf="@+id/recommend_item_lv_img"
+            android:text="请加我吕小布大人"
+            android:textColor="@color/grey_color1"
+            android:textSize="@dimen/comment_16_size"/>
+
+        <TextView
+            android:id="@+id/recommend_item_lv_gz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_recommend_tv_bac"
+            android:paddingLeft="@dimen/comment_13_dip"
+            android:paddingTop="@dimen/comment_5_dip"
+            android:paddingRight="@dimen/comment_13_dip"
+            android:paddingBottom="@dimen/comment_5_dip"
+            android:text="@string/gz"
+            android:textColor="@color/color_EC77AB"
+            android:textSize="@dimen/comment_12_size"/>
+    </RelativeLayout>
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/recommend_item_lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:lineSpacingExtra="@dimen/comment_4_dip"
+        android:textColor="@color/grey_color1"
+        android:textSize="@dimen/comment_14_size"
+        app:colorClickableText="@color/color_33B0E4"
+        app:showTrimExpandedText="true"
+        app:trimCollapsedText="@string/allview"
+        app:trimExpandedText="@string/closeview"
+        app:trimLines="4"
+        app:trimMode="trimModeLine"/>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.MessagePicturesLayout
+        android:id="@+id/recommend_item_lv_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_10_dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/comment_12_dip"
+        android:paddingBottom="@dimen/comment_12_dip">
+
+        <ImageView
+            android:layout_width="@dimen/comment_15_dip"
+            android:layout_height="@dimen/comment_15_dip"
+            android:src="@mipmap/recommend_location"/>
+
+        <TextView
+            android:id="@+id/recommend_item_lv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_8_dip"
+            android:text="艾尼斯大厦"
+            android:textColor="@color/search_text_color"
+            android:textSize="@dimen/comment_12_size"/>
+
+        <View
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/recommend_item_lv_reoprt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report"
+            android:textColor="@color/search_text_color"
+            android:textSize="@dimen/comment_12_size"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_1_dip"
+        android:background="@color/color_F0F0F0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/comment_12_dip"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/comment_12_dip"
+                android:layout_height="@dimen/comment_8_dip"
+                android:src="@mipmap/recommend_loke"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="999"
+                android:textColor="@color/search_text_color"
+                android:textSize="@dimen/comment_12_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/comment_12_dip"
+                android:layout_height="@dimen/comment_12_dip"
+                android:src="@mipmap/recommend_share"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="999"
+                android:textColor="@color/search_text_color"
+                android:textSize="@dimen/comment_12_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/comment_12_dip"
+                android:layout_height="@dimen/comment_12_dip"
+                android:src="@mipmap/recommend_message"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="999"
+                android:textColor="@color/search_text_color"
+                android:textSize="@dimen/comment_12_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/comment_12_dip"
+                android:layout_height="@dimen/comment_10_dip"
+                android:src="@drawable/sel_recommend_love"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:text="999"
+                android:textColor="@color/search_text_color"
+                android:textSize="@dimen/comment_12_size"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

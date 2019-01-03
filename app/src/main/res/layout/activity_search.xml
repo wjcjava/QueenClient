@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/white"
+
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip">
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/comment_10_dip"
+            android:paddingEnd="@dimen/comment_10_dip"
+            android:background="@color/white"
+            android:src="@mipmap/icon_back" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/comment_10_dip"
+            android:layout_toRightOf="@id/title_back">
+
+            <LinearLayout
+                android:id="@+id/layout_title"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/search_search_biankuang"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/rg_search_list_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/comment_22_dip"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_marginStart="@dimen/comment_5_dip"
+                        android:id="@+id/search_radio_shop"
+                        android:layout_width="@dimen/comment_41_dip"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/radiobutton_search_checked"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:checked="true"
+                        android:text="@string/shop"
+                        android:textColor="@color/radiobutton_textcolor" />
+
+                    <RadioButton
+                        android:layout_marginStart="@dimen/comment_5_dip"
+                        android:id="@+id/search_radio_nails"
+                        android:layout_width="@dimen/comment_41_dip"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/radiobutton_search_checked"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="商品"
+                        android:textColor="@color/radiobutton_textcolor" />
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/et_search_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_5_dip"
+                    android:background="@null"
+                    android:hint="请输入店铺关键信息"
+                    android:padding="@dimen/comment_8_dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/comment_12_size" />
+                <ImageView
+                    android:id="@+id/iv_search_diss"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_login_remove">
+                </ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_search"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_4_dip"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/comment_6_dip"
+                android:textColor="@color/search_color"
+                android:text="搜索" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_search_footprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_hot_search_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="@string/hot_search" />
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.FlowLayout
+            android:id="@+id/his_flowLayout"
+            android:layout_below="@id/tv_hot_search_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_history_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/his_flowLayout"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="@string/historical_Search" />
+
+        <ScrollView
+            android:layout_below="@id/tv_history_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/comment_10_dip"
+                    android:paddingRight="@dimen/comment_10_dip">
+
+                    <TextView
+                        android:id="@+id/tv_no_history_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/no_historical_Search"
+                        android:visibility="gone" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/search_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_clear_history_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_10_dip"
+                    android:layout_marginRight="@dimen/comment_10_dip"
+                    android:text="清空搜索" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

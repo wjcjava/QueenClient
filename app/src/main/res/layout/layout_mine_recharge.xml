@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_18_dip"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:text="购买女王币："
+            android:inputType="number"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size" />
+        <EditText
+            android:id="@+id/et_recharge_money"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_toRightOf="@+id/tv_money"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:textSize="@dimen/comment_14_size"
+            android:inputType="number|numberDecimal"
+            android:hint="请输入您需要购买的女王币个数"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/tv_money"
+        android:layout_width="match_parent"
+        android:background="@color/alpha_10_black"
+        android:layout_marginTop="@dimen/comment_14_dip"
+        android:layout_height="@dimen/comment_1_dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_actual"
+            android:layout_below="@id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_18_dip"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:text="@string/actual_acquisition"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size" />
+        <TextView
+            android:id="@+id/tv_recharge_really"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/element"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:layout_below="@id/view"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/comment_10_dip">
+        </TextView>
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:background="@color/alpha_10_black"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_height="@dimen/comment_1_dip"/>
+
+    <LinearLayout
+        android:id="@+id/li_recharge_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/comment_14_dip"
+        android:layout_marginBottom="@dimen/comment_14_dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_below="@id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_18_dip"
+            android:text="@string/payment_method"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+        <RadioGroup
+            android:id="@+id/rg_recharge_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:gravity="end">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="支付宝" />
+            <RadioButton
+                android:id="@+id/femle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="微信"/>
+        </RadioGroup>
+      <!--  <TextView
+            android:id="@+id/tv_my_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/wechat"
+            android:drawableEnd="@drawable/right_arrow"
+            android:textColor="@color/alpha_90_black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/comment_10_dip">
+        </TextView>-->
+    </LinearLayout>
+
+</LinearLayout>

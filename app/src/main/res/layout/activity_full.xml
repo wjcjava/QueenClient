@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/full_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.FullActivity">
+
+    <RelativeLayout
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_44_dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <include layout="@layout/full_activity_top"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:id="@+id/li_full_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/recycler"
+        android:layout_below="@id/top"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_home_shopping"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/full_activity_xuanfu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_fullactivity_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="商品详情"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/li_fullactivity_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/mine_back_gray"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_fullactivity_comment_numbertop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论（100）"
+                android:textColor="@color/alpha_75_black"
+                android:textSize="@dimen/comment_14_size">
+            </TextView>
+
+            <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+                android:id="@+id/score_mine_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/tv_service"
+                android:visibility="gone"
+                app:mode="random"
+                app:ratingProgress="4"
+                app:starDistance="@dimen/comment_3_dip"
+                app:starEmpty="@mipmap/empty"
+                app:starFill="@mipmap/fill"
+                app:starNum="5"
+                app:starSize="@dimen/comment_14_dip"
+                app:touchAble="false"/>
+
+            <TextView
+                android:id="@+id/full_activity_number_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="4"
+                android:textColor="@color/alpha_violet"
+                android:textSize="@dimen/comment_14_size"
+                android:visibility="gone">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fullactivity_tishi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/mine_back_gray"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="温馨提示"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+
+    </LinearLayout>
+</RelativeLayout>

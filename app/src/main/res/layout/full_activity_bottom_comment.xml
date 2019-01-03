@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/comment_15_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="商品评分"
+            android:textColor="@color/home_bottom_radio_text"
+            android:textSize="14sp"/>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+            android:id="@+id/nsli_fullactivity_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/nsli_fullactivity_ratingbar_tv"
+            app:mode="random"
+            app:ratingProgress="0"
+            app:starDistance="@dimen/comment_3_dip"
+            app:starEmpty="@mipmap/empty"
+            app:starFill="@mipmap/fill"
+            app:starNum="5"
+            app:starSize="@dimen/comment_12_dip"
+            app:touchAble="false"/>
+
+        <TextView
+            android:id="@+id/nsli_fullactivity_ratingbar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comment_8_dip"
+            android:textColor="@color/search_color"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_F4F4F4"
+        />
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+        android:id="@+id/nsli_fullactivity_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@color/color_F4F4F4"
+        android:dividerHeight="@dimen/comment_1_dip"/>
+
+</LinearLayout>

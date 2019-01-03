@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/mine_back_gray"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.mine.activity.MineDetailedActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title"/>
+
+    <include layout="@layout/queen_buy_record_item"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/ic_title"
+        android:background="@color/alpha_05_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/shop_list_null"/>
+
+       <!-- <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mine_detail_refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_all_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+           <!-- <com.scwang.smartrefresh.layout.footer.ballpulse.BallPulseView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+    </RelativeLayout>
+
+</LinearLayout>

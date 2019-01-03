@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:roundiv="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_search_ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comment_130_dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRoundAngleImageView
+                android:id="@+id/home_search_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                roundiv:radius="5dp"/>
+
+            <TextView
+                android:id="@+id/home_search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_home_server"
+                android:gravity="center"
+                android:paddingLeft="@dimen/comment_6_dip"
+                android:paddingTop="@dimen/comment_2_dip"
+                android:paddingRight="@dimen/comment_6_dip"
+                android:paddingBottom="@dimen/comment_2_dip"
+                android:textColor="@color/home_back_two"
+                android:textSize="8sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/shape_black"
+                    />
+
+                <TextView
+                    android:id="@+id/home_search_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/comment_2_dip"
+                    android:textColor="@color/sort_tvcolor1"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/home_search_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/comment_2_dip"
+                    android:layout_marginRight="@dimen/comment_5_dip"
+                    android:layout_marginBottom="@dimen/comment_2_dip"
+                    android:textColor="@color/home_server_tv"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/home_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/comment_12_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_search_ll2"
+        android:layout_width="@dimen/comment_100_dip"
+        android:layout_height="@dimen/comment_120_dip"
+        android:background="@drawable/shape_home_server_item"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/comment_50_dip"
+            android:layout_height="@dimen/comment_50_dip"
+            android:src="@drawable/home_server_more"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_15_dip"
+            android:text="查看更多"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_14_size"/>
+    </LinearLayout>
+</LinearLayout>

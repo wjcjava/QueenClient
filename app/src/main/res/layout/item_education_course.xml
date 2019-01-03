@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/comment_5_dip"
+    android:layout_marginBottom="@dimen/comment_10_dip"
+    android:layout_marginLeft="@dimen/comment_20_dip"
+    android:id="@+id/ll_education_course"
+    android:layout_marginRight="@dimen/comment_20_dip"
+    android:layout_marginTop="@dimen/comment_10_dip"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_education_course_thumbnail"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner" />
+
+
+    <TextView
+        android:id="@+id/tv_education_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="@string/jewellery"
+        android:textSize="12sp" />
+
+</LinearLayout>

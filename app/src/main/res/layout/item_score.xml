@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_order_title"
+        android:layout_width="@dimen/comment_41_dip"
+        android:layout_height="@dimen/comment_41_dip"
+        android:layout_marginStart="@dimen/comment_13_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:scaleType="center"
+        android:src="@drawable/dismiss"/>
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_8_dip"
+        android:layout_marginTop="@dimen/comment_8_dip"
+        android:layout_toRightOf="@id/iv_order_title"
+        android:text="美甲套餐"
+        android:textSize="@dimen/comment_16_size"/>
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shop_name"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_1_dip"
+        android:layout_toRightOf="@id/iv_order_title"
+        android:text="技师服务"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_13_size"/>
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+        android:id="@+id/score_custom_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shop_name"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_toRightOf="@id/tv_service"
+        app:mode="random"
+        app:ratingProgress="5"
+        app:starDistance="@dimen/comment_16_dip"
+        app:starEmpty="@mipmap/empty"
+        app:starFill="@mipmap/fill"
+        app:starNum="5"
+        app:starSize="@dimen/comment_19_dip"
+        app:touchAble="true"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shop_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/comment_1_dip"
+        android:layout_marginEnd="@dimen/comment_15_dip"
+        android:text="非常好"
+        android:textColor="@color/alpha_75_black"
+        android:textSize="@dimen/comment_13_size"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_below="@id/iv_order_title"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="@color/alpha_05_black"/>
+
+    <EditText
+        android:id="@+id/et_score_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_80_dip"
+        android:layout_below="@id/view"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="@color/alpha_05_black"
+        android:gravity="top"
+        android:hint="@string/hintorder"
+        android:paddingLeft="@dimen/comment_20_dip"
+        android:paddingTop="@dimen/comment_15_dip"
+        android:textSize="@dimen/comment_13_size"/>
+
+    <!--  <ImageView
+          android:id="@+id/iv_add"
+          android:layout_width="@dimen/comment_80_dip"
+          android:layout_height="@dimen/comment_80_dip"
+          android:layout_below="@id/et_score_order"
+          android:layout_marginStart="@dimen/comment_20_dip"
+          android:layout_marginTop="@dimen/comment_14_dip"
+          android:src="@mipmap/icon_order_add" />-->
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+        android:id="@+id/gv_comment_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_score_order"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_marginEnd="@dimen/comment_20_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"/>
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_2_dip"
+        android:layout_below="@id/gv_comment_gridView"
+        android:layout_marginTop="@dimen/comment_14_dip"
+        android:background="@color/alpha_05_black"/>
+
+    <CheckBox
+        android:id="@+id/cb_order_checked"
+        android:layout_width="@dimen/comment_25_dip"
+        android:layout_height="@dimen/comment_25_dip"
+        android:layout_below="@id/view_one"
+        android:layout_marginStart="@dimen/comment_19_dip"
+        android:layout_marginTop="@dimen/comment_18_dip"
+        android:layout_marginBottom="@dimen/comment_22_dip"
+        android:button="@drawable/purchase_checkbox"
+        android:checked="true">
+    </CheckBox>
+
+
+    <TextView
+        android:id="@+id/tv_anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_one"
+        android:layout_marginStart="@dimen/comment_15_dip"
+        android:layout_marginTop="@dimen/comment_21_dip"
+        android:layout_marginBottom="@dimen/comment_22_dip"
+        android:layout_toRightOf="@id/cb_order_checked"
+        android:text="@string/anonymous"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_14_size"/>
+
+    <TextView
+        android:id="@+id/tv_niming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_one"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/comment_18_dip"
+        android:layout_marginEnd="@dimen/comment_10_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:text="@string/anonymousshow"
+        android:textColor="@color/alpha_55_black"
+        android:textSize="@dimen/comment_12_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/tv_niming"
+        android:background="@color/mine_back_gray"
+        android:visibility="gone">
+    </View>
+</RelativeLayout>

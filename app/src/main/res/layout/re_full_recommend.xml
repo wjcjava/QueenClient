@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/li_workroom_like_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="160dp"
+    android:layout_marginTop="@dimen/comment_5_dip"
+    android:layout_marginStart="@dimen/comment_17_dip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="@dimen/comment_100_dip"
+        android:layout_height="@dimen/comment_100_dip">
+        <ImageView
+            android:id="@+id/iv_commodity_picture"
+            android:layout_width="@dimen/comment_100_dip"
+            android:layout_height="@dimen/comment_100_dip"
+            android:scaleType="center"
+            android:src="@drawable/dismiss" />
+        <ImageView android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="@dimen/comment_20_dip"
+            android:src="@drawable/shop_produce_fire"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/comment_10_dip">
+        </ImageView>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/iv_commodity_picture"
+        android:id="@+id/tv_commodity_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_12_size" />
+    <TextView
+        android:id="@+id/tv_praise"
+        android:layout_width="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/alpha_55_black"
+        android:textSize="@dimen/comment_12_size"
+        android:layout_below="@id/tv_commodity_name"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_present_price"
+            android:layout_below="@id/tv_praise"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/gray_E7370C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/comment_5_dip"
+            android:text="¥15"/>
+
+        <TextView
+            android:id="@+id/tv_present_market"
+            android:layout_below="@id/tv_praise"
+            android:textSize="@dimen/comment_12_size"
+            android:textColor="@color/alpha_35_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="@dimen/comment_5_dip"
+            android:text="¥150"
+            />
+
+    </LinearLayout>
+</LinearLayout>

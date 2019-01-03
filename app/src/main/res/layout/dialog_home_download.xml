@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/comment_300_dip"
+        android:layout_height="380dp"
+        android:background="@mipmap/home_download_bac">
+
+        <ImageView
+            android:id="@+id/dialog_download_cancel"
+            android:layout_width="@dimen/comment_12_dip"
+            android:layout_height="@dimen/comment_12_dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/comment_80_dip"
+            android:layout_marginRight="@dimen/comment_40_dip"
+            android:src="@mipmap/home_download_del"/>
+
+        <TextView
+            android:id="@+id/dialog_download_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/comment_18_size"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/dialog_download_dow"
+            android:layout_width="94dp"
+            android:layout_height="@dimen/comment_95_dip"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/dialog_download_cancel_two"
+            android:background="@mipmap/home_road">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/comment_5_dip"
+                android:text="立即升级"
+                android:textColor="@color/white"
+                android:textSize="@dimen/comment_12_size"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dialog_download_cancel_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="以后再说"
+            android:textColor="@color/grey_color3"
+            android:textSize="@dimen/comment_11_size"/>
+    </RelativeLayout>
+</LinearLayout>

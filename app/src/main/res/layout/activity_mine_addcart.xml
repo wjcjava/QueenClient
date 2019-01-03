@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@color/white"
+                tools:context=".ui.mine.activity.MineAddcartActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ic_title"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:text="@string/guarantee_assets"
+        android:textSize="@dimen/comment_14_size" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_50_dip"
+
+        android:layout_below="@id/tv_phone"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_actual"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:text="@string/card_number"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_actual"
+            android:inputType="number"
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_toLeftOf="@id/view"
+            android:layout_toRightOf="@id/tv_actual"
+            android:background="@color/white"
+            android:hint="@string/exemption_fee"
+            android:textSize="@dimen/comment_14_size" />
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comment_10_dip"
+            android:src="@drawable/icon_mine_camera" />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_marginLeft="@dimen/comment_20_dip"
+        android:layout_marginRight="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:background="@drawable/ic_setting_breake"
+        android:text="@string/next_step"
+        />
+</RelativeLayout>

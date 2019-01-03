@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cv_adapter_headpic"
+        app:civ_border_color="@color/white"
+        android:layout_width="@dimen/comment_45_dip"
+        android:layout_height="@dimen/comment_45_dip"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_centerVertical="true"
+        android:backgroundTintMode="@color/white"
+
+        android:src="@drawable/dismiss" />
+
+    <TextView
+        android:id="@+id/tv_adapter_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_toRightOf="@id/cv_adapter_headpic"
+        android:textSize="@dimen/comment_14_size" />
+
+    <TextView
+        android:id="@+id/tv_home_goshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shap_queen"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="去拼单"
+        android:textColor="@color/white" />
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_toLeftOf="@id/tv_home_goshare"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_adapter_surplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还差0人拼成"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_12_size" />
+
+        <TextView
+            android:id="@+id/tv_adapter_shengyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余21:15:15.6"
+            android:visibility="gone"
+            android:textColor="@color/colorPri"
+            android:textSize="@dimen/comment_10_size" />
+    </LinearLayout>
+
+</RelativeLayout>

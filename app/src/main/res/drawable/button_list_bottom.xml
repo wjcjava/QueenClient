@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景色 -->
+    <solid android:color="@color/tranparent" />
+    <!-- 边框色 -->
+    <stroke
+        android:width="@dimen/comment_1_dip"
+        android:color="@color/alpha_35_black" />
+    <corners
+        android:topLeftRadius="3dip"
+        android:topRightRadius="3dip"
+        android:bottomLeftRadius="3dip"
+        android:bottomRightRadius="3dip"/>
+</shape>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_marginStart="@dimen/comment_5_dip"
+        android:layout_marginEnd="@dimen/comment_5_dip"
+        android:id="@+id/tv_merchants_name"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_weight="1"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="@dimen/comment_45_dip"
+        android:background="@drawable/radiobutton_search_checked"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/shop"
+        android:textColor="@color/radiobutton_textcolor" />
+</LinearLayout>

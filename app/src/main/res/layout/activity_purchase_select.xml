@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mine_back_gray"
+              android:orientation="vertical"
+              tools:context=".ui.home.activity.PurchaseSelectActivity">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_19_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:text="商品通用券"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_15_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/re_select_common"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_5_dip" />
+
+                <TextView
+                    android:id="@+id/tv_history_common_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="暂无商品通用券"
+                    android:textSize="@dimen/comment_16_size"
+                    android:textColor="@color/alpha_85_black"
+                    android:padding="15dp"
+                    android:gravity="center">
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_19_dip"
+                android:layout_marginTop="@dimen/comment_10_dip"
+                android:text="单品抵用券"
+                android:textColor="@color/alpha_95_black"
+                android:textSize="@dimen/comment_15_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/re_select_itemcoupons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_5_dip" />
+
+                <TextView
+                    android:id="@+id/tv_history_select_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="暂无单品抵用券"
+                    android:textSize="@dimen/comment_16_size"
+                    android:textColor="@color/alpha_85_black"
+                    android:padding="15dp"
+                    android:gravity="center">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+
+
+
+
+
+    <!--<RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/li_purchase_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/purchase_select">
+            </ImageView>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/comment_13_dip"
+                android:textColor="@color/alpha_75_black"
+                android:text="暂无可用的优惠券"
+                android:layout_marginTop="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pur_rey_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>-->
+
+</LinearLayout>

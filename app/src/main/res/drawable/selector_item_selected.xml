@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" >
+
+        <color android:color="@color/color_home_text" />
+    </item>
+    <item android:state_focused="false" >
+        <color android:color="@color/video_bg" />
+
+    </item>
+
+</selector>
+

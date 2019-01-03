@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pop_layout"
+    android:background="@color/tranparent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_15_dip"
+            android:layout_marginTop="@dimen/comment_18_dip"
+            android:text="@string/business_features"
+            android:textColor="@color/alpha_50_black"
+            android:textSize="@dimen/comment_14_size" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_home_queen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女王会员店"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_home_tese"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/alpha_65_black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_home_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新店"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_home_tese"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/alpha_65_black">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_15_dip"
+            android:layout_marginTop="@dimen/comment_18_dip"
+            android:text="@string/preferential_activities"
+            android:textColor="@color/alpha_50_black"
+            android:textSize="@dimen/comment_14_size" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_home_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进店领券"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_home_tese"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/alpha_65_black">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_home_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="魔豆"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_home_tese"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/alpha_65_black">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_home_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拼团"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_home_tese"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/alpha_65_black">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_home_forth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特价"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_home_tese"
+                android:textSize="@dimen/comment_13_size"
+                android:textColor="@color/alpha_65_black">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="@dimen/comment_40_dip"
+                android:layout_weight="1"
+                android:background="@color/alpha_15_black"
+                android:gravity="center"
+                android:text="取消筛选" />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="@dimen/comment_40_dip"
+                android:layout_weight="1"
+                android:background="@drawable/ic_setting_breake"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

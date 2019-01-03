@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="@color/mine_back_gray"
+              tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.DealSuccessActivity">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_deal_success">
+    </ImageView>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支付成功"
+        android:textSize="@dimen/comment_18_size"
+        android:textColor="@color/alpha_95_black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_deal_success_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付金额"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_deal_success_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="145.0"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_deal_success_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14545678465"
+            android:gravity="right"
+            android:layout_toRightOf="@id/tv_order_no"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_75_black">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <View android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/middle">
+        </View>
+        <TextView
+            android:id="@+id/tv_deal_success_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="继续购物"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toLeftOf="@id/middle"
+            android:paddingEnd="40dp"
+            android:background="@drawable/button_deal_goon"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_violet">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_deal_success_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看订单"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_toRightOf="@id/middle"
+            android:layout_marginStart="20dp"
+            android:paddingEnd="40dp"
+            android:background="@drawable/button_deal_order"
+            android:textSize="@dimen/comment_13_size"
+            android:textColor="@color/alpha_95_black">
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

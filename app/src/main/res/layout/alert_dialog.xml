@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/pop_layout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btn_take_photo"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_40_dip"
+            android:background="@color/white"
+            android:text="@string/photograph"
+            android:textColor="@color/alpha_80_black"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/alpha_05_black"
+                />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_40_dip"
+            android:text="@string/photo_selection"
+            android:background="@color/white"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/alpha_80_black"
+            />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/comment_15_dip"
+            android:layout_marginBottom="@dimen/comment_15_dip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_40_dip"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/alpha_80_black"
+
+            />
+</LinearLayout>

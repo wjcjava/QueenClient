@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/li_rank_screen_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/comment_40_dip"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/rb_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/comment_5_dip"
+                    android:text="优惠筛选"
+                    android:textColor="@color/alpha_85_black"
+                    android:textSize="@dimen/comment_12_size"/>
+
+                <RadioButton
+                    android:id="@+id/bt_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_1_dip"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/icon_home_screen"
+                    android:textColor="@color/alpha_85_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_ranking_list_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/comment_40_dip"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:id="@+id/tv_new_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/alpha_85_black"
+                    android:textSize="@dimen/comment_14_size"/>
+
+                <ImageView
+                    android:id="@+id/iv_distance_new_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_dwon_blue"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/comment_15_dip"
+                android:layout_toLeftOf="@id/li_ranking_list_distance"
+                android:text="所在范围"
+                android:textColor="@color/alpha_85_black"
+                android:textSize="@dimen/comment_12_size"/>
+
+        </RelativeLayout>
+
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView
+            android:id="@+id/rv_ranking_top3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        </com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/comment_5_dip"
+            android:padding="10dp"
+            android:text="推荐店铺"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_14_size"
+            android:textStyle="bold"/>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView
+            android:id="@+id/rv_ranking_hor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        </com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView
+            android:id="@+id/rv_ranking_top4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        </com.ainisi.queenmirror.queenmirrorcduan.utilnomal.ScrollRecyclerView>
+
+
+    </LinearLayout>
+</LinearLayout>

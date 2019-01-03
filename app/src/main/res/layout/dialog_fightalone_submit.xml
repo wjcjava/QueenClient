@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tranparent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_dissmiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_username_delete">
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="参与总监的拼单"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_16_size"
+        android:textStyle="bold">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅剩"
+            android:textColor="@color/alpha_75_black"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_dialog_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/colorPri"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个名额，"
+            android:textColor="@color/alpha_75_black"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018年8月1日过期"
+            android:textColor="@color/alpha_75_black"
+            android:textSize="@dimen/comment_14_size">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_dialog_head"
+                android:layout_width="@dimen/comment_57_dip"
+                android:layout_height="@dimen/comment_57_dip"
+                android:layout_marginStart="@dimen/comment_25_dip"
+                android:backgroundTintMode="@color/white"
+                android:src="@drawable/dismiss"
+                app:civ_border_color="@color/alpha_95_black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:src="@drawable/ic_pinzhu">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/comment_57_dip"
+            android:layout_height="@dimen/comment_57_dip"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/fightalone">
+        </ImageView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_dialog_pindan"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_marginEnd="@dimen/comment_20_dip"
+        android:text="参与拼单"
+        android:textColor="@color/white"
+        android:background="@mipmap/icon_login_squareness"
+        android:layout_height="@dimen/comment_44_dip"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

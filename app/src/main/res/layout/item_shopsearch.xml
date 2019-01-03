@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/et_shap"
+    android:paddingTop="@dimen/comment_5_dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/li_home_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/comment_10_dip">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_10_dip">
+
+            <RelativeLayout
+                android:id="@+id/rl_homepage_list_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/iv_search_shop_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="center"
+                    android:src="@drawable/dismiss" />
+
+                <ImageView
+                    android:id="@+id/iv_homepage_list_queen"
+                    android:layout_width="@dimen/comment_50_dip"
+                    android:layout_height="@dimen/comment_50_dip"
+                    android:visibility="gone"
+                    android:src="@drawable/homepage_queen">
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_search_shopdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/comment_10_dip"
+                android:gravity="right"
+                android:layout_alignParentEnd="true"
+                android:text="距876m"
+                android:textColor="#000"
+                android:textSize="@dimen/comment_10_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@id/rl_homepage_list_image"
+                android:layout_toLeftOf="@id/tv_search_shopdistance"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_search_shopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="bottom"
+                    android:textColor="#000"
+                    android:text="shopName"
+                    android:textSize="@dimen/comment_14_size" />
+
+                <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+                    android:id="@+id/search_service_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:mode="random"
+                    app:starDistance="@dimen/comment_3_dip"
+                    app:starEmpty="@mipmap/empty"
+                    app:starFill="@mipmap/fill"
+                    app:starNum="5"
+                    app:ratingProgress="4"
+                    app:starSize="@dimen/comment_10_dip"
+                    app:touchAble="true" />
+
+                <TextView
+                    android:id="@+id/tv_search_shoptime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="time"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/comment_10_size" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/comment_10_dip"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="#4DC6C4C4" />
+</LinearLayout>

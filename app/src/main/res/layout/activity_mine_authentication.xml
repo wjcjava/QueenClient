@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_common"/>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="@color/mine_gray"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/comment_141_dip"
+                    android:layout_height="@dimen/comment_131_dip"
+                    android:src="@drawable/ic_mine_bigshot">
+                </ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐人姓名:"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/comment_12_dip"
+                    android:textColor="@color/alpha_65_black">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:focusable="false"
+                    android:layout_marginEnd="10dp">
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐人手机："
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/comment_12_dip"
+                    android:textColor="@color/alpha_65_black">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginEnd="10dp">
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请人手机："
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/comment_12_dip"
+                    android:textColor="@color/alpha_65_black">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginEnd="10dp">
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所 属 行 业："
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/comment_12_dip"
+                    android:textColor="@color/alpha_65_black">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginEnd="10dp">
+                </EditText>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_100_dip"
+                android:background="@drawable/mine_authen_biankuang"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="10dp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:textSize="@dimen/comment_12_dip"
+                    android:hint="请输入申请理由...">
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="@dimen/comment_45_dip"
+                android:background="@drawable/background_mine_auth">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交申请"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/comment_14_dip"
+                    android:textColor="@color/white">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

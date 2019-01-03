@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/ly_mine_foot"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/comment_28_dip"
+                android:layout_height="@dimen/comment_28_dip"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/mine_fragment_vip" />
+
+            <TextView
+                android:textSize="@dimen/comment_10_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="会员" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li_mine_pintuan"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/comment_28_dip"
+                android:layout_height="@dimen/comment_28_dip"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/mine_fragment_pintuan" />
+
+            <TextView
+                android:textSize="@dimen/comment_10_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="拼团" />
+
+        </LinearLayout>
+<!--android:id="@+id/layout_follow"-->
+        <LinearLayout
+            android:id="@+id/layout_evaluate"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="@dimen/comment_28_dip"
+                android:layout_height="@dimen/comment_26_dip"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/mine_fragment_event" />
+
+            <TextView
+                android:textSize="@dimen/comment_10_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="评论" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_follow"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/comment_28_dip"
+                android:layout_height="@dimen/comment_26_dip"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/mine_fragment_guanzhu" />
+
+            <TextView
+                android:textSize="@dimen/comment_10_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="关注" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_collection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_mine_model"
+                android:layout_width="@dimen/comment_28_dip"
+                android:layout_height="@dimen/comment_26_dip"
+                app:srcCompat="@drawable/mine_fragment_collect" />
+
+            <TextView
+                android:id="@+id/tv_mine_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:text="收藏"
+                android:textSize="@dimen/comment_10_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

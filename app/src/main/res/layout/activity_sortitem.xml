@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/sort"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sortitem_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sortitem_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/comment_35_dip"
+            app:tabBackground="@color/tranparent"
+            app:tabIndicatorColor="@color/color5"
+            app:tabIndicatorHeight="@dimen/comment_1_dip"
+            app:tabSelectedTextColor="@color/color5"
+            app:tabTextColor="@color/text_gray_1">
+
+        </android.support.design.widget.TabLayout>
+
+        <TextView
+            android:id="@+id/sortitem_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comment_12_dip"
+            android:text="@string/sort_all"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/sortitem_btn"
+            android:layout_width="@dimen/comment_40_dip"
+            android:layout_height="@dimen/comment_40_dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sort_select"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sortitem_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

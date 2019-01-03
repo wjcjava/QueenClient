@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Deepblue"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/alpha_95_black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_60_dip">
+
+
+                <TextView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/comment_20_dip"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/comment_16_size"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/comment_10_dip"
+                    android:layout_marginBottom="@dimen/comment_10_dip"
+                    android:paddingRight="@dimen/comment_10_dip"/>
+                <TextView
+                    android:id="@+id/newtitle_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comment_40_dip"
+                    android:layout_marginRight="@dimen/comment_40_dip"
+                    android:paddingTop="@dimen/comment_5_dip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/comment_18_size"
+                    android:text="@string/not_to_see"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/title_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="@dimen/comment_10_dip"
+                    android:text="@string/complete"
+                    android:textColor="@color/Dark_green"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/comment_10_dip"/>
+        </RelativeLayout>
+
+
+</RelativeLayout>

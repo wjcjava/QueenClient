@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mine_back_gray"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              tools:context=".ui.mine.activity.RechargeSuccessAgainActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <ImageView android:layout_width="@dimen/comment_80_dip"
+        android:layout_height="@dimen/comment_80_dip"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/pay_success">
+    </ImageView>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值成功"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/comment_15_dip">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/comment_13_dip"
+                android:layout_marginStart="10dp"
+                android:text="支付方式"
+                android:textColor="@color/alpha_75_black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_recharge_success_paystyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/comment_13_dip"
+                android:layout_marginEnd="10dp"
+                android:text="支付宝"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/alpha_75_black">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/comment_13_dip"
+                android:layout_marginStart="10dp"
+                android:text="充值金额"
+                android:textColor="@color/alpha_75_black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_recharge_success_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="¥180.00"
+                android:textColor="@color/alpha_75_black"
+                android:textSize="@dimen/comment_13_dip">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_charge_success_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/button_shap_queen"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+    </TextView>
+
+</LinearLayout>

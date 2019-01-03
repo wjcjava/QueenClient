@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景色 -->
+    <solid android:color="@color/home_back" />
+    <!-- 边框色 -->
+    <stroke
+        android:width="@dimen/comment_1_dip"
+        android:color="@color/home_back_two" />
+    <corners
+        android:topLeftRadius="3dp"
+        android:bottomLeftRadius="3dp"
+        android:topRightRadius="3dp"
+        android:bottomRightRadius="3dp"/>
+
+    <padding android:right="8dp"
+        android:left="8dp"
+        android:top="3dp"
+        android:bottom="3dp"/>
+</shape>

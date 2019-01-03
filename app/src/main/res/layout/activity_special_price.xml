@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/sc_special_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:background="@drawable/special_back"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sc_special_top_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_180_dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/special_top">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sc_special_top_img2"
+                    android:layout_width="150dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/special_title">
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/li_special_sales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                        android:id="@+id/li_special_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/comment_15_dip"
+                        android:horizontalSpacing="@dimen/comment_15_dip"
+                        android:numColumns="2"
+                        android:verticalSpacing="@dimen/comment_15_dip">
+
+                    </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/sc_special_top_img3"
+                    android:layout_width="188dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/special_middle">
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comment_10_dip">
+
+                    <View
+                        android:id="@+id/fr_mine_special_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/tranparent"/>
+
+                    <FrameLayout
+                        android:id="@+id/fr_mine_special_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/tranparent"
+                        android:descendantFocusability="blocksDescendants">
+
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_special_distance"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/top"
+        android:background="@color/white"
+        android:visibility="invisible"
+        app:tabBackground="@drawable/special_price_tab"
+        app:tabIndicatorColor="@color/tranparent"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/color5"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="@color/color_F5BF6B"/>
+
+
+</RelativeLayout>

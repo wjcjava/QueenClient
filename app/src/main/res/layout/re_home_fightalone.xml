@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/et_shap"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_fightalone_title"
+        android:layout_width="@dimen/comment_155_dip"
+        android:layout_height="@dimen/comment_155_dip"
+        android:layout_marginLeft="@dimen/comment_15_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_marginRight="@dimen/comment_15_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dismiss"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginRight="@dimen/comment_10_dip"
+        android:background="@color/color_D3A19F"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="@dimen/comment_11_dip"
+            android:src="@mipmap/fightalone_persion_more"/>
+
+        <TextView
+            android:id="@+id/tv_fightalone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_3_dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_9_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fightalone_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_marginRight="@dimen/comment_10_dip"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/grey_color1"
+        android:textSize="@dimen/comment_12_size"
+        />
+
+    <TextView
+        android:id="@+id/tv_fightalone_briefintroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginRight="@dimen/comment_10_dip"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/grey_color2"
+        android:textSize="@dimen/comment_10_size"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_marginRight="@dimen/comment_10_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_fightalone_presentprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/gray_E7370C"
+            android:textSize="@dimen/comment_18_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_fightalone_presentprice_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_898989"
+            android:textSize="@dimen/comment_12_size"/>
+
+        <View
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_0_dip"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="@dimen/comment_28_dip"
+            android:layout_height="@dimen/comment_28_dip"
+            android:src="@mipmap/fightalone_pin"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:popupbtn="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.shop.activity.ShopClassificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_05_black"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/bar_esthetice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_110_dip"
+            android:background="@drawable/ic_setting_breake"
+
+            >
+
+            <include layout="@layout/inner_sleeveshop_title" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_shap">
+
+
+            <TextView
+                android:id="@+id/tv_recommendable_projects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginStart="@dimen/comment_17_dip"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:text="@string/recommendable_store"
+                android:textColor="@color/gray_E7370C"
+                android:textSize="@dimen/comment_16_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/comment_14_dip"
+                android:layout_marginTop="@dimen/comment_18_dip"
+                android:text="更多>>"
+                android:textSize="@dimen/comment_11_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/re_recommendable_projects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_recommendable_projects">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <com.ainisi.queenmirror.queenmirrorcduan.popbutton.PopupButton
+                    android:id="@+id/bt_up_recommendable"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:background="@color/white"
+                    android:text="综合排序"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="12sp"
+                    popupbtn:normalBg="@drawable/tab_bkg_line"
+                    popupbtn:normalIcon="@drawable/arrow_dwon_blue"
+                    popupbtn:pressBg="@drawable/tab_bkg_selected"
+                    popupbtn:pressIcon="@drawable/arrow_up_black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/full_rb_sales"
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip"
+                android:text="@string/sales"
+                android:textColor="@color/alpha_55_black"
+                android:textSize="@dimen/comment_12_size" />
+
+            <LinearLayout
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+                    android:id="@+id/full_rb_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <ImageView
+                    android:id="@+id/iv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_dwon_blue" />
+
+                <ImageView
+                    android:id="@+id/iv_distance1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_up_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Recommend_layout"
+                android:layout_height="@dimen/comment_40_dip">
+
+                <TextView
+                    android:id="@+id/full_rb_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/comment_5_dip"
+                    android:text="@string/screen"
+                    android:textColor="@color/alpha_55_black"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/comment_8_dip"
+                    android:layout_height="@dimen/comment_9_dip"
+                    android:layout_marginTop="@dimen/comment_1_dip"
+                    android:src="@drawable/icon_home_screen" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.customview.RefreshLoadMoreLayout
+            android:id="@+id/rlm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:rll_header_hint_normal="下拉给我试试看"
+            app:rll_header_hint_ready="主淫我已经准备好了">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/full_sore_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ainisi.queenmirror.queenmirrorcduan.utils.customview.RefreshLoadMoreLayout>
+        <!--<com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollViewPager-->
+        <!--android:id="@+id/pager_home_full"-->
+        <!--android:layout_below="@id/linearLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    </LinearLayout>
+</LinearLayout>

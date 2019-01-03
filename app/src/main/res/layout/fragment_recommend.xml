@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/comment_15_dip"
+                        android:layout_marginRight="@dimen/comment_15_dip"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/recommend_class"
+                            android:layout_width="@dimen/comment_0_dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/comment_105_dip"
+                                android:layout_height="@dimen/comment_71_dip"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/recommend_1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/ainisi_big_classroom"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_12_size"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/recommend_say"
+                            android:layout_width="@dimen/comment_0_dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/comment_14_dip"
+                            android:layout_marginRight="@dimen/comment_14_dip"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/comment_105_dip"
+                                android:layout_height="@dimen/comment_71_dip"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/recommend_2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/htjx"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_12_size"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/recommend_certification"
+                            android:layout_width="@dimen/comment_0_dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/comment_105_dip"
+                                android:layout_height="@dimen/comment_71_dip"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/recommend_3"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/dkrz"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/comment_12_size"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comment_10_dip"
+                        android:layout_marginTop="@dimen/comment_15_dip"
+                        android:background="@color/color_title_color"
+                        />
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/recommend_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:tabBackground="@color/tranparent"
+                    app:tabIndicatorHeight="@dimen/comment_0_dip"
+                    app:tabSelectedTextColor="@color/color_EC77AB"
+                    app:tabTextColor="@color/tab_text">
+
+                </android.support.design.widget.TabLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_1_dip"
+                    android:background="@color/color_E4E4E4"/>
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/recommend_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

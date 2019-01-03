@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@color/white"
+                tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.MondelActivity">
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+
+        android:background="@color/alpha_05_black"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/root_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.youth.banner.Banner
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/banner_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_240_dip"
+                    android:background="@color/Light_blue" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/comment_345_dip"
+                    android:layout_height="@dimen/comment_131_dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/comment_216_dip"
+
+                    android:background="@drawable/icon_mondel_rectangular">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comment_131_dip"
+                        android:background="@drawable/icon_mondel_number" />
+
+                    <TextView
+                        android:id="@+id/tv_mondel_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comment_20_dip"
+                        android:gravity="center"
+                        android:text="19999"
+
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/comment_36_dip" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_mondel_number"
+                        android:gravity="center"
+                        android:text="@string/mondelNumber"
+                        android:textSize="@dimen/comment_15_dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_model_my"
+                android:layout_width="@dimen/comment_330_dip"
+                android:layout_height="@dimen/comment_58_dip"
+                android:layout_below="@id/root_title"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_mondel_my" />
+
+            <TextView
+                android:id="@+id/tv_mondel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_model_my"
+                android:layout_marginStart="@dimen/comment_25_dip"
+                android:text="@string/mondelService"
+                android:textSize="@dimen/comment_15_dip" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/re_mondel"
+                android:layout_width="@dimen/comment_345_dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mondel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/comment_6_dip" />
+
+            <TextView
+                android:id="@+id/tv_monsel_exchange"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/comment_25_dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re_mondel"
+                android:text="@string/exchangeShop"
+                android:textSize="@dimen/comment_15_dip"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/re_mondel_exchange"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_monsel_exchange"
+                android:layout_width="@dimen/comment_345_dip"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="@dimen/comment_30_dip"
+        android:layout_height="@dimen/comment_30_dip"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:src="@drawable/icon_model_back" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_F5F5F5"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/comment_20_dip"
+        android:paddingRight="@dimen/comment_20_dip"
+        android:paddingBottom="@dimen/comment_25_dip">
+
+        <EditText
+            android:id="@+id/setting_psd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_marginBottom="@dimen/comment_5_dip"
+            android:background="@color/tranparent"
+            android:hint="@string/add_password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/comment_10_dip"
+            android:paddingBottom="@dimen/comment_10_dip"
+            android:textColor="@color/grey_color1"
+            android:textColorHint="@color/search_text_color"
+            android:textSize="@dimen/comment_15_size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_1_dip"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:background="@color/color_EAEAEA"/>
+
+        <EditText
+            android:id="@+id/setting_psd_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_marginBottom="@dimen/comment_5_dip"
+            android:background="@color/tranparent"
+            android:hint="@string/add_password_two"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/comment_10_dip"
+            android:paddingBottom="@dimen/comment_10_dip"
+            android:textColor="@color/grey_color1"
+            android:textColorHint="@color/search_text_color"
+            android:textSize="@dimen/comment_15_size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_1_dip"
+            android:background="@color/color_EAEAEA"/>
+
+        <Button
+            android:id="@+id/setting_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_40_dip"
+            android:layout_marginLeft="@dimen/comment_20_dip"
+            android:layout_marginTop="@dimen/comment_25_dip"
+            android:layout_marginRight="@dimen/comment_20_dip"
+            android:background="@mipmap/icon_login_squareness"
+            android:text="@string/determine"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_15_size"/>
+    </LinearLayout>
+</LinearLayout>

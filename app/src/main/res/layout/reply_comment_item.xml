@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_marginStart="75dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_reply_comment_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商家回应："
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/comment_12_size">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_reply_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="good"
+        android:textColor="@color/alpha_75_black"
+        android:textSize="@dimen/comment_12_size">
+    </TextView>
+
+</LinearLayout>

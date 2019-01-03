@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:context=".ui.shop.activity.WorkRoomDetailActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar_workroom_detail"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/icon_home">
+
+        <include layout="@layout/work_room_detail_topitem"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_50_dip"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_44_dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alpha_75_black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/comment_60_dip"
+                android:text=" "
+                android:textColor="@color/gray_E7370C"
+                android:textSize="@dimen/comment_18_size"/>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="@dimen/comment_100_dip"
+                android:layout_height="@dimen/comment_50_dip"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/ic_setting_breake"
+                android:gravity="center"
+                android:text="去结算"
+                android:textColor="#fff"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:src="@drawable/icon_shopping_cart"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout"
+        android:layout_below="@id/bar_workroom_detail"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                           android:id="@+id/workroom_refreshLayout"
+                                                           android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"
+                                                           android:layout_below="@id/bar_esthetice">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.ainisi.queenmirror.queenmirrorcduan.utilnomal.HoveringScrollview
+                        android:id="@+id/whs_workroom_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/li_workroom_top"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="本店爆品"
+                                    android:textColor="@color/shop_detail_text"
+                                    android:textSize="14dp">
+                                </TextView>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/re_recommendable_projects_shop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="160dp"
+                                    android:layout_marginTop="8dp">
+
+                                </android.support.v7.widget.RecyclerView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="6dp"
+                                    android:background="@color/home_bottom_radio">
+                                </View>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/search2"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp">
+
+                                <LinearLayout
+                                    android:id="@+id/li_workroom_xuan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <!--这里是悬停布局-->
+                                    <include layout="@layout/common_top"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--这里是底部的布局-->
+                            <include layout="@layout/common_bottom"/>
+
+                        </LinearLayout>
+                    </com.ainisi.queenmirror.queenmirrorcduan.utilnomal.HoveringScrollview>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.scwang.smartrefresh.layout.footer.ballpulse.BallPulseView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search01"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bar_workroom_detail"
+        android:orientation="vertical">
+    </LinearLayout>
+</RelativeLayout>

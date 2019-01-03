@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.home.activity.ShoppingCartActivity">
+    <include layout="@layout/acitonbar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_05_black">
+
+        <LinearLayout
+            android:id="@+id/ll_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/search_text_biankuang" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_44_dip">
+
+                <CheckBox
+                    android:id="@+id/all_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/comment_14_dip"
+                    android:background="@null"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/purchase_checkbox"
+                    android:drawablePadding="@dimen/comment_10_dip"
+                    android:text="全选"
+                    android:textColor="@color/alpha_70_black"
+                    android:textSize="@dimen/comment_14_size" />
+
+                <TextView
+                    android:id="@+id/all_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/comment_57_dip"
+                    android:layout_marginTop="@dimen/comment_16_dip"
+                    android:layout_toRightOf="@id/all_checkBox"
+                    android:text="总价："
+                    android:textSize="@dimen/comment_14_size" />
+
+                <TextView
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/comment_7_dip"
+                    android:layout_marginTop="@dimen/comment_17_dip"
+                    android:layout_toRightOf="@id/all_money"
+                    android:text="¥0.00"
+                    android:textColor="@color/colorDeeppowder"
+                    android:textSize="@dimen/comment_12_size" />
+
+                <TextView
+                    android:id="@+id/go_pay"
+                    android:layout_width="@dimen/comment_147_dip"
+                    android:layout_height="@dimen/comment_44_dip"
+                    android:layout_marginStart="@dimen/comment_17_dip"
+                    android:layout_toRightOf="@id/total_price"
+                    android:background="@color/colorDeeppowder"
+                    android:gravity="center"
+                    android:text="去结算"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/comment_15_size" />
+
+
+                <TextView
+                    android:id="@+id/del_goods"
+                    android:layout_width="@dimen/comment_147_dip"
+                    android:layout_height="@dimen/comment_44_dip"
+                    android:layout_marginStart="@dimen/comment_17_dip"
+                    android:layout_toRightOf="@id/total_price"
+                    android:background="@color/colorPri"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/comment_16_size"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_empty_shopcart"
+            layout="@layout/empty_shopcart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+    <!-- </in.srain.cube.views.ptr.PtrFrameLayout>-->
+
+</LinearLayout>

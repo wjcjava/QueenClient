@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/comment_40_dip"
+            android:paddingTop="@dimen/comment_15_dip"
+            android:paddingRight="@dimen/comment_40_dip"
+            android:paddingBottom="@dimen/comment_20_dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="绑定手机号"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/comment_20_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_30_dip"
+                android:text="手机号"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/comment_16_size"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:layout_marginBottom="@dimen/comment_5_dip">
+
+                <EditText
+                    android:id="@+id/tv_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/tranparent"
+                    android:gravity="center|left"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingTop="@dimen/comment_10_dip"
+                    android:paddingBottom="@dimen/comment_10_dip"
+                    android:textColor="@color/grey_color1"
+                    android:textColorHint="@color/grey_color3"
+                    android:textSize="@dimen/comment_15_size"/>
+
+                <ImageView
+                    android:id="@+id/iv_remove_text"
+                    android:layout_width="@dimen/comment_20_dip"
+                    android:layout_height="@dimen/comment_30_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/comment_28_dip"
+                    android:src="@drawable/icon_login_remove"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_1_dip"
+                android:background="@color/color_C9C9C9"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_20_dip"
+                android:text="验证码"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/comment_16_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_5_dip"
+                android:layout_marginBottom="@dimen/comment_5_dip"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_validation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/tranparent"
+                    android:gravity="center|left"
+                    android:hint="请输入验证码"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/grey_color1"
+                    android:textColorHint="@color/grey_color3"
+                    android:textSize="@dimen/comment_15_size"/>
+
+                <TextView
+                    android:id="@+id/tv_validation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_register_red"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/comment_10_dip"
+                    android:paddingTop="@dimen/comment_5_dip"
+                    android:paddingRight="@dimen/comment_10_dip"
+                    android:paddingBottom="@dimen/comment_5_dip"
+                    android:text="获取验证码"
+                    android:textColor="@color/color_FE2F2F"
+                    android:textSize="@dimen/comment_13_size"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_1_dip"
+                android:background="@color/color_C9C9C9"/>
+
+
+            <Button
+                android:id="@+id/bt_user_confirmregistration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_44_dip"
+                android:layout_marginTop="@dimen/comment_40_dip"
+                android:layout_marginBottom="@dimen/comment_30_dip"
+                android:background="@mipmap/register_btn"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/comment_16_size"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

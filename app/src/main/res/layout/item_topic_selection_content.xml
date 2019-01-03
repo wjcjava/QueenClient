@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/rl_topic_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_topic_pic"
+        android:layout_width="@dimen/comment_80_dip"
+        android:layout_height="@dimen/comment_60_dip"
+        android:layout_marginLeft="@dimen/comment_15_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        android:layout_marginBottom="@dimen/comment_15_dip"
+        android:background="@color/common_bg"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_15_dip"
+        android:layout_marginTop="@dimen/comment_23_dip"
+        android:layout_toRightOf="@id/iv_topic_pic"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#魔镜魔镜，告诉我谁最美#"
+            android:textColor="@color/topic_title_bg"
+            android:textSize="@dimen/comment_14_size" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_8_dip"
+                android:text="1.3万讨论"
+                android:textColor="@color/search_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_8_dip"
+                android:text=" 36526万阅读"
+                android:textColor="@color/search_text_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

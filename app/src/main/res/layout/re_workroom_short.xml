@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_workroom_list"
+                android:layout_height="@dimen/comment_125_dip"
+                android:background="@drawable/et_shap">
+
+    <RelativeLayout
+        android:id="@+id/rl_workroom_image"
+        android:layout_width="@dimen/comment_95_dip"
+        android:layout_height="@dimen/comment_95_dip"
+        android:layout_marginBottom="@dimen/comment_19_dip"
+        android:layout_marginStart="@dimen/comment_11_dip"
+        android:layout_marginTop="@dimen/comment_15_dip">
+
+        <ImageView
+            android:id="@+id/iv_weorkroom_title"
+            android:layout_width="@dimen/comment_95_dip"
+            android:layout_height="@dimen/comment_95_dip"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:scaleType="center"
+            android:src="@drawable/dismiss" />
+
+        <ImageView
+            android:id="@+id/iv_workroom_pintuan"
+            android:layout_width="@dimen/comment_40_dip"
+            android:layout_height="@dimen/comment_40_dip"
+            android:src="@drawable/workroom_pintuan">
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_weorkroom_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/rl_workroom_image"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_14_size" />
+
+    <TextView
+        android:id="@+id/tv_weorkroom_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_weorkroom_title"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/rl_workroom_image"
+        android:textSize="@dimen/comment_12_size"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_weorkroom_name"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_toRightOf="@id/rl_workroom_image">
+
+        <ImageView
+            android:id="@+id/iv_big_share"
+            android:layout_width="@dimen/comment_12_dip"
+            android:layout_height="@dimen/comment_12_dip"
+            android:layout_marginTop="@dimen/comment_4_dip"
+            android:src="@drawable/icon_workroom_see" />
+
+        <TextView
+            android:id="@+id/tv_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:layout_toRightOf="@id/iv_big_share"
+            android:text="浏览1125次"
+            android:textSize="@dimen/comment_10_size" />
+
+        <ImageView
+            android:id="@+id/iv_big_massage"
+            android:layout_width="@dimen/comment_12_dip"
+            android:layout_height="@dimen/comment_12_dip"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_4_dip"
+            android:layout_toRightOf="@id/tv_browse"
+            android:src="@drawable/icon_workroom_fabulous" />
+
+        <TextView
+            android:id="@+id/tv_fabulous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_marginTop="@dimen/comment_2_dip"
+            android:layout_toRightOf="@id/iv_big_massage"
+            android:text="好评率100%"
+            android:textSize="@dimen/comment_10_size" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_toRightOf="@id/tv_fabulous">
+
+            <ImageView
+                android:id="@+id/iv_big_praise"
+                android:layout_width="@dimen/comment_12_dip"
+                android:layout_height="@dimen/comment_12_dip"
+                android:layout_marginTop="@dimen/comment_4_dip"
+                android:src="@drawable/icon_workroom_time" />
+
+            <TextView
+                android:id="@+id/tv_workroom_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/comment_5_dip"
+                android:layout_marginTop="@dimen/comment_2_dip"
+                android:layout_toRightOf="@id/iv_big_praise"
+                android:text="0分钟"
+                android:textColor="@color/alpha_15_black"
+                android:textSize="@dimen/comment_10_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/li_xiangou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:layout_toRightOf="@id/rl_workroom_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/buy_workroom_only_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:text="限购一次"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:visibility="gone"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@color/color_FF374F"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_10_size">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_workroom_bean_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:text="需支付魔豆：0.00"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:visibility="gone"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/color_FF374F"
+            android:textSize="@dimen/comment_12_size">
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_workroom_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:text="女王会员立减：¥0.00"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        android:paddingBottom="2dp"
+        android:layout_below="@id/li_xiangou"
+        android:layout_toRightOf="@id/rl_workroom_image"
+        android:textColor="@color/color_FF374F"
+        android:textSize="@dimen/comment_12_size">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_workroom_discount"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_toRightOf="@id/rl_workroom_image"
+        android:text="¥58"
+        android:textColor="@color/gray_E7370C"
+        android:textSize="@dimen/comment_15_size" />
+
+    <TextView
+        android:id="@+id/tv_workroom_service_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_workroom_discount"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_3_dip"
+        android:layout_toRightOf="@id/tv_price"
+        android:text="¥128"
+        android:textColor="@color/alpha_15_black"
+        android:textSize="@dimen/comment_12_size" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_workroom_add_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/comment_35_dip"
+            android:padding="@dimen/comment_5_dip"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="@dimen/comment_15_dip"
+            android:src="@drawable/inco_workroom_add" />
+
+        <TextView
+            android:id="@+id/tv_workroom_pintuan"
+            android:layout_below="@id/tv_fightalone_briefintroduction"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/comment_100_dip"
+            android:text="去拼单 >"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_home_fightalone"
+            android:textSize="@dimen/comment_13_size"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/comment_12_dip"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/comment_30_dip" />
+    </RelativeLayout>
+</RelativeLayout>

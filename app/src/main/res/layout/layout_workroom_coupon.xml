@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_workroom_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_21_dip"
+        android:text="店铺通用券"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_16_size" />
+    <TextView
+        android:id="@+id/text_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/alpha_55_black"
+        android:textSize="@dimen/comment_14_size"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:text="店家没有发放店铺通用券"
+        />
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+        android:id="@+id/list_shop"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/comment_21_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="单品抵扣券"
+        android:textColor="@color/alpha_95_black"
+        android:textSize="@dimen/comment_16_size" />
+    <TextView
+        android:id="@+id/text_single"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/alpha_55_black"
+        android:textSize="@dimen/comment_14_size"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="店家没有发放单品抵扣券"
+        />
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+        android:id="@+id/list_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_shap"
+                android:paddingTop="@dimen/comment_10_dip"
+                android:paddingBottom="@dimen/comment_5_dip"
+                android:paddingLeft="@dimen/comment_10_dip"
+                android:paddingEnd="@dimen/comment_10_dip">
+    <RelativeLayout
+        android:id="@+id/re_workroom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_140_dip"
+        android:background="@drawable/button_shap_queen">
+        <TextView
+            android:id="@+id/tv_shop_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/comment_17_dip"
+            android:layout_marginTop="15dp"
+            android:text="10元优惠券"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/videoView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_shop_discount"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_20_dip"
+            android:layout_marginRight="@dimen/comment_20_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@drawable/dash_dashed_shape" />
+
+        <TextView
+            android:id="@+id/tv_face_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_shop_discount"
+            android:layout_below="@+id/videoView2"
+            android:text="面值："
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_shop_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_face_money"
+            android:layout_toEndOf="@+id/tv_face_money"
+            android:text="10元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/comment_14_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_coune_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_face_money"
+            android:layout_below="@+id/tv_face_money"
+            android:layout_marginTop="10dp"
+            android:text="无条件使用"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_youxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_coune_conditions"
+            android:layout_below="@+id/tv_coune_conditions"
+            android:layout_marginTop="@dimen/comment_3_dip"
+            android:text="有效期："
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_coune_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_youxiao"
+            android:layout_toEndOf="@+id/tv_youxiao"
+            android:text="2018.01.08~2018.03.08"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/img_overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_alignEnd="@+id/videoView2"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/icon_shop_receive" />
+    </RelativeLayout>
+</RelativeLayout>

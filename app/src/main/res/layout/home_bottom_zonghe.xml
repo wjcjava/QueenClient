@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bottom_zonghe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="综合排序"
+        android:padding="10dp"
+        android:textSize="@dimen/comment_12_size"
+        android:textColor="@color/alpha_65_black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_bottom_pingfen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评分高到低"
+        android:padding="10dp"
+        android:textSize="@dimen/comment_12_size"
+        android:textColor="@color/alpha_65_black">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_bottom_look"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览量高到低"
+        android:padding="10dp"
+        android:textSize="@dimen/comment_12_size"
+        android:textColor="@color/alpha_65_black">
+    </TextView>
+
+</LinearLayout>

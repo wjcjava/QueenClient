@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.user.ForgetcipherActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ic_title"
+        android:background="@color/alpha_05_black">
+
+        <RelativeLayout
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/comment_95_dip"
+                android:layout_height="@dimen/comment_95_dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/comment_15_dip"
+                android:src="@mipmap/ic_queen" />
+
+            <LinearLayout
+                android:id="@+id/re_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_head"
+                android:layout_marginEnd="@dimen/comment_10_dip"
+                android:layout_marginStart="@dimen/comment_10_dip"
+                android:layout_marginTop="@dimen/comment_40_dip"
+                android:background="@drawable/et_shap"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:layout_height="@dimen/comment_40_dip">
+
+                    <ImageView
+                        android:id="@+id/iv_phonenumber"
+                        android:layout_width="@dimen/comment_15_dip"
+                        android:layout_height="@dimen/comment_25_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_18_dip"
+                        android:src="@mipmap/icon_login_phone" />
+
+                    <ImageView
+                        android:id="@+id/iv_remove_text"
+                        android:layout_width="@dimen/comment_20_dip"
+                        android:layout_height="@dimen/comment_30_dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_28_dip"
+                        android:src="@drawable/icon_login_remove" />
+
+                    <EditText
+                        android:id="@+id/et_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comment_25_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comment_10_dip"
+                        android:layout_marginStart="@dimen/comment_14_dip"
+                        android:layout_toLeftOf="@id/iv_remove_text"
+                        android:layout_toRightOf="@id/iv_phonenumber"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:hint="请输入手机号"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="@dimen/comment_14_size" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_2_dip"
+                    android:layout_below="@id/iv_phonenumber"
+                    android:layout_marginEnd="@dimen/comment_16_dip"
+                    android:layout_marginStart="@dimen/comment_16_dip"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:background="@color/alpha_05_black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_40_dip"
+                    android:layout_marginTop="@dimen/comment_5_dip">
+
+                    <ImageView
+                        android:id="@+id/iv_password"
+                        android:layout_width="@dimen/comment_19_dip"
+                        android:layout_height="@dimen/comment_24_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_18_dip"
+                        android:src="@mipmap/icon_login_password" />
+
+                    <EditText
+                        android:id="@+id/et_validation"
+                        android:layout_width="@dimen/comment_150_dip"
+                        android:layout_height="@dimen/comment_24_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_14_dip"
+                        android:layout_toRightOf="@id/iv_password"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:hint="请输入验证码"
+                        android:inputType="number"
+                        android:textSize="@dimen/comment_14_size" />
+
+                    <View
+                        android:id="@+id/view0"
+                        android:layout_width="@dimen/comment_2_dip"
+                        android:layout_height="@dimen/comment_38_dip"
+                        android:layout_marginEnd="@dimen/comment_10_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/comment_10_dip"
+                        android:layout_toRightOf="@id/et_validation"
+                        android:background="@color/gray_E7370C" />
+
+                    <TextView
+                        android:id="@+id/tv_validation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/view0"
+                        android:layout_marginEnd="@dimen/comment_10_dip"
+                        android:layout_centerVertical="true"
+                        android:text="获取验证码"
+                        android:textColor="@color/gray_E7370C"
+                        android:textSize="@dimen/comment_15_size" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_2_dip"
+                    android:layout_below="@id/iv_password"
+                    android:layout_marginEnd="@dimen/comment_16_dip"
+                    android:layout_marginStart="@dimen/comment_16_dip"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:background="@color/alpha_05_black" />
+
+                <RelativeLayout
+                    android:id="@+id/re_graphics_validation"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/re_validation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comment_40_dip"
+                        android:layout_marginTop="@dimen/comment_5_dip">
+
+                        <ImageView
+                            android:id="@+id/iv_graphics_pass"
+                            android:layout_width="@dimen/comment_19_dip"
+                            android:layout_height="@dimen/comment_24_dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/comment_18_dip"
+                            android:src="@mipmap/icon_login_password" />
+
+                        <EditText
+                            android:id="@+id/et_graphics_validation"
+                            android:layout_width="@dimen/comment_150_dip"
+                            android:layout_height="@dimen/comment_24_dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/comment_20_dip"
+                            android:layout_marginStart="@dimen/comment_14_dip"
+                            android:layout_toRightOf="@id/iv_graphics_pass"
+                            android:background="@color/white"
+                            android:gravity="center|left"
+                            android:hint="请输入图形验证码"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:textSize="@dimen/comment_14_size" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_graphics_validation"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/comment_24_dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/comment_20_dip"
+                            android:layout_toRightOf="@id/et_graphics_validation" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comment_2_dip"
+                        android:layout_below="@id/re_validation"
+                        android:layout_marginEnd="@dimen/comment_16_dip"
+                        android:layout_marginStart="@dimen/comment_16_dip"
+                        android:layout_marginTop="@dimen/comment_5_dip"
+                        android:background="@color/alpha_05_black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_40_dip">
+
+                    <ImageView
+                        android:id="@+id/iv_proving"
+                        android:layout_width="@dimen/comment_19_dip"
+                        android:layout_height="@dimen/comment_24_dip"
+
+                        android:layout_marginStart="@dimen/comment_18_dip"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_login_password" />
+
+                    <ImageView
+                        android:id="@+id/iv_login_see"
+                        android:layout_width="@dimen/comment_28_dip"
+                        android:layout_height="@dimen/comment_11_dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/comment_28_dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_login_see">
+                    </ImageView>
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comment_24_dip"
+                        android:layout_marginBottom="@dimen/comment_10_dip"
+                        android:layout_marginEnd="@dimen/comment_10_dip"
+                        android:layout_marginStart="@dimen/comment_14_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/iv_login_see"
+                        android:layout_toRightOf="@id/iv_proving"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:hint="请输入密码(6-16位)"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:textSize="@dimen/comment_14_size" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_2_dip"
+                    android:layout_below="@id/et_password"
+                    android:layout_marginEnd="@dimen/comment_5_dip"
+                    android:layout_marginStart="@dimen/comment_16_dip"
+                    android:layout_marginTop="@dimen/comment_5_dip"
+                    android:background="@color/alpha_05_black" />
+
+                <Button
+                    android:id="@+id/bt_user_forgotpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comment_44_dip"
+                    android:layout_below="@id/view_three"
+                    android:layout_marginBottom="@dimen/comment_33_dip"
+                    android:layout_marginEnd="@dimen/comment_20_dip"
+                    android:layout_marginStart="@dimen/comment_20_dip"
+                    android:layout_marginTop="@dimen/comment_30_dip"
+                    android:background="@mipmap/icon_login_squareness"
+                    android:text="确定"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/comment_15_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/login_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re_login">
+
+                <include layout="@layout/activity_login_mine" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.ScrollInterceptScrollView>
+</RelativeLayout>

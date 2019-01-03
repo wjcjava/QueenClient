@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--昼夜模式主色调-->
+    <attr name="dayNightBackground" format="color|reference" />
+    <attr name="dayNightBackgroundOne" format="color|reference" />
+    <attr name="dayNightMineTopBackground" format="color|reference" />
+    <attr name="dayNightOneTextColor" format="color|reference" />
+    <attr name="dayNightTwoTextColor" format="color|reference" />
+    <attr name="dayNightThreeTextColor" format="color|reference" />
+    <attr name="dayNightFourTextColor" format="color|reference" />
+    <attr name="dayNightFiveTextColor" format="color|reference" />
+    <attr name="dayNightBackgroundDrawable" format="color|reference" />
+
+    <declare-styleable name="DayNightMode">
+        <attr name="dayNightBackgroundAttr" format="string|reference"/><!--切换背景属性-->
+        <attr name="dayNightBackgroundOneAttr" format="string|reference"/><!--切换背景属性-->
+        <attr name="dayNightMineTopBackgroundAttr" format="string|reference"/><!--切换背景属性-->
+        <attr name="dayNightOneTextColorAttr" format="string|reference"/><!--切换一级字体颜色属性-->
+        <attr name="dayNightTwoTextColorAttr" format="string|reference"/><!--切换二级字体颜色属性-->
+        <attr name="dayNightThreeTextColorAttr" format="string|reference"/><!--切换三级字体颜色属性-->
+        <attr name="dayNightFourTextColorAttr" format="string|reference"/><!--切换三级字体颜色属性-->
+        <attr name="dayNightFiveTextColorAttr" format="string|reference"/><!--切换三级字体颜色属性-->
+        <attr name="dayNightBackgroundDrawableAttr" format="string|reference"/><!--切换背景图片属性-->
+    </declare-styleable>
+    <!--跑马灯-->
+    <declare-styleable name="MarqueeStyle">
+        <attr name="marqueeTextSize" format="dimension"/>
+        <attr name="marqueeTextColor" format="color"/>
+        <attr name="marqueeInterval" format="integer|reference"/>
+        <attr name="marqueeTextGravity" >
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+    <!--图形制作-->
+    <declare-styleable name="MultiShapeView">
+        <attr name="shape" format="enum">
+            <enum name="rect" value="1"/>
+            <enum name="circle" value="2"/>
+        </attr>
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="cover_color" format="color" />
+        <attr name="round_radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <style name="Widget_GifView"></style>
+    <declare-styleable name="statusview">
+        <attr name="complete" format="reference" />
+        <attr name="error" format="reference" />
+        <attr name="loading" format="reference" />
+        <attr name="dismissOnComplete" format="boolean"/>
+    </declare-styleable>
+
+</resources>

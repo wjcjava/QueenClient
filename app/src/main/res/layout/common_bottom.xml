@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_F4F4F4"
+        android:dividerHeight="@dimen/comment_1_dip"
+        android:scrollbars="none">
+    </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview>
+
+    <LinearLayout
+        android:id="@+id/li_roomdetail_xinyong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/re_workroom_credit"/>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+            android:id="@+id/listView_xinyong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/color_F4F4F4"
+            android:dividerHeight="@dimen/comment_1_dip"
+            android:scrollbars="none">
+        </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview>
+
+    </LinearLayout>
+    <!--门店优惠券-->
+    <include
+        layout="@layout/layout_workroom_coupon"/>
+
+    <!--商家信息-->
+    <include
+        layout="@layout/layout_workroom_service_information"/>
+
+</RelativeLayout>

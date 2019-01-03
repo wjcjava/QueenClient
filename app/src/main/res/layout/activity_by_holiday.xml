@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/li_holiday_out"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="@color/tranparent"
+              tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.mine.activity.ActivityByHolidayActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/sc_holiday_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_holiday_topimage"
+                android:layout_width="match_parent"
+                android:layout_height="314dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hodliday">
+            </ImageView>
+
+            <ImageView android:layout_width="191dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/activity_holiday">
+            </ImageView>
+
+            <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview
+                android:id="@+id/nli_holiday_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:divider="@null">
+            </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollListview>
+
+            <ImageView android:layout_width="191dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/activity_holiday_two">
+            </ImageView>
+
+            <com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView
+                android:id="@+id/nsg_holiday_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:numColumns="2"
+                android:divider="@null">
+            </com.ainisi.queenmirror.queenmirrorcduan.utils.NoScrollGridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

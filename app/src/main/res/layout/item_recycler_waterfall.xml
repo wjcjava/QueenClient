@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/et_shap"
+        android:padding="@dimen/comment_8_dip">
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_homepage_shop"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/dismiss"/>
+
+            <ImageView
+                android:id="@+id/iv_homepage_queen"
+                android:layout_width="@dimen/comment_50_dip"
+                android:layout_height="@dimen/comment_50_dip"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/homepage_queen">
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_homepage_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_12_size"/>
+
+        <com.ainisi.queenmirror.queenmirrorcduan.utils.CustomRatingBar
+            android:id="@+id/iv_xingxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shopName"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            app:mode="random"
+            app:ratingProgress="4"
+            app:starDistance="@dimen/comment_2_dip"
+            app:starEmpty="@mipmap/empty"
+            app:starFill="@mipmap/fill"
+            app:starNum="5"
+            app:starSize="@dimen/comment_10_dip"
+            app:touchAble="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_xingxing"
+            android:layout_marginTop="@dimen/comment_5_dip">
+
+            <TextView
+                android:id="@+id/tv_shop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_home_server"
+                android:gravity="center"
+                android:paddingLeft="@dimen/comment_4_dip"
+                android:paddingTop="@dimen/comment_1_dip"
+                android:paddingRight="@dimen/comment_4_dip"
+                android:paddingBottom="@dimen/comment_1_dip"
+                android:singleLine="true"
+                android:textColor="@color/home_back_two"
+                android:textSize="@dimen/comment_8_size"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_homepage_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/alpha_55_black"
+                android:textSize="@dimen/comment_10_size"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
